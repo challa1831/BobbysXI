@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Big Trip · WC 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background:
+      radial-gradient(circle at 10% 10%, rgba(233,30,99,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 90% 60%, rgba(255,140,66,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 50% 100%, rgba(131,169,92,0.18) 0%, transparent 50%),
+      linear-gradient(180deg, #1a0a2e 0%, #2a1340 50%, #1a0a2e 100%);
+  }
+  body::before {
+    content: ""; display: block; height: 4px;
+    background: linear-gradient(90deg, #E91E63 0% 14%, #FF8C42 14% 28%, #FFD700 28% 42%, #83A95C 42% 56%, #00BCD4 56% 70%, #7C4DFF 70% 84%, #E91E63 84% 100%);
+    margin: -14px -12px 16px;
+  }
+  .city {
+    border: 2px solid; border-radius: 14px; padding: 0; margin-bottom: 16px;
+    overflow: hidden; background: rgba(0,0,0,0.4);
+  }
+  .city-header { padding: 14px 16px; color: white; }
+  .city.cdmx { border-color: #E91E63; } .city.cdmx .city-header { background: linear-gradient(135deg, #E91E63, #C2185B); }
+  .city.gdl  { border-color: #FF8C42; } .city.gdl  .city-header { background: linear-gradient(135deg, #FF8C42, #E65100); }
+  .city.oax  { border-color: #83A95C; } .city.oax  .city-header { background: linear-gradient(135deg, #83A95C, #4A6B2A); }
+  .city.nyc  { border-color: #1E88E5; } .city.nyc  .city-header { background: linear-gradient(135deg, #1E88E5, #0D47A1); }
+  .city-name { font-size: 22px; font-weight: 900; letter-spacing: 1px; }
+  .city-dates { font-size: 11.5px; font-weight: 700; letter-spacing: 1.5px; opacity: 0.95; }
+  .city-nights { display: inline-block; background: rgba(0,0,0,0.4); padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 800; margin-left: 6px; }
+  .city-body { padding: 14px 16px; }
+  .city-row { display: grid; grid-template-columns: 90px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px dashed rgba(255,215,0,0.2); }
+  .city-row:last-child { border-bottom: none; }
+  .city-row-label { font-size: 10.5px; letter-spacing: 1.5px; color: #FFD700; font-weight: 800; text-transform: uppercase; }
+  .city-row-val { color: white; font-weight: 500; font-size: 13px; line-height: 1.5; }
+  .roster-table { width: 100%; border-collapse: collapse; }
+  .roster-table thead th { color: #FFD700; font-size: 10px; letter-spacing: 1.3px; padding: 6px 4px; text-align: left; border-bottom: 2px solid #E91E63; text-transform: uppercase; font-weight: 800; }
+  .roster-table tbody td { padding: 9px 4px; border-bottom: 1px dashed rgba(255,215,0,0.18); font-size: 12px; color: white; }
+  .roster-num { color: #FFD700; font-weight: 900; }
+  .status { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; font-weight: 800; }
+  .status.tbd { background: #FFD700; color: #1a0a2e; }
+  .card { background: rgba(0,0,0,0.35); border: 2px solid rgba(255,215,0,0.4); border-left: 5px solid #E91E63; border-radius: 8px; padding: 14px; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-btn">← BACK TO HUB</a>
+
+  <div style="text-align:center; padding: 10px 0 24px;">
+    <div style="font-size: 11px; letter-spacing: 4px; font-weight: 800; color: #FFD700; margin-bottom: 12px;">⚽ DON BOBBY'S HAREM · BIG TRIP ⚽</div>
+    <h1 style="font-size: clamp(38px, 9vw, 56px); line-height: 0.95; font-weight: 900; background: linear-gradient(135deg, #FF8C42, #E91E63, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">OUR BIG TRIP</h1>
+    <div style="font-style: italic; font-weight: 600; margin-top: 4px;">Mumbai → Tokyo → México → Nueva York 🌮🗽</div>
+    <div style="margin-top: 10px; font-size: 12px; letter-spacing: 2px; color: #FFD700; font-weight: 700;">14 TRAVELLERS · 3 WEEKS · 4 CITIES · JUN–JUL 2026</div>
+  </div>
+
+  <div class="section-banner"><h2>🗺️ CITIES &amp; DAYS</h2></div>
+
+  <div class="city cdmx">
+    <div class="city-header">
+      <div style="font-size: 28px; line-height: 1;">🌮</div>
+      <div class="city-name">MEXICO CITY</div>
+      <div class="city-dates">20 – 24 JUN <span class="city-nights">5 NIGHTS</span></div>
+    </div>
+    <div class="city-body">
+      <div class="city-row"><div class="city-row-label">🍽️ Eat</div><div class="city-row-val">Tacos al pastor · <strong>Pujol</strong> · Contramar · Tortas at Café de Tacuba · Churros at El Moro · Tlacoyos in markets</div></div>
+      <div class="city-row"><div class="city-row-label">🍹 Party</div><div class="city-row-val"><strong>Roma Norte</strong> · Condesa · Polanco · <strong>Plaza Garibaldi</strong> (mariachi all night) · Hanky Panky speakeasy · Licorería Limantour</div></div>
+    </div>
+  </div>
+
+  <div class="city gdl">
+    <div class="city-header">
+      <div style="font-size: 28px; line-height: 1;">🍹</div>
+      <div class="city-name">GUADALAJARA</div>
+      <div class="city-dates">24 – 28 JUN <span class="city-nights">~4 NIGHTS</span></div>
+    </div>
+    <div class="city-body">
+      <div class="city-row"><div class="city-row-label">🍽️ Eat</div><div class="city-row-val"><strong>Tortas ahogadas</strong> (the local king) · Birria · Carne en su jugo · Karne Garibaldi · Hueso restaurant</div></div>
+      <div class="city-row"><div class="city-row-label">🍹 Party</div><div class="city-row-val"><strong>Tequila town</strong> tours (1hr away) · Plaza de los Mariachis · Lafayette &amp; Chapultepec bar streets · Mezcal tasting tours</div></div>
+    </div>
+  </div>
+
+  <div class="city oax">
+    <div class="city-header">
+      <div style="font-size: 28px; line-height: 1;">🌶️</div>
+      <div class="city-name">OAXACA</div>
+      <div class="city-dates">28 JUN – 2 JUL <span class="city-nights">4 NIGHTS</span></div>
+    </div>
+    <div class="city-body">
+      <div class="city-row"><div class="city-row-label">🍽️ Eat</div><div class="city-row-val"><strong>Mole</strong> (its spiritual home) · Tlayudas · Chapulines · Quesillo · Casa Oaxaca · Origen · Levadura de Olla</div></div>
+      <div class="city-row"><div class="city-row-label">🍹 Party</div><div class="city-row-val"><strong>Mezcal everywhere</strong> · Real Minero · Los Danzantes · Sabina Sabe · La Mezcalerita · Centro Histórico bar crawl</div></div>
+    </div>
+  </div>
+
+  <div class="city nyc">
+    <div class="city-header">
+      <div style="font-size: 28px; line-height: 1;">🗽</div>
+      <div class="city-name">NEW YORK CITY</div>
+      <div class="city-dates">2 – 9 JUL <span class="city-nights">7 NIGHTS</span></div>
+    </div>
+    <div class="city-body">
+      <div class="city-row"><div class="city-row-label">🍽️ Eat</div><div class="city-row-val"><strong>Katz's Deli</strong> pastrami · Joe's Pizza · Levain bakery · Russ &amp; Daughters bagels · Smorgasburg market · Carbone</div></div>
+      <div class="city-row"><div class="city-row-label">🍹 Party</div><div class="city-row-val"><strong>Williamsburg</strong> rooftops · Lower East Side bars · East Village dive crawls · West Village cocktails · Brooklyn Mirage if open</div></div>
+    </div>
+  </div>
+
+  <div class="section-banner"><h2>👥 DON BOBBY'S HAREM · ROSTER</h2></div>
+
+  <div class="card">
+    <table class="roster-table">
+      <thead><tr><th>#</th><th>Name</th><th>US Visa</th><th>Paid</th></tr></thead>
+      <tbody><tr><td class="roster-num">1</td><td>Bobby</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">2</td><td>Nihar</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">3</td><td>Kaveer</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">4</td><td>Darshini</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">5</td><td>Soumita</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">6</td><td>Dan</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">7</td><td>Nidhi</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">8</td><td>Alluri</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">9</td><td>Pari</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">10</td><td>Ipshita</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">11</td><td>Kambe</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">12</td><td>Dipti</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">13</td><td>Anjali</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr>
+<tr><td class="roster-num">14</td><td>Challa</td><td><span class="status tbd">TBD</span></td><td><span class="status tbd">—</span></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="section-banner"><h2>📑 DOCS · CRITICAL</h2></div>
+  <div class="card">
+    <ul style="list-style:none;">
+      <li style="padding:10px 4px; border-bottom: 1px dashed rgba(255,215,0,0.2);"><strong style="color:#FFD700;">🇺🇸 US B1/B2 visa</strong> <span style="background:#EF4444; color:white; padding:2px 8px; border-radius:3px; font-size:9px; letter-spacing:1.2px; font-weight:800;">URGENT</span><br><small style="opacity:0.85;">Mumbai consulate wait = 1-12 months. Apply NOW. Also unlocks visa-free Mexico entry.</small></li>
+      <li style="padding:10px 4px; border-bottom: 1px dashed rgba(255,215,0,0.2);"><strong style="color:#FFD700;">🇲🇽 Mexico entry</strong><br><small style="opacity:0.85;">Visa-free for Indians with valid US/UK/Canada/Schengen/Japan visa. Else: e-visa online (~5 days).</small></li>
+      <li style="padding:10px 4px; border-bottom: 1px dashed rgba(255,215,0,0.2);"><strong style="color:#FFD700;">🇯🇵 Japan transit</strong><br><small style="opacity:0.85;">Under 24h airside = no visa. Overnight or leaving terminal = apply transit visa.</small></li>
+      <li style="padding:10px 4px;"><strong style="color:#FFD700;">Passport validity</strong><br><small style="opacity:0.85;">Must be valid 6+ months past July 2026.</small></li>
+    </ul>
+  </div>
+
+  <div class="hub-footer">
+    🌮 ¡VAMOS A MÉXICO! · DON BOBBY'S HAREM 🗽<br>
+    LAST UPDATED · MAY 2026 · KEEP THIS DOC LIVE
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
