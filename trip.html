@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jefe &amp; the Escuadrón · WC 2026</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  body {
+    background:
+      radial-gradient(circle at 10% 10%, rgba(56,189,248,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 90% 60%, rgba(20,184,166,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 50% 100%, rgba(30,64,175,0.22) 0%, transparent 50%),
+      linear-gradient(180deg, #020617 0%, #0F172A 50%, #020617 100%);
+  }
+  body::before {
+    content: ""; display: block; height: 4px;
+    background: linear-gradient(90deg, #38BDF8 0% 20%, #14B8A6 20% 40%, #0EA5E9 40% 60%, #1E40AF 60% 80%, #38BDF8 80% 100%);
+    margin: -14px -12px 16px;
+  }
+  /* Flights / itinerary */
+  .leg-list { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px; align-items: center;
+    background: rgba(15,23,42,0.6);
+    border: 1.5px solid rgba(56,189,248,0.35);
+    border-left: 5px solid #38BDF8;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .leg-date {
+    text-align: center;
+    background: rgba(56,189,248,0.12);
+    border: 1px solid rgba(56,189,248,0.4);
+    border-radius: 8px;
+    padding: 8px 4px;
+    color: #7DD3FC; font-weight: 900; letter-spacing: 1px;
+  }
+  .leg-date .d-num { font-size: 22px; line-height: 1; }
+  .leg-date .d-mon { font-size: 10px; letter-spacing: 2px; margin-top: 2px; opacity: 0.9; }
+  .leg-route { font-size: 15px; font-weight: 800; color: #E2E8F0; letter-spacing: 0.5px; }
+  .leg-route .arrow { color: #14B8A6; margin: 0 6px; font-weight: 900; }
+  .leg-meta { font-size: 11px; letter-spacing: 1.2px; color: #38BDF8; opacity: 0.85; margin-top: 4px; font-weight: 700; text-transform: uppercase; }
+
+  .city-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 700px) { .city-grid { grid-template-columns: 1fr 1fr; } }
+  .city { border: 2px solid; border-radius: 14px; padding: 0; overflow: hidden; background: rgba(2,6,23,0.55); }
+  .city-header { padding: 14px 16px; color: white; }
+  .city.cdmx { border-color: #38BDF8; } .city.cdmx .city-header { background: linear-gradient(135deg, #1E40AF, #0EA5E9); }
+  .city.gdl  { border-color: #14B8A6; } .city.gdl  .city-header { background: linear-gradient(135deg, #0F766E, #14B8A6); }
+  .city.oax  { border-color: #2DD4BF; } .city.oax  .city-header { background: linear-gradient(135deg, #134E4A, #2DD4BF); }
+  .city.nyc  { border-color: #0EA5E9; } .city.nyc  .city-header { background: linear-gradient(135deg, #0B1733, #1E40AF); }
+  .city-name { font-size: 22px; font-weight: 900; letter-spacing: 1px; }
+  .city-dates { font-size: 11.5px; font-weight: 700; letter-spacing: 1.5px; opacity: 0.95; }
+  .city-nights { display: inline-block; background: rgba(2,6,23,0.5); padding: 2px 8px; border-radius: 12px; font-size: 10px; font-weight: 800; margin-left: 6px; }
+  .city-body { padding: 14px 16px; }
+  .city-row { display: grid; grid-template-columns: 90px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px dashed rgba(56,189,248,0.22); }
+  .city-row:last-child { border-bottom: none; }
+  .city-row-label { font-size: 10.5px; letter-spacing: 1.5px; color: #38BDF8; font-weight: 800; text-transform: uppercase; }
+  .city-row-val { color: #E2E8F0; font-weight: 500; font-size: 13px; line-height: 1.5; }
+
+  .roster-table { width: 100%; border-collapse: collapse; }
+  .roster-table thead th { color: #38BDF8; font-size: 10px; letter-spacing: 1.3px; padding: 6px 4px; text-align: left; border-bottom: 2px solid #14B8A6; text-transform: uppercase; font-weight: 800; }
+  .roster-table tbody td { padding: 9px 4px; border-bottom: 1px dashed rgba(56,189,248,0.18); font-size: 12px; color: #E2E8F0; }
+  .roster-num { color: #38BDF8; font-weight: 900; }
+  .status { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; font-weight: 800; }
+  .status.tbd { background: #38BDF8; color: #020617; }
+
+  .card { background: rgba(2,6,23,0.55); border: 1.5px solid rgba(56,189,248,0.35); border-left: 5px solid #38BDF8; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+
+  /* Side-by-side: itinerary + roster */
+  .itin-roster-row { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 18px; }
+  @media (min-width: 900px) { .itin-roster-row { grid-template-columns: 1.05fr 0.95fr; align-items: start; } }
+  .panel { background: rgba(2,6,23,0.5); border: 1.5px solid rgba(56,189,248,0.3); border-radius: 12px; padding: 14px 16px 18px; }
+  .panel-title { font-size: 11px; letter-spacing: 3px; color: #38BDF8; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .panel-title::after { content: ""; flex: 1; height: 1px; background: linear-gradient(to right, rgba(56,189,248,0.4), transparent); }
+
+  /* Two-column roster, sized so 7 rows match the 5-leg flight panel height */
+  .roster-grid {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    column-gap: 26px;
+    row-gap: 4px;
+  }
+  .roster-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 6px;
+    border-bottom: 1px dashed rgba(56,189,248,0.22);
+    font-size: 16px; font-weight: 600; color: #E2E8F0;
+    letter-spacing: 0.4px;
+  }
+  .roster-row .rn {
+    display: inline-block; width: 26px; text-align: right;
+    color: #38BDF8; font-weight: 900; font-size: 15px;
+  }
+  .roster-row:nth-last-child(-n+2) { border-bottom: none; }
+
+  /* Reservations table */
+  .res-table { width: 100%; border-collapse: collapse; }
+  .res-table thead th {
+    color: #38BDF8; font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase;
+    font-weight: 800; padding: 8px 6px; text-align: left;
+    border-bottom: 2px solid #14B8A6;
+  }
+  .res-table tbody td {
+    padding: 11px 6px;
+    border-bottom: 1px dashed rgba(56,189,248,0.2);
+    font-size: 14px; color: #E2E8F0; font-weight: 500;
+  }
+  .res-table tbody tr:last-child td { border-bottom: none; }
+  .res-table .res-date { color: #7DD3FC; font-weight: 700; letter-spacing: 0.6px; font-size: 13px; }
+  .res-table .res-tbd { color: #64748B; font-style: italic; font-weight: 600; letter-spacing: 1px; }
+  .res-hint { margin-top: 12px; font-size: 11px; color: #64748B; font-style: italic; letter-spacing: 0.4px; }
+  .res-hint code { background: rgba(56,189,248,0.12); padding: 1px 6px; border-radius: 3px; color: #38BDF8; font-family: inherit; font-style: normal; }
+
+  /* ---- Animated journey map ---- */
+  #mexico-map { width: 100%; height: 380px; border-radius: 8px; }
+  @media (max-width: 600px) { #mexico-map { height: 300px; } }
+  .mexico-map-wrap {
+    margin: 6px 0 22px;
+    background: rgba(2,6,23,0.6);
+    border: 1.5px solid rgba(56,189,248,0.4);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.45);
+  }
+  .mexico-map-caption {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 10px 16px;
+    background: rgba(2,6,23,0.7);
+    border-top: 1px solid rgba(56,189,248,0.25);
+    font-size: 11px; letter-spacing: 1.5px; font-weight: 700;
+    color: #94A3B8; text-transform: uppercase;
+  }
+  .mexico-map-caption .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 3px 10px; border-radius: 20px;
+    font-size: 11px; font-weight: 700;
+  }
+  .mexico-map-caption .pill .dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid; }
+  /* Leaflet popup theme */
+  .leaflet-popup-content-wrapper { border-radius: 10px !important; box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important; }
+  .leaflet-popup-content { margin: 10px 14px !important; font-family: 'Inter', -apple-system, sans-serif; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a href="index.html" class="back-btn">← BACK TO HUB</a>
+
+  <div style="text-align:center; padding: 10px 0 24px;">
+    <div style="font-size: 11px; letter-spacing: 4px; font-weight: 800; color: #38BDF8; margin-bottom: 12px;">⚽ DON BOBBY'S CLUB · BIG TRIP ⚽</div>
+    <h1 style="font-size: clamp(38px, 9vw, 64px); line-height: 0.95; font-weight: 900; background: linear-gradient(135deg, #7DD3FC, #38BDF8, #14B8A6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">JEFE &amp; THE ESCUADRÓN</h1>
+    <div style="font-style: italic; font-weight: 600; margin-top: 4px; color: #CBD5E1;">Mumbai → Tokyo → México → Nueva York</div>
+    <div style="margin-top: 10px; font-size: 12px; letter-spacing: 2px; color: #38BDF8; font-weight: 700;">14 TRAVELLERS · 22 DAYS · 4 CITIES · 5 FLIGHTS</div>
+  </div>
+
+  <div class="section-banner"><h2>✈️ ITINERARY &amp; ROSTER</h2></div>
+
+  <div class="itin-roster-row">
+    <!-- LEFT: flight legs -->
+    <div class="panel">
+      <div class="panel-title">Flight legs · 5 sectors</div>
+      <div class="leg-list" id="leg-list"></div>
+    </div>
+
+    <!-- RIGHT: traveller roster -->
+    <div class="panel">
+      <div class="panel-title">Don Bobby's Club · 14 travellers</div>
+      <div class="roster-grid" id="roster-grid"></div>
+    </div>
+  </div>
+
+  <div class="section-banner"><h2>🛏️ RESERVATIONS MADE</h2></div>
+  <div class="card">
+    <table class="res-table">
+      <thead>
+        <tr><th style="width:130px;">Date</th><th style="width:140px;">City</th><th>Place</th></tr>
+      </thead>
+      <tbody id="res-rows"></tbody>
+    </table>
+    <div class="res-hint">Edit this table in <code>trip.html</code> as bookings are confirmed.</div>
+  </div>
+
+
+  <div class="section-banner"><h2>🇲🇽 MEXICO LEG · IN DETAIL</h2></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <div class="mexico-map-wrap">
+    <div id="mexico-map"></div>
+    <div class="mexico-map-caption">
+      <span>STOPS</span>
+      <span class="pill" style="background:rgba(83,74,183,0.15); color:#A39CE8;"><span class="dot" style="background:#534AB7;border-color:#3C3489;"></span>Mexico City</span>
+      <span class="pill" style="background:rgba(29,158,117,0.15); color:#5DCFA1;"><span class="dot" style="background:#1D9E75;border-color:#0F6E56;"></span>Guadalajara</span>
+      <span class="pill" style="background:rgba(216,90,48,0.15); color:#F0A07A;"><span class="dot" style="background:#D85A30;border-color:#993C1D;"></span>Oaxaca</span>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    if (!window.L) return; // Leaflet not loaded
+    const map = L.map('mexico-map', { zoomControl: true, scrollWheelZoom: false, minZoom: 4 }).setView([20.5, -101.5], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 12
+    }).addTo(map);
+    function icon(color, border) {
+      return L.divIcon({
+        className: '',
+        html: `<div style="width:20px;height:20px;border-radius:50%;background:${color};border:3px solid ${border};box-shadow:0 2px 8px rgba(0,0,0,0.32);"></div>`,
+        iconSize: [20,20], iconAnchor: [10,10], popupAnchor: [0,-12]
+      });
+    }
+    const mxCities = [
+      { name: 'Mexico City', lat: 19.4326, lng: -99.1332,  color: '#534AB7', border: '#3C3489', desc: 'Capital · 6 nights · 19–26 Jun', dates: '6 nights · 19–26 Jun' },
+      { name: 'Guadalajara', lat: 20.6597, lng: -103.3496, color: '#1D9E75', border: '#0F6E56', desc: "Mexico's 2nd city · 2 nights · 26–28 Jun", dates: '2 nights · 26–28 Jun' },
+      { name: 'Oaxaca',      lat: 17.0732, lng: -96.7266,  color: '#D85A30', border: '#993C1D', desc: 'Colonial gem · 4 nights · 28 Jun – 2 Jul', dates: '4 nights · 28 Jun – 2 Jul' }
+    ];
+    const latlngs = [];
+    mxCities.forEach(c => {
+      L.marker([c.lat, c.lng], { icon: icon(c.color, c.border) }).addTo(map).bindPopup(
+        `<div style="min-width:170px;"><div style="font-size:14px;font-weight:700;color:#1a1a18;">${c.name}</div><div style="font-size:11.5px;color:#666;margin-top:3px;">${c.dates}</div></div>`,
+        { offset: [0,-6] }
+      );
+      latlngs.push([c.lat, c.lng]);
+    });
+    // Connect the three Mexico stops in trip order
+    L.polyline(latlngs, { color: '#185FA5', weight: 2.5, opacity: 0.55, dashArray: '5 7' }).addTo(map);
+  })();
+  </script>
+
+  <div class="section-banner"><h2>🗺️ CITIES &amp; DAYS</h2></div>
+
+  <div class="city-grid" id="city-grid"></div>
+
+
+  <div class="hub-footer">
+    🌮 ¡VAMOS A MÉXICO! · DON BOBBY'S CLUB 🗽<br>
+    LAST UPDATED · MAY 2026 · KEEP THIS DOC LIVE
+  </div>
+</div>
+<script src="data-loader.js"></script>
+<script src="templates.js"></script>
+<script>
+document.addEventListener('wc:ready', () => {
+  const T = window.WC.render;
+  const data = window.WC.data;
+  document.getElementById('leg-list').innerHTML    = data.trip.legs.map(T.legRow).join('');
+  document.getElementById('roster-grid').innerHTML = data.trip.roster.map(T.rosterRow).join('');
+  document.getElementById('res-rows').innerHTML    = data.trip.reservations.map(T.reservationRow).join('');
+  document.getElementById('city-grid').innerHTML   = data.trip.cities.map(T.cityCard).join('');
+});
+</script>
+<script src="app.js"></script>
+</body>
+</html>

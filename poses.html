@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Don Bobby · Caricature Studio · WC 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { background: #F4EFE3; color: #1A1A1A; }
+  .studio-wrap { max-width: 1180px; margin: 0 auto; padding: 18px 14px 60px; }
+  .studio-header { text-align: center; padding: 16px 0 8px; }
+  .studio-eyebrow { font-family: Georgia, serif; font-style: italic; font-weight: 600; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; color: #C8102E; margin-bottom: 6px; }
+  .studio-title { font-family: Georgia, serif; font-size: clamp(40px, 8vw, 70px); font-weight: 900; letter-spacing: -1.5px; line-height: 1; color: #1A1A1A; }
+  .studio-title em { font-style: italic; color: #C8102E; font-weight: 900; }
+  .studio-sub { font-family: Georgia, serif; font-style: italic; font-size: 14px; color: #6B6B6B; margin-top: 8px; letter-spacing: 1px; }
+  .studio-rule { display: flex; align-items: center; gap: 14px; margin: 22px 0 28px; }
+  .studio-rule::before, .studio-rule::after { content: ""; flex: 1; height: 1px; background: #1A1A1A; opacity: 0.25; }
+  .studio-rule .pill { display: inline-block; padding: 4px 14px; background: #1A1A1A; color: #F4EFE3; font-family: Georgia, serif; font-style: italic; font-weight: 700; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; }
+  .studio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .studio-card { background: #FFFFFF; border: 1px solid #1A1A1A; border-radius: 2px; overflow: hidden; box-shadow: 0 8px 22px rgba(26,26,26,0.10), 0 2px 4px rgba(26,26,26,0.05); position: relative; transition: transform .2s ease; }
+  .studio-card:hover { transform: translateY(-3px); }
+  .card-num { position: absolute; top: 10px; right: 10px; background: #1A1A1A; color: #F4EFE3; font-family: Georgia, serif; font-weight: 900; font-style: italic; font-size: 12px; letter-spacing: 1px; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; }
+  .studio-card svg { width: 100%; height: auto; display: block; background: #FFFFFF; }
+  .card-meta { border-top: 1px solid #1A1A1A; padding: 12px 14px 14px; text-align: center; font-family: Georgia, serif; background: #FFFFFF; position: relative; }
+  .card-meta::before { content: ""; position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 60%; height: 3px; background: #C8102E; }
+  .card-name { font-size: 19px; font-weight: 900; font-style: italic; letter-spacing: 0.4px; color: #1A1A1A; }
+  .card-tag { font-size: 11.5px; font-style: italic; color: #6B6B6B; margin-top: 4px; letter-spacing: 0.6px; }
+  .back-btn { background: #FFFFFF; color: #1A1A1A; border-color: #1A1A1A; }
+  .studio-footer { text-align: center; margin-top: 36px; font-family: Georgia, serif; font-style: italic; font-size: 12px; letter-spacing: 2px; color: #6B6B6B; }
+  .studio-footer .accent { color: #C8102E; font-weight: 900; }
+</style>
+</head>
+<body>
+<div class="studio-wrap">
+  <a href="index.html" class="back-btn">← BACK TO HUB</a>
+  <div class="studio-header">
+    <div class="studio-eyebrow">Caricature Studio · Korea Kit</div>
+    <div class="studio-title">Don <em>Bobby</em> · Ten Poses</div>
+    <div class="studio-sub">A study in the gentleman's game · World Cup 2026</div>
+  </div>
+  <div class="studio-rule"><span class="pill">★ Plate One ★</span></div>
+  <div class="studio-grid" id="studio-grid"></div>
+  <div class="studio-footer"><span class="accent">★</span> END OF STUDY <span class="accent">★</span></div>
+</div>
+
+<script>
+(function(){
+  const C = {
+    ink: '#1A1A1A', inkSoft: '#4A4A4A',
+    skin: '#F2D4B5', skinSh: '#C99B73', skinHi: '#FBEAD3',
+    hair: '#1A1A1A', hairTex: '#3A3A3A',
+    jersey: '#C8102E', jerseySh: '#8A0A1F',
+    white: '#FFFFFF', crest: '#D4AF37',
+    sock: '#C8102E', sockBand: '#FFFFFF',
+    boot: '#3A1E0B', bootSh: '#1A0A04', bootLace: '#F4EFE3',
+    cheek: '#E89B8C', accent: '#C8102E'
+  };
+
+  // FILLED tube — closed-path limb with proper volume
+  function tube(x1, y1, mx, my, x2, y2, w1, w2, fill) {
+    const dx1 = mx - x1, dy1 = my - y1;
+    const L1 = Math.hypot(dx1, dy1) || 1;
+    const p1x = -dy1/L1 * w1/2, p1y = dx1/L1 * w1/2;
+    const dx2 = x2 - mx, dy2 = y2 - my;
+    const L2 = Math.hypot(dx2, dy2) || 1;
+    const p2x = -dy2/L2 * w2/2, p2y = dx2/L2 * w2/2;
+    return `<path d="M ${x1+p1x} ${y1+p1y} Q ${mx+p1x} ${my+p1y} ${x2+p2x} ${y2+p2y} L ${x2-p2x} ${y2-p2y} Q ${mx-p1x} ${my-p1y} ${x1-p1x} ${y1-p1y} Z" fill="${fill}" stroke="${C.ink}" stroke-width="2" stroke-linejoin="round"/>`;
+  }
+  function lerp(a, b, t) { return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t]; }
+
+  function head(cx, cy, opts={}) {
+    const tilt = opts.tilt || 0;
+    const open = opts.open || false;
+    const closed = opts.eyesClosed || false;
+    const happy = opts.squint !== false;
+    const lookDx = opts.lookDx || 0, lookDy = opts.lookDy || 0;
+    const RX = 36, RY = 44;
+    const eyeY = cy - 4;
+    const eyeLX = cx - 12, eyeRX = cx + 12;
+    const eye = (ex, ey) => {
+      if (closed) return `<path d="M ${ex-8} ${ey+1} Q ${ex} ${ey-5} ${ex+8} ${ey+1}" stroke="${C.ink}" stroke-width="2.8" fill="none" stroke-linecap="round"/>`;
+      if (open) return `<ellipse cx="${ex}" cy="${ey}" rx="6" ry="7" fill="${C.white}" stroke="${C.ink}" stroke-width="2"/><ellipse cx="${ex + lookDx*2}" cy="${ey + 1 + lookDy}" rx="3" ry="4" fill="${C.ink}"/>`;
+      if (happy) return `<path d="M ${ex-8} ${ey+3} Q ${ex} ${ey-5} ${ex+8} ${ey+3}" stroke="${C.ink}" stroke-width="2.8" fill="none" stroke-linecap="round"/><path d="M ${ex+6} ${ey-1} L ${ex+11} ${ey-5}" stroke="${C.ink}" stroke-width="1.4" stroke-linecap="round" opacity="0.55"/>`;
+      return `<ellipse cx="${ex}" cy="${ey}" rx="4" ry="5" fill="${C.ink}"/>`;
+    };
+    const mouth = open
+      ? `<path d="M ${cx-16} ${cy+24} Q ${cx} ${cy+40} ${cx+16} ${cy+24} Q ${cx+12} ${cy+26} ${cx} ${cy+26} Q ${cx-12} ${cy+26} ${cx-16} ${cy+24} Z" fill="${C.ink}" stroke="${C.ink}" stroke-width="1.6"/><path d="M ${cx-10} ${cy+26} Q ${cx} ${cy+30} ${cx+10} ${cy+26} L ${cx+10} ${cy+28} Q ${cx} ${cy+32} ${cx-10} ${cy+28} Z" fill="${C.white}"/>`
+      : `<path d="M ${cx-17} ${cy+24} Q ${cx} ${cy+35} ${cx+17} ${cy+24}" stroke="${C.ink}" stroke-width="2.8" fill="none" stroke-linecap="round"/><path d="M ${cx-17} ${cy+24} Q ${cx-19} ${cy+20} ${cx-13} ${cy+19}" stroke="${C.ink}" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M ${cx+17} ${cy+24} Q ${cx+19} ${cy+20} ${cx+13} ${cy+19}" stroke="${C.ink}" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+
+    return `<g transform="rotate(${tilt} ${cx} ${cy})">
+      <path d="M ${cx-9} ${cy+RY-8} L ${cx-9} ${cy+RY+10} L ${cx+9} ${cy+RY+10} L ${cx+9} ${cy+RY-8} Z" fill="${C.skin}" stroke="${C.ink}" stroke-width="2"/>
+      <path d="M ${cx-9} ${cy+RY-6} Q ${cx} ${cy+RY+4} ${cx+9} ${cy+RY-6}" fill="${C.skinSh}" opacity="0.5"/>
+      <ellipse cx="${cx-RX-2}" cy="${cy+10}" rx="6" ry="11" fill="${C.skin}" stroke="${C.ink}" stroke-width="2"/>
+      <path d="M ${cx-RX-1} ${cy+5} Q ${cx-RX+2} ${cy+12} ${cx-RX-1} ${cy+16}" stroke="${C.skinSh}" stroke-width="1.6" fill="none"/>
+      <ellipse cx="${cx+RX+2}" cy="${cy+10}" rx="6" ry="11" fill="${C.skin}" stroke="${C.ink}" stroke-width="2"/>
+      <path d="M ${cx+RX+1} ${cy+5} Q ${cx+RX-2} ${cy+12} ${cx+RX+1} ${cy+16}" stroke="${C.skinSh}" stroke-width="1.6" fill="none"/>
+      <path d="M ${cx-RX+2} ${cy-RY+10} Q ${cx-RX-4} ${cy-2} ${cx-RX+2} ${cy+20} Q ${cx-20} ${cy+RY} ${cx} ${cy+RY+4} Q ${cx+20} ${cy+RY} ${cx+RX-2} ${cy+20} Q ${cx+RX+4} ${cy-2} ${cx+RX-2} ${cy-RY+10} Q ${cx+14} ${cy-RY-2} ${cx} ${cy-RY-2} Q ${cx-14} ${cy-RY-2} ${cx-RX+2} ${cy-RY+10} Z" fill="${C.skin}" stroke="${C.ink}" stroke-width="2.5"/>
+      <path d="M ${cx-RX+3} ${cy} Q ${cx-RX+5} ${cy+22} ${cx-16} ${cy+RY-2}" fill="${C.skinSh}" opacity="0.3"/>
+      <path d="M ${cx-RX+2} ${cy-RY+10} Q ${cx-RX-4} ${cy-RY+14} ${cx-RX+4} ${cy-RY-2} Q ${cx-16} ${cy-RY-10} ${cx-4} ${cy-RY-5} Q ${cx} ${cy-RY-12} ${cx+4} ${cy-RY-5} Q ${cx+16} ${cy-RY-10} ${cx+RX-4} ${cy-RY-2} Q ${cx+RX+4} ${cy-RY+14} ${cx+RX-2} ${cy-RY+10} Q ${cx+RX-6} ${cy-4} ${cx+10} ${cy-RY+14} L ${cx-10} ${cy-RY+14} Q ${cx-RX+6} ${cy-4} ${cx-RX+2} ${cy-RY+10} Z" fill="${C.hair}" stroke="${C.ink}" stroke-width="2"/>
+      ${[-22,-16,-10,-4,2,8,14,20].map(dx => `<line x1="${cx+dx}" y1="${cy-RY+6}" x2="${cx+dx}" y2="${cy-RY-4}" stroke="${C.hairTex}" stroke-width="1.4" opacity="0.55"/>`).join('')}
+      <path d="M ${cx-3} ${cy-RY+12} L ${cx} ${cy-RY+20} L ${cx+3} ${cy-RY+12} Z" fill="${C.hair}"/>
+      <path d="M ${eyeLX-8} ${eyeY-11} Q ${eyeLX} ${eyeY-15} ${eyeLX+8} ${eyeY-11}" stroke="${C.ink}" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M ${eyeRX-8} ${eyeY-11} Q ${eyeRX} ${eyeY-15} ${eyeRX+8} ${eyeY-11}" stroke="${C.ink}" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      ${eye(eyeLX, eyeY)}
+      ${eye(eyeRX, eyeY)}
+      <path d="M ${cx-2} ${cy+2} Q ${cx-6} ${cy+14} ${cx-1} ${cy+18}" stroke="${C.ink}" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      <path d="M ${cx+5} ${cy+15} Q ${cx} ${cy+18} ${cx-4} ${cy+17}" stroke="${C.ink}" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <ellipse cx="${cx-22}" cy="${cy+14}" rx="5" ry="3.5" fill="${C.cheek}" opacity="0.5"/>
+      <ellipse cx="${cx+22}" cy="${cy+14}" rx="5" ry="3.5" fill="${C.cheek}" opacity="0.5"/>
+      <path d="M ${cx-13} ${cy+20} Q ${cx-4} ${cy+17} ${cx} ${cy+21} Q ${cx+4} ${cy+17} ${cx+13} ${cy+20} Q ${cx+9} ${cy+23} ${cx+3} ${cy+23} Q ${cx} ${cy+22} ${cx-3} ${cy+23} Q ${cx-9} ${cy+23} ${cx-13} ${cy+20} Z" fill="${C.ink}"/>
+      ${mouth}
+      <path d="M ${cx-14} ${cy+RY-2} Q ${cx} ${cy+RY+2} ${cx+14} ${cy+RY-2}" stroke="${C.skinSh}" stroke-width="1.4" fill="none" opacity="0.5"/>
+    </g>`;
+  }
+
+  function torso(cx, cy, opts={}) {
+    const tilt = opts.tilt || 0;
+    const top = cy - 35, bot = cy + 35;
+    const lSh = cx - 32, rSh = cx + 32;
+    const lWa = cx - 26, rWa = cx + 26;
+    const showNum = opts.showNum !== false;
+    return `<g transform="rotate(${tilt} ${cx} ${cy})">
+      <path d="M ${lSh} ${top+8} Q ${lSh-4} ${top+22} ${lSh+2} ${top+34} Q ${lWa-3} ${cy+14} ${lWa} ${bot} L ${rWa} ${bot} Q ${rWa+3} ${cy+14} ${rSh-2} ${top+34} Q ${rSh+4} ${top+22} ${rSh} ${top+8} Q ${cx+10} ${top} ${cx} ${top} Q ${cx-10} ${top} ${lSh} ${top+8} Z" fill="${C.jersey}" stroke="${C.ink}" stroke-width="2.4"/>
+      <path d="M ${lSh} ${top+8} Q ${lSh-12} ${top+22} ${lSh-8} ${top+32} L ${lSh+2} ${top+30} Q ${lSh+2} ${top+18} ${lSh+4} ${top+10} Z" fill="${C.jersey}" stroke="${C.ink}" stroke-width="2"/>
+      <line x1="${lSh-8}" y1="${top+32}" x2="${lSh+2}" y2="${top+30}" stroke="${C.white}" stroke-width="3"/>
+      <path d="M ${rSh} ${top+8} Q ${rSh+12} ${top+22} ${rSh+8} ${top+32} L ${rSh-2} ${top+30} Q ${rSh-2} ${top+18} ${rSh-4} ${top+10} Z" fill="${C.jersey}" stroke="${C.ink}" stroke-width="2"/>
+      <line x1="${rSh+8}" y1="${top+32}" x2="${rSh-2}" y2="${top+30}" stroke="${C.white}" stroke-width="3"/>
+      <path d="M ${cx-12} ${top+3} L ${cx} ${top+18} L ${cx+12} ${top+3} L ${cx+8} ${top+3} L ${cx} ${top+14} L ${cx-8} ${top+3} Z" fill="${C.white}" stroke="${C.ink}" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M ${lSh+3} ${top+18} Q ${lSh-1} ${cy+8} ${lWa+2} ${bot-3}" stroke="${C.jerseySh}" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.4"/>
+      <g transform="translate(${cx-18} ${top+22})">
+        <path d="M 0 0 L 12 0 L 12 11 Q 6 17 0 11 Z" fill="${C.crest}" stroke="${C.ink}" stroke-width="1.6"/>
+        <circle cx="6" cy="6" r="2.4" fill="${C.jersey}" stroke="${C.ink}" stroke-width="0.6"/>
+      </g>
+      ${showNum ? `<text x="${cx+8}" y="${bot-8}" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="900" fill="${C.white}" stroke="${C.ink}" stroke-width="0.8">10</text>` : ''}
+    </g>`;
+  }
+
+  function arm(shoulder, elbow, hand, opts={}) {
+    const w = opts.w || 16, lowW = opts.lowW || 13;
+    const sleeveEnd = lerp(shoulder, hand, 0.30);
+    return `${tube(shoulder[0], shoulder[1], (shoulder[0]+sleeveEnd[0])/2, (shoulder[1]+sleeveEnd[1])/2, sleeveEnd[0], sleeveEnd[1], w, w-2, C.jersey)}
+      <line x1="${sleeveEnd[0]-6}" y1="${sleeveEnd[1]}" x2="${sleeveEnd[0]+6}" y2="${sleeveEnd[1]}" stroke="${C.white}" stroke-width="2.5"/>
+      ${tube(sleeveEnd[0], sleeveEnd[1], elbow[0], elbow[1], hand[0], hand[1], w-2, lowW, C.skin)}
+      <g transform="translate(${hand[0]} ${hand[1]})">
+        <ellipse cx="0" cy="0" rx="9" ry="8" fill="${C.skin}" stroke="${C.ink}" stroke-width="2"/>
+        <path d="M -5 -2 L -5 3" stroke="${C.ink}" stroke-width="1" opacity="0.55"/>
+        <path d="M -1 -3 L -1 4" stroke="${C.ink}" stroke-width="1" opacity="0.55"/>
+        <path d="M 3 -3 L 3 3" stroke="${C.ink}" stroke-width="1" opacity="0.55"/>
+        <path d="M -7 0 Q -3 -5 4 -5" stroke="${C.skinSh}" stroke-width="1.2" fill="none" opacity="0.6"/>
+      </g>`;
+  }
+
+  function leg(hip, knee, ankle, opts={}) {
+    const w = opts.w || 18, sw = opts.sw || 16;
+    const bootAngle = opts.bootAngle || 0;
+    const bootSize = opts.bootSize || 1;
+    const sockTop = lerp(hip, ankle, 0.55);
+    return `${tube(hip[0], hip[1], (hip[0]+sockTop[0])/2, (hip[1]+sockTop[1])/2 - 2, sockTop[0], sockTop[1], w, sw+2, C.skin)}
+      <ellipse cx="${sockTop[0]}" cy="${sockTop[1]}" rx="${(sw+2)/2}" ry="3.5" fill="${C.sockBand}" stroke="${C.ink}" stroke-width="1.5"/>
+      ${tube(sockTop[0], sockTop[1]+3, knee[0], knee[1], ankle[0], ankle[1], sw, sw-2, C.sock)}
+      <g transform="translate(${ankle[0]} ${ankle[1]}) rotate(${bootAngle}) scale(${bootSize})">
+        <path d="M -9 -2 Q -12 8 -5 11 L 15 11 Q 22 9 19 1 Q 10 -7 -3 -5 Q -7 -4 -9 -2 Z" fill="${C.boot}" stroke="${C.ink}" stroke-width="2"/>
+        <line x1="-2" y1="-2" x2="11" y2="-2" stroke="${C.bootLace}" stroke-width="1.2" opacity="0.85"/>
+        <line x1="0" y1="0" x2="13" y2="0" stroke="${C.bootLace}" stroke-width="1.2" opacity="0.7"/>
+        <line x1="0" y1="2" x2="14" y2="2" stroke="${C.bootLace}" stroke-width="1.2" opacity="0.6"/>
+        <path d="M -5 11 L 15 11" stroke="${C.bootSh}" stroke-width="3" stroke-linecap="round"/>
+      </g>`;
+  }
+
+  function shorts(cx, cy) {
+    return `<path d="M ${cx-30} ${cy-4} Q ${cx-34} ${cy+12} ${cx-30} ${cy+26} L ${cx-6} ${cy+22} L ${cx-2} ${cy+10} L ${cx+2} ${cy+10} L ${cx+6} ${cy+22} L ${cx+30} ${cy+26} Q ${cx+34} ${cy+12} ${cx+30} ${cy-4} Z" fill="${C.white}" stroke="${C.ink}" stroke-width="2.2"/>
+      <rect x="${cx-30}" y="${cy-4}" width="60" height="4" fill="${C.jersey}"/>
+      <line x1="${cx-28}" y1="${cy+2}" x2="${cx-30}" y2="${cy+24}" stroke="${C.jersey}" stroke-width="2.5"/>
+      <line x1="${cx+28}" y1="${cy+2}" x2="${cx+30}" y2="${cy+24}" stroke="${C.jersey}" stroke-width="2.5"/>`;
+  }
+
+  function ball(cx, cy, r=14) {
+    return `<ellipse cx="${cx}" cy="${cy+r}" rx="${r*0.8}" ry="${r*0.18}" fill="${C.ink}" opacity="0.2"/>
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="${C.white}" stroke="${C.ink}" stroke-width="2.2"/>
+      <polygon points="${cx},${cy-r*0.55} ${cx+r*0.52},${cy-r*0.15} ${cx+r*0.32},${cy+r*0.5} ${cx-r*0.32},${cy+r*0.5} ${cx-r*0.52},${cy-r*0.15}" fill="${C.ink}"/>
+      <path d="M ${cx} ${cy-r*0.55} L ${cx} ${cy-r}" stroke="${C.ink}" stroke-width="1.5"/>
+      <path d="M ${cx+r*0.52} ${cy-r*0.15} L ${cx+r*0.85} ${cy-r*0.4}" stroke="${C.ink}" stroke-width="1.5"/>
+      <path d="M ${cx-r*0.52} ${cy-r*0.15} L ${cx-r*0.85} ${cy-r*0.4}" stroke="${C.ink}" stroke-width="1.5"/>`;
+  }
+
+  function stage() {
+    return `<rect width="280" height="320" fill="${C.white}"/>
+      <ellipse cx="140" cy="298" rx="78" ry="7" fill="${C.ink}" opacity="0.18"/>`;
+  }
+  function whoosh(points, color) {
+    const stroke = color || C.ink;
+    return points.map(([x1,y1,x2,y2]) => `<path d="M ${x1} ${y1} Q ${(x1+x2)/2} ${(y1+y2)/2 - 4} ${x2} ${y2}" stroke="${stroke}" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>`).join('');
+  }
+
+  const POSES = [];
+
+  POSES.push({ num:'01', name:'The Strike', tag:'a clean follow-through', render:()=>`
+    ${stage()}
+    ${leg([130,205], [128,238], [126,272])}
+    ${leg([150,205], [195,225], [232,182], {bootAngle:-32, bootSize:0.95})}
+    ${shorts(140, 198)}
+    ${torso(140, 162, {tilt:-6})}
+    ${arm([114,134], [88,170], [70,200])}
+    ${arm([170,134], [196,118], [212,90])}
+    ${head(138, 78, {tilt:-5, open:true, squint:false, lookDx:0.6})}
+    ${ball(252, 178, 12)}
+    ${whoosh([[226,178,248,178],[225,188,246,188]])}
+  `});
+
+  POSES.push({ num:'02', name:'The Toast', tag:'salut, hermanos', render:()=>`
+    ${stage()}
+    ${leg([128,205], [124,238], [122,272])}
+    ${leg([152,205], [156,238], [158,272])}
+    ${shorts(140, 198)}
+    ${torso(140, 162)}
+    ${arm([114,134], [100,168], [110,200])}
+    ${arm([170,134], [198,98], [212,52])}
+    <g transform="rotate(12 212 52)">
+      <path d="M 198 46 L 226 46 L 218 66 L 206 66 Z" fill="${C.jersey}" stroke="${C.ink}" stroke-width="2"/>
+      <ellipse cx="212" cy="46" rx="14" ry="2.5" fill="${C.white}" stroke="${C.ink}" stroke-width="1.5"/>
+      <line x1="212" y1="66" x2="212" y2="78" stroke="${C.ink}" stroke-width="2"/>
+      <ellipse cx="212" cy="80" rx="7" ry="1.6" fill="${C.ink}"/>
+    </g>
+    ${head(138, 78, {tilt:2, open:true, squint:false})}
+  `});
+
+  POSES.push({ num:'03', name:'The Celebration', tag:'arms to the sky', render:()=>`
+    ${stage()}
+    ${leg([128,205], [118,238], [114,272])}
+    ${leg([152,205], [162,238], [166,272])}
+    ${shorts(140, 198)}
+    ${torso(140, 162)}
+    ${arm([114,136], [72,98], [42,58])}
+    ${arm([170,136], [210,98], [238,58])}
+    ${head(140, 78, {open:true, squint:false, lookDy:-2})}
+    <g fill="${C.accent}" stroke="${C.ink}" stroke-width="1.5">
+      <polygon points="42,44 48,30 54,44 64,46 54,50 52,62 46,50 36,50"/>
+      <polygon points="236,40 242,26 248,40 258,42 248,46 246,58 240,46 228,46"/>
+    </g>
+  `});
+
+  POSES.push({ num:'04', name:'The Save', tag:'fingertip stop', render:()=>`
+    ${stage()}
+    ${leg([176,170], [220,184], [254,200], {bootAngle:22})}
+    ${leg([166,182], [206,206], [240,234], {bootAngle:34})}
+    <g transform="rotate(-72 138 175)">${torso(138, 175)}</g>
+    ${arm([116,168], [70,128], [38,98])}
+    ${arm([124,188], [78,150], [48,118])}
+    ${head(108, 140, {tilt:-40, open:true, squint:false, lookDx:-0.8})}
+    ${ball(22, 80, 12)}
+    ${whoosh([[44,90,28,80]])}
+  `});
+
+  POSES.push({ num:'05', name:'The Header', tag:'meets it cleanly', render:()=>`
+    ${stage()}
+    ${leg([128,205], [98,230], [82,260], {bootAngle:-16})}
+    ${leg([152,205], [184,230], [200,260], {bootAngle:16})}
+    ${shorts(140, 198)}
+    ${torso(140, 162, {tilt:4})}
+    ${arm([114,134], [78,150], [56,180])}
+    ${arm([170,134], [202,150], [224,180])}
+    ${head(140, 64, {tilt:-6, squint:false, lookDy:-3})}
+    ${ball(140, 18, 13)}
+    ${whoosh([[120,38,110,30],[160,38,170,30]])}
+  `});
+
+  POSES.push({ num:'06', name:'Foot on Ball', tag:'the classic pose', render:()=>`
+    ${stage()}
+    ${leg([152,205], [156,238], [156,272])}
+    ${leg([128,205], [108,228], [102,245], {bootSize:0.9})}
+    ${ball(104, 264, 14)}
+    ${shorts(140, 198)}
+    ${torso(140, 162, {tilt:-2})}
+    ${arm([114,134], [96,162], [114,192])}
+    ${arm([170,134], [188,162], [170,192])}
+    ${head(140, 78, {tilt:-3, squint:false})}
+  `});
+
+  POSES.push({ num:'07', name:'The Flag', tag:'lap of honour', render:()=>`
+    ${stage()}
+    ${leg([128,205], [100,238], [82,268], {bootAngle:-8})}
+    ${leg([152,205], [184,228], [200,246], {bootAngle:20})}
+    ${shorts(140, 198)}
+    ${torso(140, 162, {tilt:-6})}
+    ${arm([114,134], [94,118], [80,98])}
+    ${arm([170,134], [200,118], [228,100])}
+    ${head(138, 76, {tilt:-8, open:true, squint:false, lookDx:0.5})}
+    <line x1="228" y1="100" x2="262" y2="22" stroke="${C.ink}" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="262" cy="20" r="4" fill="${C.crest}" stroke="${C.ink}" stroke-width="1.5"/>
+    <path d="M 238 34 Q 212 26 178 38 Q 170 50 188 64 Q 214 60 246 76 Z" fill="${C.white}" stroke="${C.ink}" stroke-width="2"/>
+    <circle cx="208" cy="52" r="9" fill="${C.jersey}"/>
+    <path d="M 208 43 Q 213 52 208 61 Q 203 52 208 43 Z" fill="${C.ink}"/>
+  `});
+
+  POSES.push({ num:'08', name:'The Chilena', tag:'overhead, mid-air', render:()=>`
+    ${stage()}
+    <g transform="rotate(-70 140 180)">${torso(140, 180)}</g>
+    ${shorts(180, 152)}
+    ${leg([188,156], [212,108], [228,62], {bootAngle:-58, bootSize:0.95})}
+    ${ball(248, 50, 12)}
+    ${leg([168,162], [140,194], [114,216], {bootAngle:42})}
+    ${arm([126,192], [86,212], [60,240])}
+    ${arm([120,170], [82,156], [56,144])}
+    ${head(80, 222, {tilt:88, open:true, squint:false})}
+    ${whoosh([[238,68,254,58],[248,82,262,76]])}
+  `});
+
+  POSES.push({ num:'09', name:'Number One', tag:'we are the kings', render:()=>`
+    ${stage()}
+    ${leg([128,205], [126,238], [124,272])}
+    ${leg([152,205], [154,238], [156,272])}
+    ${shorts(140, 198)}
+    ${torso(140, 162, {tilt:2})}
+    ${arm([114,134], [102,180], [106,210])}
+    ${arm([170,134], [184,92], [190,50])}
+    <rect x="186" y="32" width="8" height="14" rx="2" fill="${C.skin}" stroke="${C.ink}" stroke-width="1.8"/>
+    ${head(140, 78, {open:true, squint:false, lookDy:-2})}
+    <g>
+      <polygon points="190,4 194,18 208,16 196,26 202,42 190,34 178,42 184,26 172,16 186,18" fill="${C.accent}" stroke="${C.ink}" stroke-width="1.6"/>
+      <text x="190" y="32" text-anchor="middle" font-family="Georgia, serif" font-weight="900" font-style="italic" font-size="16" fill="${C.white}">1</text>
+    </g>
+  `});
+
+  POSES.push({ num:'10', name:'The Penalty', tag:'cold as ice', render:()=>`
+    ${stage()}
+    <circle cx="208" cy="282" r="3.5" fill="${C.ink}"/>
+    ${leg([128,205], [126,238], [124,272])}
+    ${leg([152,205], [154,238], [156,272])}
+    ${shorts(140, 198)}
+    ${torso(140, 162)}
+    ${arm([114,134], [98,168], [116,196])}
+    ${arm([170,134], [186,168], [168,196])}
+    ${head(140, 78, {tilt:6, squint:false, lookDx:0.8, lookDy:0.7})}
+    ${ball(208, 276, 12)}
+  `});
+
+  const grid = document.getElementById('studio-grid');
+  grid.innerHTML = POSES.map(p => `
+    <div class="studio-card">
+      <div class="card-num">${p.num}</div>
+      <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg">${p.render()}</svg>
+      <div class="card-meta">
+        <div class="card-name">${p.name}</div>
+        <div class="card-tag">${p.tag}</div>
+      </div>
+    </div>
+  `).join('');
+})();
+</script>
+</body>
+</html>

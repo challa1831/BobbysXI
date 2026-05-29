@@ -1,0 +1,399 @@
+/* ============================================
+   WC 2026 HUB — STYLES v2 (responsive)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e 0%, #0a0a14 100%);
+  color: white;
+  min-height: 100vh;
+  padding: 14px 12px 28px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 720px; margin: 0 auto; }
+@media (min-width: 900px) {
+  body { padding: 24px; }
+  .container { max-width: 1100px; }
+}
+
+a, button { font-family: inherit; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+a:active, button:active { opacity: 0.85; }
+
+.back-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 18px;
+  background: rgba(0,0,0,0.45);
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 30px;
+  font-size: 11px; letter-spacing: 1.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* HEADER */
+.hub-header { text-align: center; padding: 14px 0 4px; }
+.hub-subtitle {
+  font-size: 11px; letter-spacing: 4px;
+  color: #FFD700; font-weight: 800;
+  margin: 12px 0 6px; text-transform: uppercase;
+}
+.hub-header h1 {
+  font-size: clamp(36px, 9vw, 72px);
+  line-height: 0.95; font-weight: 900;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #C8102E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+.hub-meta {
+  font-size: 11.5px; letter-spacing: 2px;
+  color: #FFD700; opacity: 0.9; font-weight: 700;
+}
+
+/* BOBBY — same image everywhere (bobby.png) */
+.bobby-mascot {
+  width: 280px; max-width: 80vw;
+  height: auto;
+  display: block;
+  margin: 0 auto 4px;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: drop-shadow(4px 8px 16px rgba(0,0,0,0.45));
+  border: 2px solid rgba(255,215,0,0.35);
+}
+@media (min-width: 900px) { .bobby-mascot { width: 360px; max-width: none; } }
+img.bobby-mascot { display: block; }
+
+.bobby-greeting {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFE070 0%, #FFD700 50%, #C9A227 100%);
+  color: #1a1a2e;
+  padding: 9px 22px;
+  border-radius: 4px;
+  border: 2px solid #FFE070;
+  font-weight: 900; font-size: 16px;
+  letter-spacing: 4px;
+  margin: 6px auto 16px;
+  box-shadow: 0 6px 24px rgba(255,215,0,0.5), inset 0 1px 0 rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+/* COUNTRY GRID */
+.country-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px; margin-top: 18px;
+}
+@media (max-width: 420px) { .country-grid { grid-template-columns: 1fr; } }
+@media (min-width: 700px) { .country-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+@media (min-width: 1000px) { .country-grid { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+
+.country-card {
+  border: 3px solid; border-radius: 14px;
+  padding: 14px 12px; text-align: center;
+  color: white; position: relative; cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  text-decoration: none; display: block;
+  background: rgba(0,0,0,0.4);
+}
+.country-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.country-card .badge {
+  position: absolute; top: -10px; right: 10px;
+  font-size: 9px; padding: 3px 9px; border-radius: 20px;
+  background: #000; color: #FFD700;
+  letter-spacing: 1px; font-weight: 800;
+  border: 1px solid currentColor;
+}
+.country-card .mascot-mini { width: 70px; height: 70px; display: block; margin: 4px auto 8px; }
+.country-card .title { font-size: 17px; font-weight: 900; letter-spacing: 0.5px; line-height: 1.1; }
+.country-card .group { font-size: 9.5px; letter-spacing: 1.5px; margin-top: 4px; opacity: 0.85; font-weight: 700; }
+
+.country-card.argentina { background: linear-gradient(135deg, #75AADB 0%, #FFFFFF 50%, #75AADB 100%); border-color: #FFD700; color: #1a1a2e; }
+.country-card.france { background: linear-gradient(135deg, #002654 0%, #FFFFFF 50%, #ED2939 100%); border-color: #FFD700; }
+.country-card.spain { background: linear-gradient(135deg, #C60B1E 0%, #FFC400 100%); border-color: #FFD700; }
+.country-card.brazil { background: linear-gradient(135deg, #009C3B 0%, #FFDC00 100%); border-color: #002776; color: #1a1a2e; }
+.country-card.netherlands { background: linear-gradient(135deg, #FF6E1B 0%, #21468B 100%); border-color: #FFD700; }
+.country-card.japan { background: linear-gradient(135deg, #FFFFFF 0%, #FFB7C5 50%, #BC002D 100%); border-color: #BC002D; color: #1a1a2e; }
+.country-card.portugal { background: linear-gradient(135deg, #C8102E 0%, #006A4E 100%); border-color: #FFD700; }
+.country-card.germany { background: linear-gradient(135deg, #1a1a1a 0%, #DD0000 50%, #FFCE00 100%); border-color: #FFCE00; }
+.country-card.england { background: linear-gradient(135deg, #FFFFFF 0%, #C8102E 100%); border-color: #C8102E; color: #1a1a2e; }
+.country-card.belgium { background: linear-gradient(135deg, #000000 0%, #FAE042 50%, #ED2939 100%); border-color: #FFD700; }
+
+/* HOME FEATURES */
+.trip-feature, .schedule-feature {
+  display: block; width: 100%; text-align: left;
+  margin: 18px 0; padding: 18px;
+  border-radius: 16px; color: white;
+  border: 3px solid; position: relative; overflow: hidden;
+}
+.trip-feature {
+  background: linear-gradient(135deg, #E91E63 0%, #FF8C42 50%, #FFD700 100%);
+  border-color: #FFD700;
+  box-shadow: 0 12px 28px rgba(233,30,99,0.4);
+}
+.trip-feature::before {
+  content: "🌮 🍹 🌶️ 🗽";
+  position: absolute; top: -10px; right: -10px;
+  font-size: 56px; opacity: 0.08; letter-spacing: 8px;
+  transform: rotate(-12deg); pointer-events: none;
+}
+.schedule-feature {
+  background: linear-gradient(135deg, #1E40AF 0%, #4338CA 50%, #7E22CE 100%);
+  border-color: #93C5FD;
+}
+.trip-feature-eyebrow {
+  display: inline-block;
+  background: rgba(0,0,0,0.45); color: #FFD700;
+  padding: 4px 10px; border-radius: 12px;
+  font-size: 10px; font-weight: 800; letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.trip-feature-title { font-size: 26px; font-weight: 900; letter-spacing: 0.5px; margin-bottom: 4px; text-shadow: 2px 2px 0 rgba(0,0,0,0.2); }
+.trip-feature-sub { font-style: italic; font-weight: 600; opacity: 0.95; margin-bottom: 10px; }
+.trip-feature-route { font-size: 18px; letter-spacing: 2px; }
+.trip-feature-arrow {
+  display: inline-block;
+  background: rgba(0,0,0,0.4); color: #FFD700;
+  padding: 5px 14px; border-radius: 20px;
+  font-weight: 800; letter-spacing: 1.5px;
+  font-size: 11px; margin-top: 10px;
+}
+@media (min-width: 900px) {
+  .home-features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+  .home-features .trip-feature, .home-features .schedule-feature { margin: 0; }
+}
+
+/* COUNTRY HERO */
+.country-hero { text-align: center; padding: 16px 0 12px; }
+.country-hero .bobby-mascot { width: 220px; }
+@media (min-width: 900px) { .country-hero .bobby-mascot { width: 280px; } }
+.mascot-name { font-style: italic; font-weight: 700; font-size: 16px; margin: 4px auto 8px; color: #FFD700; }
+.country-title {
+  font-size: clamp(34px, 8vw, 64px);
+  font-weight: 900; letter-spacing: -1px;
+  line-height: 1; margin-bottom: 6px;
+}
+.country-subtitle {
+  font-size: 11px; letter-spacing: 2.5px;
+  font-weight: 700; margin-bottom: 10px; opacity: 0.92;
+}
+.formation-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(0,0,0,0.45);
+  border: 2px solid #FFD700;
+  border-radius: 20px;
+  color: #FFD700;
+  font-size: 11px; letter-spacing: 1.5px; font-weight: 800;
+}
+
+.section-banner { margin: 26px 0 14px; display: flex; align-items: center; gap: 12px; }
+.section-banner::before, .section-banner::after {
+  content: ""; flex: 1; height: 2px;
+  background: linear-gradient(90deg, transparent, #FFD700, transparent);
+}
+.section-banner h2 { color: #FFD700; font-size: 18px; font-weight: 900; letter-spacing: 2px; white-space: nowrap; }
+
+/* MATCH CARDS */
+.match-cards { display: flex; flex-direction: column; gap: 10px; }
+@media (min-width: 700px) { .match-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; } }
+.match-card {
+  background: rgba(0,0,0,0.45);
+  border-left: 5px solid #FFD700;
+  border-radius: 8px; padding: 12px 14px;
+}
+.match-meta { font-size: 10.5px; letter-spacing: 1.5px; color: #FFD700; font-weight: 800; margin-bottom: 6px; }
+.match-teams { font-size: 17px; font-weight: 900; margin-bottom: 4px; }
+.match-teams .vs { color: #FFD700; font-style: italic; margin: 0 6px; font-size: 13px; }
+.match-stadium { font-size: 11px; color: white; opacity: 0.8; font-weight: 500; font-style: italic; }
+.match-odds { display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255,215,0,0.25); }
+.odd-cell { flex: 1; text-align: center; background: rgba(255,215,0,0.1); padding: 6px 4px; border-radius: 4px; }
+.odd-label { font-size: 9px; letter-spacing: 1px; color: #FFD700; font-weight: 800; text-transform: uppercase; }
+.odd-value { font-size: 14px; font-weight: 900; color: white; display: block; margin-top: 1px; }
+.match-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+
+.weather-slot {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(0,0,0,0.4);
+  padding: 4px 10px; border-radius: 12px;
+  font-size: 11.5px; font-weight: 700;
+  margin-left: auto; margin-top: 8px;
+}
+.weather-icon { font-size: 18px; }
+.weather-temp { color: #FFD700; }
+.weather-rain { opacity: 0.85; font-size: 10px; }
+.weather-na { color: #FFD700; opacity: 0.55; }
+
+/* PITCH */
+.pitch-wrapper {
+  margin: 8px auto 24px;
+  background: rgba(0,0,0,0.45);
+  border-radius: 12px; padding: 6px;
+  border: 2px solid rgba(255,215,0,0.4);
+  max-width: 600px;
+}
+.pitch-wrapper svg { width: 100%; height: auto; display: block; border-radius: 8px; }
+
+/* ============================================
+   WC HISTORY (top-of-page summary on country pages)
+   Loaded by app.js via renderCountryHistory()
+   ============================================ */
+.wc-history {
+  margin: 14px auto 22px;
+  background: rgba(0,0,0,0.45);
+  border: 2px solid rgba(255,215,0,0.35);
+  border-radius: 12px;
+  padding: 14px 16px 16px;
+  max-width: 720px;
+}
+.wch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.wch-cell {
+  background: rgba(255,215,0,0.08);
+  border: 1px solid rgba(255,215,0,0.25);
+  border-radius: 8px;
+  padding: 8px 4px;
+  text-align: center;
+}
+.wch-cell.wch-titles { background: rgba(255,215,0,0.18); border-color: #FFD700; }
+.wch-num { font-size: 26px; font-weight: 900; color: #FFD700; line-height: 1; }
+.wch-titles .wch-num { text-shadow: 0 0 8px rgba(255,215,0,0.45); }
+.wch-lbl {
+  font-size: 9.5px; letter-spacing: 1.5px;
+  color: white; opacity: 0.85; text-transform: uppercase;
+  margin-top: 4px; font-weight: 700;
+}
+.wch-best {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px;
+  background: rgba(255,215,0,0.06);
+  border-left: 3px solid #FFD700;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.wch-best-lbl { font-size: 10px; letter-spacing: 1.5px; color: #FFD700; text-transform: uppercase; font-weight: 800; }
+.wch-best-val { font-size: 13px; color: white; font-weight: 700; }
+.wch-blurb { font-size: 12.5px; line-height: 1.55; color: white; opacity: 0.92; font-style: italic; padding: 6px 0 0; }
+
+/* SQUAD GRID */
+.squad-section { margin-top: 24px; }
+.squad-grid { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 12px; }
+@media (min-width: 500px) { .squad-grid { grid-template-columns: 1fr 1fr; gap: 10px; } }
+@media (min-width: 900px) { .squad-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; } }
+@media (min-width: 1100px) { .squad-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.squad-card {
+  background: rgba(0,0,0,0.45);
+  border: 1.5px solid rgba(255,215,0,0.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex; align-items: center; gap: 10px;
+  cursor: pointer; transition: all 0.15s;
+}
+.squad-card:hover { border-color: #FFD700; background: rgba(255,215,0,0.1); }
+.squad-card.captain { border-left: 4px solid #FFD700; }
+.squad-card.star { border-left: 4px solid #FFA500; }
+.squad-card.injured { border-left: 4px solid #EF4444; }
+.squad-card.bench { opacity: 0.85; }
+
+.squad-pos {
+  background: rgba(255,215,0,0.2);
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 10px; font-weight: 900;
+  min-width: 36px; text-align: center; flex-shrink: 0;
+}
+.squad-info { flex: 1; min-width: 0; }
+.squad-name { font-size: 13px; font-weight: 800; line-height: 1.2; }
+.squad-meta { font-size: 10.5px; color: #FFD700; opacity: 0.85; margin-top: 2px; font-weight: 600; }
+.squad-badge { font-size: 9px; padding: 2px 5px; border-radius: 3px; font-weight: 800; letter-spacing: 0.5px; }
+.squad-badge.cap { background: #FFD700; color: #1a1a2e; }
+.squad-badge.star { background: #FFA500; color: #1a1a2e; }
+.squad-badge.inj { background: #EF4444; color: white; }
+
+/* MODAL */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 100; display: none;
+  align-items: flex-end; justify-content: center;
+}
+@media (min-width: 700px) { .modal-overlay { align-items: center; } }
+.modal-overlay.active { display: flex; animation: fadeIn 0.2s; }
+.modal-content {
+  background: linear-gradient(180deg, #1a1a2e 0%, #0a0a14 100%);
+  border-top: 3px solid #FFD700;
+  border-radius: 16px 16px 0 0;
+  padding: 20px 18px 30px;
+  width: 100%; max-width: 480px;
+  animation: slideUp 0.3s; position: relative;
+}
+@media (min-width: 700px) { .modal-content { border-radius: 16px; border: 3px solid #FFD700; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.modal-close {
+  position: absolute; top: 14px; right: 14px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,215,0,0.4);
+  color: #FFD700;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font-size: 18px; font-weight: 800;
+}
+.modal-player-name { font-size: 22px; font-weight: 900; letter-spacing: 0.5px; color: #FFD700; margin-bottom: 4px; }
+.modal-player-pos { font-size: 11px; color: white; opacity: 0.7; letter-spacing: 1.5px; font-weight: 700; margin-bottom: 12px; text-transform: uppercase; }
+.modal-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.stat-box { background: rgba(255,215,0,0.08); border: 1px solid rgba(255,215,0,0.3); border-radius: 6px; padding: 8px; }
+.stat-label { font-size: 9.5px; letter-spacing: 1.2px; color: #FFD700; font-weight: 700; text-transform: uppercase; }
+.stat-value { font-size: 16px; font-weight: 900; color: white; margin-top: 1px; }
+.modal-note { margin-top: 12px; padding: 10px 12px; background: rgba(255,215,0,0.1); border-left: 3px solid #FFD700; border-radius: 4px; font-size: 12.5px; line-height: 1.5; font-style: italic; }
+
+/* MAP */
+.na-map-wrapper {
+  margin: 14px auto 22px;
+  background: rgba(0,0,0,0.45);
+  border: 2px solid rgba(255,215,0,0.4);
+  border-radius: 12px; padding: 6px;
+  max-width: 800px;
+}
+.na-map { width: 100%; height: auto; display: block; border-radius: 8px; }
+
+.travel-cities-list { display: grid; grid-template-columns: 1fr; gap: 8px; margin-top: 14px; }
+@media (min-width: 600px) { .travel-cities-list { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 900px) { .travel-cities-list { grid-template-columns: repeat(3, 1fr); } }
+.travel-city {
+  background: rgba(0,0,0,0.45);
+  border: 2px solid rgba(255,215,0,0.4);
+  border-radius: 10px; padding: 12px 14px;
+}
+.travel-city-name { font-size: 14px; font-weight: 900; color: #FFD700; letter-spacing: 1px; margin-bottom: 4px; }
+.travel-city-detail { font-size: 12px; color: white; opacity: 0.9; line-height: 1.5; }
+
+/* FOOTER */
+.hub-footer {
+  margin-top: 28px; text-align: center;
+  padding: 16px;
+  background: rgba(0,0,0,0.35);
+  border-top: 2px solid #C8102E;
+  border-bottom: 2px solid #FFD700;
+  border-radius: 4px;
+  font-size: 10.5px; color: #FFD700;
+  letter-spacing: 1.5px; font-weight: 700;
+}
+.disclaimer { color: #FF6B35; margin-top: 6px; opacity: 0.9; }
