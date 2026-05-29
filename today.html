@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today on tour · Don Bobby's Club</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background:
+      radial-gradient(circle at 12% 8%,  rgba(184,134,11,0.10) 0%, transparent 55%),
+      radial-gradient(circle at 88% 90%, rgba(139,42,51,0.07) 0%, transparent 55%),
+      #C4DBC0;
+    color: #1F2E1F;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+  body::before { display: none; }
+  .container { max-width: 760px; }
+
+  .back-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    color: #1F2E1F; border: 1px solid #1F2E1F;
+    border-radius: 3px;
+    font-size: 11px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 2px 0 #8B2A33;
+  }
+
+  .pc-eyebrow {
+    text-align: center; margin-top: 22px;
+    font-weight: 500; font-size: 12px; letter-spacing: 5px;
+    color: #8B2A33; text-transform: uppercase;
+  }
+  .pc-eyebrow::before, .pc-eyebrow::after {
+    content: "✦"; margin: 0 10px; color: #B8860B;
+  }
+  .pc-title {
+    text-align: center;
+    font-size: clamp(36px, 7vw, 60px);
+    font-weight: 800; line-height: 0.95; letter-spacing: -1.5px;
+    color: #1F2E1F; margin-top: 8px;
+  }
+  .pc-title em { font-style: italic; color: #8B2A33; }
+
+  /* Day navigator */
+  .day-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0 6px;
+  }
+  .day-nav button {
+    padding: 10px 14px;
+    background: #FFFFFF;
+    color: #1F2E1F;
+    border: 1px solid #1F2E1F;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .day-nav button:hover { background: #FFF7E2; transform: translateY(-1px); }
+  .day-nav button:disabled { opacity: 0.35; cursor: not-allowed; }
+  .day-nav .prev { justify-self: start; }
+  .day-nav .next { justify-self: end; }
+  .day-nav .day-pill {
+    text-align: center;
+    font-size: 11px; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;
+    color: #5A6B5A;
+  }
+  .day-nav .day-pill .num {
+    background: #2F5233; color: #FFFFFF;
+    padding: 2px 9px; border-radius: 2px;
+    font-weight: 800;
+  }
+
+  .day-title {
+    text-align: center;
+    font-size: clamp(26px, 5vw, 38px); font-weight: 800; letter-spacing: -1px;
+    color: #1F2E1F; margin: 6px 0 4px;
+  }
+  .day-where {
+    text-align: center;
+    font-size: 13px; font-style: italic; color: #5A6B5A;
+    margin-bottom: 24px;
+  }
+  .day-where strong { color: #8B2A33; font-weight: 700; font-style: normal; }
+
+  /* Sections */
+  .section {
+    background: #FFFFFF;
+    border: 1px solid rgba(31,46,31,0.18);
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(31,46,31,0.08);
+    margin-bottom: 18px;
+    overflow: hidden;
+  }
+  .section-head {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(31,46,31,0.12);
+    background: #FFF7E2;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .section-head .label {
+    font-size: 11px; letter-spacing: 3px; font-weight: 700; text-transform: uppercase;
+    color: #2F5233;
+  }
+  .section-head .count {
+    font-size: 11px; color: #5A6B5A; font-weight: 600;
+  }
+  .section-body { padding: 14px 16px; }
+
+  /* Flight card */
+  .flight {
+    display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(31,46,31,0.12);
+  }
+  .flight:last-child { border-bottom: none; }
+  .flight-icon {
+    background: #B8860B; color: #FFFFFF;
+    height: 48px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .flight-route { font-size: 15px; font-weight: 700; color: #1F2E1F; letter-spacing: 0.4px; }
+  .flight-meta { font-size: 11px; letter-spacing: 1.5px; font-weight: 600; color: #5A6B5A; margin-top: 3px; text-transform: uppercase; }
+
+  /* Match row */
+  .match {
+    display: grid; grid-template-columns: 60px 1fr auto; gap: 14px; align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(31,46,31,0.12);
+  }
+  .match:last-child { border-bottom: none; }
+  .match-time {
+    text-align: center;
+    background: #1F2E1F; color: #FFFFFF;
+    padding: 8px 0; border-radius: 3px;
+  }
+  .match-time .h { display: block; font-size: 13px; font-weight: 800; letter-spacing: 0.5px; }
+  .match-time .tz { display: block; font-size: 9px; letter-spacing: 1px; opacity: 0.7; }
+  .match-teams { display: flex; flex-direction: column; }
+  .match-pair { font-size: 14px; font-weight: 700; color: #1F2E1F; }
+  .match-pair .vs { color: #5A6B5A; font-style: italic; font-weight: 500; margin: 0 4px; }
+  .match-where { font-size: 11px; color: #5A6B5A; margin-top: 3px; }
+  .match-grp {
+    background: #2F5233; color: #FFFFFF;
+    padding: 3px 8px; border-radius: 2px;
+    font-size: 10px; letter-spacing: 1px; font-weight: 700;
+  }
+
+  /* Empty state */
+  .empty {
+    padding: 18px 8px;
+    text-align: center;
+    font-style: italic; color: #5A6B5A; font-size: 13px;
+  }
+
+  /* Footer */
+  .day-footer {
+    text-align: center;
+    margin-top: 14px; padding: 16px;
+    font-size: 11.5px; font-style: italic; color: #5A6B5A;
+    border-top: 1px dashed rgba(31,46,31,0.22);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <a href="index.html" class="back-btn">← Back to the hub</a>
+
+  <div class="pc-eyebrow">Don Bobby's Club</div>
+  <div class="pc-title">Today <em>on tour</em></div>
+
+  <div class="day-nav">
+    <button class="prev" id="prev">◀ Prev day</button>
+    <div class="day-pill"><span class="num" id="day-num">Day 1 / 22</span></div>
+    <button class="next" id="next">Next day ▶</button>
+  </div>
+
+  <div class="day-title" id="day-title">Friday · 19 June 2026</div>
+  <div class="day-where" id="day-where">in <strong>Mumbai</strong> · departure day</div>
+
+  <div class="section" id="trip-section">
+    <div class="section-head">
+      <span class="label">Our day</span>
+      <span class="count" id="trip-count"></span>
+    </div>
+    <div class="section-body" id="trip-body"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <span class="label">Matches</span>
+      <span class="count" id="match-count"></span>
+    </div>
+    <div class="section-body" id="match-body"></div>
+  </div>
+
+  <div class="day-footer">
+    The day-by-day plan reads from <code>data/live.json</code> — edit it and refresh.
+  </div>
+
+</div>
+
+<script src="data-loader.js"></script>
+<script>
+(function(){
+  const TRIP_START = "2026-06-19";
+  const TRIP_END   = "2026-07-10";
+
+  // Helpers
+  const monthShort = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const dayName    = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function ymd(d) { return d.toISOString().slice(0,10); }
+  function parse(s) { const [y,m,d] = s.split('-').map(Number); return new Date(Date.UTC(y, m-1, d)); }
+  function addDays(d, n) { const x = new Date(d); x.setUTCDate(x.getUTCDate()+n); return x; }
+  function pretty(d) {
+    return `${dayName[d.getUTCDay()]} · ${d.getUTCDate()} ${monthShort[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  }
+  function dayIndex(d) {
+    const start = parse(TRIP_START);
+    return Math.round((d - start) / 86400000) + 1;
+  }
+  function clampDay(d) {
+    const s = parse(TRIP_START), e = parse(TRIP_END);
+    if (d < s) return s;
+    if (d > e) return e;
+    return d;
+  }
+
+  // City windows from live.json. cities[] has dates like "19 – 26 JUN" -> we compute ranges.
+  function cityRanges(cities) {
+    const MAP = { JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11 };
+    return cities.map(c => {
+      const m = c.dates.match(/(\d+)\s*[–-]\s*(\d+)?\s*([A-Z]{3})?(?:\s*[–-]\s*(\d+)\s*([A-Z]{3}))?/i);
+      // Try a more general parse: split on dash
+      let startDay, startMon, endDay, endMon;
+      const parts = c.dates.split(/\s*[–-]\s*/).map(p => p.trim());
+      if (parts.length === 2) {
+        // e.g. "19 – 26 JUN"  OR  "28 JUN – 2 JUL"
+        const m1 = parts[0].match(/(\d+)(?:\s+([A-Z]{3}))?/i);
+        const m2 = parts[1].match(/(\d+)(?:\s+([A-Z]{3}))?/i);
+        startDay = parseInt(m1[1], 10);
+        startMon = m1[2];
+        endDay   = parseInt(m2[1], 10);
+        endMon   = m2[2];
+        if (!startMon && endMon) startMon = endMon;
+      }
+      const startMonth = MAP[(startMon||"JUN").toUpperCase()];
+      const endMonth   = MAP[(endMon||"JUN").toUpperCase()];
+      return {
+        name: c.name,
+        emoji: c.emoji,
+        nights: c.nights,
+        start: new Date(Date.UTC(2026, startMonth, startDay)),
+        end:   new Date(Date.UTC(2026, endMonth, endDay))
+      };
+    });
+  }
+
+  function cityFor(day, ranges) {
+    for (const r of ranges) {
+      if (day >= r.start && day <= r.end) return r;
+    }
+    return null;
+  }
+
+  // Render
+  let CURRENT;
+  function render(d, data) {
+    CURRENT = d;
+    const today = ymd(d);
+    document.getElementById('day-title').textContent = pretty(d);
+    const idx = dayIndex(d);
+    const total = Math.round((parse(TRIP_END) - parse(TRIP_START))/86400000) + 1;
+    document.getElementById('day-num').textContent = `Day ${idx} / ${total}`;
+    document.getElementById('prev').disabled = ymd(d) <= TRIP_START;
+    document.getElementById('next').disabled = ymd(d) >= TRIP_END;
+
+    const ranges = cityRanges(data.trip.cities);
+    const city = cityFor(d, ranges);
+    const where = document.getElementById('day-where');
+    if (city) where.innerHTML = `in <strong>${city.emoji} ${city.name}</strong>`;
+    else where.textContent = 'on the road';
+
+    // Trip section: any flight legs whose date matches today, plus the city stay note
+    const tripBody  = document.getElementById('trip-body');
+    const tripCount = document.getElementById('trip-count');
+    const legs = (data.trip.legs || []).filter(l => {
+      const mon = (l.month || '').toUpperCase();
+      const monIdx = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'].indexOf(mon);
+      return monIdx === d.getUTCMonth() && l.day === d.getUTCDate();
+    });
+    let bits = legs.map(l => `
+      <div class="flight">
+        <div class="flight-icon">✈</div>
+        <div>
+          <div class="flight-route">${l.route}</div>
+          <div class="flight-meta">${l.meta}</div>
+        </div>
+      </div>`).join('');
+    if (city && !legs.length) {
+      bits += `<div class="flight">
+        <div class="flight-icon">🏨</div>
+        <div>
+          <div class="flight-route">Staying in ${city.name}</div>
+          <div class="flight-meta">${city.dates} · ${city.nights} nights</div>
+        </div>
+      </div>`;
+    }
+    tripBody.innerHTML = bits || `<div class="empty">No travel scheduled.</div>`;
+    tripCount.textContent = legs.length ? `${legs.length} flight${legs.length>1?'s':''}` : (city ? city.name : '');
+
+    // Match section
+    const matchBody  = document.getElementById('match-body');
+    const matchCount = document.getElementById('match-count');
+    const todays = (data.matches || []).filter(m => m.date === today);
+    if (todays.length === 0) {
+      matchBody.innerHTML = `<div class="empty">No fixtures today — enjoy the day off.</div>`;
+      matchCount.textContent = '';
+    } else {
+      matchBody.innerHTML = todays.map(m => `
+        <div class="match">
+          <div class="match-time"><span class="h">${m.time.replace(' ET','')}</span><span class="tz">ET</span></div>
+          <div class="match-teams">
+            <div class="match-pair">${m.home.flag} ${m.home.code} <span class="vs">vs</span> ${m.away.flag} ${m.away.code}</div>
+            <div class="match-where">📍 ${m.stadium || m.city}</div>
+          </div>
+          <div class="match-grp">GRP ${m.group}</div>
+        </div>`).join('');
+      matchCount.textContent = `${todays.length} match${todays.length>1?'es':''}`;
+    }
+  }
+
+  function init() {
+    document.addEventListener('wc:ready', () => {
+      const data = window.WC.data;
+      // Initial day: today if within trip range, else trip start
+      const real = new Date();
+      const today = new Date(Date.UTC(real.getUTCFullYear(), real.getUTCMonth(), real.getUTCDate()));
+      let d = clampDay(today);
+      if (today < parse(TRIP_START)) d = parse(TRIP_START);
+      render(d, data);
+
+      document.getElementById('prev').addEventListener('click', () => {
+        const next = addDays(CURRENT, -1);
+        if (next >= parse(TRIP_START)) render(next, data);
+      });
+      document.getElementById('next').addEventListener('click', () => {
+        const next = addDays(CURRENT, 1);
+        if (next <= parse(TRIP_END)) render(next, data);
+      });
+    });
+  }
+  init();
+})();
+</script>
+</body>
+</html>

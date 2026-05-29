@@ -1,0 +1,5273 @@
+{
+  "_meta": {
+    "schema_version": 1,
+    "schema": "Single source of truth. Edit this file and push — pages render from it on load.",
+    "tournamentStart": "2026-06-11",
+    "tournamentEnd": "2026-07-19",
+    "tournamentPhase": "pre-tournament",
+    "lastUpdated": "2026-05-28",
+    "notes": [
+      "Match results: set 'result': {'home': 2, 'away': 1} on a fixture. Standings auto-recompute.",
+      "Standings sort: Pts → GD → GF → name.",
+      "Top-2 of each group advance (highlighted light-green on schedule.html)."
+    ],
+    "fifaRankingDate": "2026-04-01",
+    "nextFifaUpdate": "2026-06-11"
+  },
+  "groups": [
+    {
+      "letter": "A",
+      "teams": [
+        {
+          "code": "MEX",
+          "name": "Mexico",
+          "flag": "🇲🇽"
+        },
+        {
+          "code": "SUI",
+          "name": "Switzerland",
+          "flag": "🇨🇭"
+        },
+        {
+          "code": "CZE",
+          "name": "Czechia",
+          "flag": "🇨🇿"
+        },
+        {
+          "code": "RSA",
+          "name": "South Africa",
+          "flag": "🇿🇦"
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "teams": [
+        {
+          "code": "CAN",
+          "name": "Canada",
+          "flag": "🇨🇦"
+        },
+        {
+          "code": "QAT",
+          "name": "Qatar",
+          "flag": "🇶🇦"
+        },
+        {
+          "code": "CIV",
+          "name": "Côte d'Ivoire",
+          "flag": "🇨🇮"
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "flag": "🏴"
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "teams": [
+        {
+          "code": "BRA",
+          "name": "Brazil",
+          "flag": "🇧🇷"
+        },
+        {
+          "code": "MAR",
+          "name": "Morocco",
+          "flag": "🇲🇦"
+        },
+        {
+          "code": "HAI",
+          "name": "Haiti",
+          "flag": "🇭🇹"
+        },
+        {
+          "code": "TBD",
+          "name": "TBD",
+          "flag": "🏴"
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "teams": [
+        {
+          "code": "USA",
+          "name": "USA",
+          "flag": "🇺🇸"
+        },
+        {
+          "code": "AUS",
+          "name": "Australia",
+          "flag": "🇦🇺"
+        },
+        {
+          "code": "PAR",
+          "name": "Paraguay",
+          "flag": "🇵🇾"
+        },
+        {
+          "code": "TUR",
+          "name": "Türkiye",
+          "flag": "🇹🇷"
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "teams": [
+        {
+          "code": "GER",
+          "name": "Germany",
+          "flag": "🇩🇪"
+        },
+        {
+          "code": "ECU",
+          "name": "Ecuador",
+          "flag": "🇪🇨"
+        },
+        {
+          "code": "KOR",
+          "name": "South Korea",
+          "flag": "🇰🇷"
+        },
+        {
+          "code": "CUW",
+          "name": "Curaçao",
+          "flag": "🇨🇼"
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "teams": [
+        {
+          "code": "NED",
+          "name": "Netherlands",
+          "flag": "🇳🇱"
+        },
+        {
+          "code": "JPN",
+          "name": "Japan",
+          "flag": "🇯🇵"
+        },
+        {
+          "code": "SWE",
+          "name": "Sweden",
+          "flag": "🇸🇪"
+        },
+        {
+          "code": "TUN",
+          "name": "Tunisia",
+          "flag": "🇹🇳"
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "teams": [
+        {
+          "code": "BEL",
+          "name": "Belgium",
+          "flag": "🇧🇪"
+        },
+        {
+          "code": "IRN",
+          "name": "Iran",
+          "flag": "🇮🇷"
+        },
+        {
+          "code": "EGY",
+          "name": "Egypt",
+          "flag": "🇪🇬"
+        },
+        {
+          "code": "NZL",
+          "name": "New Zealand",
+          "flag": "🇳🇿"
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "teams": [
+        {
+          "code": "ESP",
+          "name": "Spain",
+          "flag": "🇪🇸"
+        },
+        {
+          "code": "URU",
+          "name": "Uruguay",
+          "flag": "🇺🇾"
+        },
+        {
+          "code": "KSA",
+          "name": "Saudi Arabia",
+          "flag": "🇸🇦"
+        },
+        {
+          "code": "CPV",
+          "name": "Cape Verde",
+          "flag": "🇨🇻"
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "teams": [
+        {
+          "code": "FRA",
+          "name": "France",
+          "flag": "🇫🇷"
+        },
+        {
+          "code": "NOR",
+          "name": "Norway",
+          "flag": "🇳🇴"
+        },
+        {
+          "code": "SEN",
+          "name": "Senegal",
+          "flag": "🇸🇳"
+        },
+        {
+          "code": "IRQ",
+          "name": "Iraq",
+          "flag": "🇮🇶"
+        }
+      ]
+    },
+    {
+      "letter": "J",
+      "teams": [
+        {
+          "code": "ARG",
+          "name": "Argentina",
+          "flag": "🇦🇷"
+        },
+        {
+          "code": "AUT",
+          "name": "Austria",
+          "flag": "🇦🇹"
+        },
+        {
+          "code": "ALG",
+          "name": "Algeria",
+          "flag": "🇩🇿"
+        },
+        {
+          "code": "JOR",
+          "name": "Jordan",
+          "flag": "🇯🇴"
+        }
+      ]
+    },
+    {
+      "letter": "K",
+      "teams": [
+        {
+          "code": "POR",
+          "name": "Portugal",
+          "flag": "🇵🇹"
+        },
+        {
+          "code": "COL",
+          "name": "Colombia",
+          "flag": "🇨🇴"
+        },
+        {
+          "code": "COD",
+          "name": "DR Congo",
+          "flag": "🇨🇩"
+        },
+        {
+          "code": "UZB",
+          "name": "Uzbekistan",
+          "flag": "🇺🇿"
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "teams": [
+        {
+          "code": "ENG",
+          "name": "England",
+          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+        },
+        {
+          "code": "CRO",
+          "name": "Croatia",
+          "flag": "🇭🇷"
+        },
+        {
+          "code": "GHA",
+          "name": "Ghana",
+          "flag": "🇬🇭"
+        },
+        {
+          "code": "PAN",
+          "name": "Panama",
+          "flag": "🇵🇦"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "M1",
+      "date": "2026-06-11",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Mexico City",
+      "stadium": "Mexico City",
+      "home": {
+        "flag": "🇲🇽",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M2",
+      "date": "2026-06-11",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Toronto",
+      "stadium": "Toronto",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M3",
+      "date": "2026-06-12",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "B",
+      "city": "Los Angeles",
+      "stadium": "Los Angeles",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M4",
+      "date": "2026-06-12",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Guadalajara",
+      "stadium": "Guadalajara",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M5",
+      "date": "2026-06-12",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "F",
+      "city": "Vancouver",
+      "stadium": "Vancouver",
+      "home": {
+        "flag": "🇳🇱",
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      "away": {
+        "flag": "🇯🇵",
+        "code": "JPN",
+        "name": "Japan"
+      },
+      "result": null
+    },
+    {
+      "id": "M6",
+      "date": "2026-06-13",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "B",
+      "city": "San Francisco",
+      "stadium": "San Francisco",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M7",
+      "date": "2026-06-13",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "G",
+      "city": "Seattle",
+      "stadium": "Seattle",
+      "home": {
+        "flag": "🇧🇪",
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      "away": {
+        "flag": "🇪🇬",
+        "code": "EGY",
+        "name": "Egypt"
+      },
+      "result": null
+    },
+    {
+      "id": "M8",
+      "date": "2026-06-13",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "B",
+      "city": "Toronto",
+      "stadium": "Toronto",
+      "home": {
+        "flag": "🇨🇦",
+        "code": "CAN",
+        "name": "Canada"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M9",
+      "date": "2026-06-13",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "New York/New Jersey",
+      "stadium": "New York/New Jersey",
+      "home": {
+        "flag": "🇧🇷",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "away": {
+        "flag": "🇲🇦",
+        "code": "MAR",
+        "name": "Morocco"
+      },
+      "result": null
+    },
+    {
+      "id": "M10",
+      "date": "2026-06-14",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "code": "SCO",
+        "name": "SCO"
+      },
+      "result": null
+    },
+    {
+      "id": "M11",
+      "date": "2026-06-14",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Miami",
+      "stadium": "Miami",
+      "home": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M12",
+      "date": "2026-06-14",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "D",
+      "city": "Los Angeles",
+      "stadium": "Los Angeles",
+      "home": {
+        "flag": "🇺🇸",
+        "code": "USA",
+        "name": "USA"
+      },
+      "away": {
+        "flag": "🇵🇾",
+        "code": "PAR",
+        "name": "Paraguay"
+      },
+      "result": null
+    },
+    {
+      "id": "M13",
+      "date": "2026-06-14",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "D",
+      "city": "San Francisco",
+      "stadium": "San Francisco",
+      "home": {
+        "flag": "🇦🇺",
+        "code": "AUS",
+        "name": "Australia"
+      },
+      "away": {
+        "flag": "🇹🇷",
+        "code": "TUR",
+        "name": "Türkiye"
+      },
+      "result": null
+    },
+    {
+      "id": "M14",
+      "date": "2026-06-15",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "H",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇪🇸",
+        "code": "ESP",
+        "name": "Spain"
+      },
+      "away": {
+        "flag": "🇨🇻",
+        "code": "CPV",
+        "name": "Cape Verde"
+      },
+      "result": null
+    },
+    {
+      "id": "M15",
+      "date": "2026-06-15",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "G",
+      "city": "Los Angeles",
+      "stadium": "Los Angeles",
+      "home": {
+        "flag": "🇮🇷",
+        "code": "IRN",
+        "name": "Iran"
+      },
+      "away": {
+        "flag": "🇳🇿",
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      "result": null
+    },
+    {
+      "id": "M16",
+      "date": "2026-06-15",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Houston",
+      "stadium": "Houston",
+      "home": {
+        "flag": "🇩🇪",
+        "code": "GER",
+        "name": "Germany"
+      },
+      "away": {
+        "flag": "🇨🇼",
+        "code": "CUW",
+        "name": "Curaçao"
+      },
+      "result": null
+    },
+    {
+      "id": "M17",
+      "date": "2026-06-15",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Kansas City",
+      "stadium": "Kansas City",
+      "home": {
+        "flag": "🇨🇮",
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      },
+      "away": {
+        "flag": "🇪🇨",
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      "result": null
+    },
+    {
+      "id": "M18",
+      "date": "2026-06-16",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Mexico City",
+      "stadium": "Mexico City",
+      "home": {
+        "flag": "🇲🇽",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "away": {
+        "flag": "🇰🇷",
+        "code": "KOR",
+        "name": "South Korea"
+      },
+      "result": null
+    },
+    {
+      "id": "M19",
+      "date": "2026-06-16",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "J",
+      "city": "Kansas City",
+      "stadium": "Kansas City",
+      "home": {
+        "flag": "🇦🇷",
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      "away": {
+        "flag": "🇩🇿",
+        "code": "ALG",
+        "name": "Algeria"
+      },
+      "result": null
+    },
+    {
+      "id": "M20",
+      "date": "2026-06-16",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "J",
+      "city": "Houston",
+      "stadium": "Houston",
+      "home": {
+        "flag": "🇯🇴",
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      "away": {
+        "flag": "🏴",
+        "code": "TBD",
+        "name": "TBD"
+      },
+      "result": null
+    },
+    {
+      "id": "M21",
+      "date": "2026-06-17",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "L",
+      "city": "Toronto",
+      "stadium": "Toronto",
+      "home": {
+        "flag": "🇬🇭",
+        "code": "GHA",
+        "name": "Ghana"
+      },
+      "away": {
+        "flag": "🇵🇦",
+        "code": "PAN",
+        "name": "Panama"
+      },
+      "result": null
+    },
+    {
+      "id": "M22",
+      "date": "2026-06-17",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "L",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "code": "ENG",
+        "name": "England"
+      },
+      "away": {
+        "flag": "🇭🇷",
+        "code": "CRO",
+        "name": "Croatia"
+      },
+      "result": null
+    },
+    {
+      "id": "M23",
+      "date": "2026-06-17",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇧🇷",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "away": {
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "code": "SCO",
+        "name": "SCO"
+      },
+      "result": null
+    },
+    {
+      "id": "M24",
+      "date": "2026-06-17",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "K",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇵🇹",
+        "code": "POR",
+        "name": "Portugal"
+      },
+      "away": {
+        "flag": "🇨🇩",
+        "code": "COD",
+        "name": "DR Congo"
+      },
+      "result": null
+    },
+    {
+      "id": "M25",
+      "date": "2026-06-17",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "I",
+      "city": "New York/New Jersey",
+      "stadium": "New York/New Jersey",
+      "home": {
+        "flag": "🇫🇷",
+        "code": "FRA",
+        "name": "France"
+      },
+      "away": {
+        "flag": "🇸🇳",
+        "code": "SEN",
+        "name": "Senegal"
+      },
+      "result": null
+    },
+    {
+      "id": "M26",
+      "date": "2026-06-18",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "B",
+      "city": "Toronto",
+      "stadium": "Toronto",
+      "home": {
+        "flag": "🇨🇦",
+        "code": "CAN",
+        "name": "Canada"
+      },
+      "away": {
+        "flag": "🇶🇦",
+        "code": "QAT",
+        "name": "Qatar"
+      },
+      "result": null
+    },
+    {
+      "id": "M27",
+      "date": "2026-06-18",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "F",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇳🇱",
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      "away": {
+        "flag": "🇸🇪",
+        "code": "SWE",
+        "name": "Sweden"
+      },
+      "result": null
+    },
+    {
+      "id": "M28",
+      "date": "2026-06-18",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "G",
+      "city": "San Francisco",
+      "stadium": "San Francisco",
+      "home": {
+        "flag": "🇧🇪",
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      "away": {
+        "flag": "🇮🇷",
+        "code": "IRN",
+        "name": "Iran"
+      },
+      "result": null
+    },
+    {
+      "id": "M29",
+      "date": "2026-06-18",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "D",
+      "city": "Los Angeles",
+      "stadium": "Los Angeles",
+      "home": {
+        "flag": "🇺🇸",
+        "code": "USA",
+        "name": "USA"
+      },
+      "away": {
+        "flag": "🇦🇺",
+        "code": "AUS",
+        "name": "Australia"
+      },
+      "result": null
+    },
+    {
+      "id": "M30",
+      "date": "2026-06-19",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Guadalajara",
+      "stadium": "Guadalajara",
+      "home": {
+        "flag": "🇰🇷",
+        "code": "KOR",
+        "name": "South Korea"
+      },
+      "away": {
+        "flag": "🇨🇿",
+        "code": "CZE",
+        "name": "Czechia"
+      },
+      "result": null
+    },
+    {
+      "id": "M31",
+      "date": "2026-06-19",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Mexico City",
+      "stadium": "Mexico City",
+      "home": {
+        "flag": "🇨🇭",
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      "away": {
+        "flag": "🇿🇦",
+        "code": "RSA",
+        "name": "South Africa"
+      },
+      "result": null
+    },
+    {
+      "id": "M32",
+      "date": "2026-06-19",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "D",
+      "city": "San Francisco",
+      "stadium": "San Francisco",
+      "home": {
+        "flag": "🇹🇷",
+        "code": "TUR",
+        "name": "Türkiye"
+      },
+      "away": {
+        "flag": "🇵🇾",
+        "code": "PAR",
+        "name": "Paraguay"
+      },
+      "result": null
+    },
+    {
+      "id": "M33",
+      "date": "2026-06-20",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇲🇦",
+        "code": "MAR",
+        "name": "Morocco"
+      },
+      "away": {
+        "flag": "🇭🇹",
+        "code": "HAI",
+        "name": "Haiti"
+      },
+      "result": null
+    },
+    {
+      "id": "M34",
+      "date": "2026-06-20",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Miami",
+      "stadium": "Miami",
+      "home": {
+        "flag": "🇭🇹",
+        "code": "HAI",
+        "name": "Haiti"
+      },
+      "away": {
+        "flag": "🇧🇷",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "result": null
+    },
+    {
+      "id": "M35",
+      "date": "2026-06-20",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇨🇮",
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      },
+      "away": {
+        "flag": "🇰🇷",
+        "code": "KOR",
+        "name": "South Korea"
+      },
+      "result": null
+    },
+    {
+      "id": "M36",
+      "date": "2026-06-21",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇪🇨",
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      "away": {
+        "flag": "🇨🇼",
+        "code": "CUW",
+        "name": "Curaçao"
+      },
+      "result": null
+    },
+    {
+      "id": "M37",
+      "date": "2026-06-21",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "L",
+      "city": "Boston",
+      "stadium": "Boston",
+      "home": {
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "code": "ENG",
+        "name": "England"
+      },
+      "away": {
+        "flag": "🇬🇭",
+        "code": "GHA",
+        "name": "Ghana"
+      },
+      "result": null
+    },
+    {
+      "id": "M38",
+      "date": "2026-06-21",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "H",
+      "city": "Miami",
+      "stadium": "Miami",
+      "home": {
+        "flag": "🇪🇸",
+        "code": "ESP",
+        "name": "Spain"
+      },
+      "away": {
+        "flag": "🇸🇦",
+        "code": "KSA",
+        "name": "Saudi Arabia"
+      },
+      "result": null
+    },
+    {
+      "id": "M39",
+      "date": "2026-06-21",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Houston",
+      "stadium": "Houston",
+      "home": {
+        "flag": "🇩🇪",
+        "code": "GER",
+        "name": "Germany"
+      },
+      "away": {
+        "flag": "🇨🇮",
+        "code": "CIV",
+        "name": "Côte d'Ivoire"
+      },
+      "result": null
+    },
+    {
+      "id": "M40",
+      "date": "2026-06-21",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "F",
+      "city": "Monterrey",
+      "stadium": "Monterrey",
+      "home": {
+        "flag": "🇸🇪",
+        "code": "SWE",
+        "name": "Sweden"
+      },
+      "away": {
+        "flag": "🇯🇵",
+        "code": "JPN",
+        "name": "Japan"
+      },
+      "result": null
+    },
+    {
+      "id": "M41",
+      "date": "2026-06-22",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "B",
+      "city": "Toronto",
+      "stadium": "Toronto",
+      "home": {
+        "flag": "🇨🇭",
+        "code": "SUI",
+        "name": "Switzerland"
+      },
+      "away": {
+        "flag": "🇨🇦",
+        "code": "CAN",
+        "name": "Canada"
+      },
+      "result": null
+    },
+    {
+      "id": "M42",
+      "date": "2026-06-22",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇧🇷",
+        "code": "BRA",
+        "name": "Brazil"
+      },
+      "away": {
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "code": "SCO",
+        "name": "SCO"
+      },
+      "result": null
+    },
+    {
+      "id": "M43",
+      "date": "2026-06-22",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "J",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇦🇷",
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      "away": {
+        "flag": "🇦🇹",
+        "code": "AUT",
+        "name": "Austria"
+      },
+      "result": null
+    },
+    {
+      "id": "M44",
+      "date": "2026-06-23",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "I",
+      "city": "Philadelphia",
+      "stadium": "Philadelphia",
+      "home": {
+        "flag": "🇫🇷",
+        "code": "FRA",
+        "name": "France"
+      },
+      "away": {
+        "flag": "🇮🇶",
+        "code": "IRQ",
+        "name": "Iraq"
+      },
+      "result": null
+    },
+    {
+      "id": "M45",
+      "date": "2026-06-23",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "K",
+      "city": "Houston",
+      "stadium": "Houston",
+      "home": {
+        "flag": "🇵🇹",
+        "code": "POR",
+        "name": "Portugal"
+      },
+      "away": {
+        "flag": "🇺🇿",
+        "code": "UZB",
+        "name": "Uzbekistan"
+      },
+      "result": null
+    },
+    {
+      "id": "M46",
+      "date": "2026-06-23",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Mexico City",
+      "stadium": "Mexico City",
+      "home": {
+        "flag": "🇲🇽",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "away": {
+        "flag": "🇨🇿",
+        "code": "CZE",
+        "name": "Czechia"
+      },
+      "result": null
+    },
+    {
+      "id": "M47",
+      "date": "2026-06-24",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "C",
+      "city": "Atlanta",
+      "stadium": "Atlanta",
+      "home": {
+        "flag": "🇲🇦",
+        "code": "MAR",
+        "name": "Morocco"
+      },
+      "away": {
+        "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "code": "SCO",
+        "name": "SCO"
+      },
+      "result": null
+    },
+    {
+      "id": "M48",
+      "date": "2026-06-24",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "G",
+      "city": "Vancouver",
+      "stadium": "Vancouver",
+      "home": {
+        "flag": "🇳🇿",
+        "code": "NZL",
+        "name": "New Zealand"
+      },
+      "away": {
+        "flag": "🇧🇪",
+        "code": "BEL",
+        "name": "Belgium"
+      },
+      "result": null
+    },
+    {
+      "id": "M49",
+      "date": "2026-06-25",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "A",
+      "city": "Mexico City",
+      "stadium": "Mexico City",
+      "home": {
+        "flag": "🇨🇿",
+        "code": "CZE",
+        "name": "Czechia"
+      },
+      "away": {
+        "flag": "🇲🇽",
+        "code": "MEX",
+        "name": "Mexico"
+      },
+      "result": null
+    },
+    {
+      "id": "M50",
+      "date": "2026-06-25",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "F",
+      "city": "Houston",
+      "stadium": "Houston",
+      "home": {
+        "flag": "🇳🇱",
+        "code": "NED",
+        "name": "Netherlands"
+      },
+      "away": {
+        "flag": "🇹🇳",
+        "code": "TUN",
+        "name": "Tunisia"
+      },
+      "result": null
+    },
+    {
+      "id": "M51",
+      "date": "2026-06-25",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "L",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇵🇦",
+        "code": "PAN",
+        "name": "Panama"
+      },
+      "away": {
+        "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+        "code": "ENG",
+        "name": "England"
+      },
+      "result": null
+    },
+    {
+      "id": "M52",
+      "date": "2026-06-26",
+      "time": "15:00 ET",
+      "stage": "group",
+      "group": "E",
+      "city": "Philadelphia",
+      "stadium": "Philadelphia",
+      "home": {
+        "flag": "🇪🇨",
+        "code": "ECU",
+        "name": "Ecuador"
+      },
+      "away": {
+        "flag": "🇩🇪",
+        "code": "GER",
+        "name": "Germany"
+      },
+      "result": null
+    },
+    {
+      "id": "M53",
+      "date": "2026-06-26",
+      "time": "18:00 ET",
+      "stage": "group",
+      "group": "I",
+      "city": "Boston",
+      "stadium": "Boston",
+      "home": {
+        "flag": "🇳🇴",
+        "code": "NOR",
+        "name": "Norway"
+      },
+      "away": {
+        "flag": "🇫🇷",
+        "code": "FRA",
+        "name": "France"
+      },
+      "result": null
+    },
+    {
+      "id": "M54",
+      "date": "2026-06-26",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "G",
+      "city": "San Francisco",
+      "stadium": "San Francisco",
+      "home": {
+        "flag": "🇪🇬",
+        "code": "EGY",
+        "name": "Egypt"
+      },
+      "away": {
+        "flag": "🇮🇷",
+        "code": "IRN",
+        "name": "Iran"
+      },
+      "result": null
+    },
+    {
+      "id": "M55",
+      "date": "2026-06-27",
+      "time": "12:00 ET",
+      "stage": "group",
+      "group": "H",
+      "city": "Guadalajara",
+      "stadium": "Guadalajara",
+      "home": {
+        "flag": "🇺🇾",
+        "code": "URU",
+        "name": "Uruguay"
+      },
+      "away": {
+        "flag": "🇪🇸",
+        "code": "ESP",
+        "name": "Spain"
+      },
+      "result": null
+    },
+    {
+      "id": "M56",
+      "date": "2026-06-27",
+      "time": "19:30 ET",
+      "stage": "group",
+      "group": "K",
+      "city": "Miami",
+      "stadium": "Miami",
+      "home": {
+        "flag": "🇨🇴",
+        "code": "COL",
+        "name": "Colombia"
+      },
+      "away": {
+        "flag": "🇵🇹",
+        "code": "POR",
+        "name": "Portugal"
+      },
+      "result": null
+    },
+    {
+      "id": "M57",
+      "date": "2026-06-27",
+      "time": "21:00 ET",
+      "stage": "group",
+      "group": "J",
+      "city": "Dallas",
+      "stadium": "Dallas",
+      "home": {
+        "flag": "🇯🇴",
+        "code": "JOR",
+        "name": "Jordan"
+      },
+      "away": {
+        "flag": "🇦🇷",
+        "code": "ARG",
+        "name": "Argentina"
+      },
+      "result": null
+    }
+  ],
+  "trip": {
+    "legs": [
+      {
+        "day": 19,
+        "month": "JUN",
+        "route": "MUMBAI → TOKYO → MEXICO CITY",
+        "meta": "Leg 1 · BOM → NRT → MEX · Tokyo layover"
+      },
+      {
+        "day": 26,
+        "month": "JUN",
+        "route": "MEXICO CITY → GUADALAJARA",
+        "meta": "Leg 2 · MEX → GDL · short hop"
+      },
+      {
+        "day": 28,
+        "month": "JUN",
+        "route": "GUADALAJARA → OAXACA",
+        "meta": "Leg 3 · GDL → OAX · domestic"
+      },
+      {
+        "day": 2,
+        "month": "JUL",
+        "route": "OAXACA → NEW YORK CITY",
+        "meta": "Leg 4 · OAX → JFK · Mexico to USA"
+      },
+      {
+        "day": 10,
+        "month": "JUL",
+        "route": "NEW YORK CITY → MUMBAI",
+        "meta": "Leg 5 · JFK → BOM · return home"
+      }
+    ],
+    "cities": [
+      {
+        "code": "cdmx",
+        "emoji": "🌮",
+        "name": "MEXICO CITY",
+        "dates": "19 – 26 JUN",
+        "nights": 6,
+        "eat": "",
+        "party": ""
+      },
+      {
+        "code": "gdl",
+        "emoji": "🍹",
+        "name": "GUADALAJARA",
+        "dates": "26 – 28 JUN",
+        "nights": 2,
+        "eat": "",
+        "party": ""
+      },
+      {
+        "code": "oax",
+        "emoji": "🌶️",
+        "name": "OAXACA",
+        "dates": "28 JUN – 2 JUL",
+        "nights": 4,
+        "eat": "",
+        "party": ""
+      },
+      {
+        "code": "nyc",
+        "emoji": "🗽",
+        "name": "NEW YORK CITY",
+        "dates": "2 – 10 JUL",
+        "nights": 8,
+        "eat": "",
+        "party": ""
+      }
+    ],
+    "roster": [
+      {
+        "num": 1,
+        "name": "Bobby"
+      },
+      {
+        "num": 2,
+        "name": "Nihar"
+      },
+      {
+        "num": 3,
+        "name": "Kaveer"
+      },
+      {
+        "num": 4,
+        "name": "Darshini"
+      },
+      {
+        "num": 5,
+        "name": "Soumita"
+      },
+      {
+        "num": 6,
+        "name": "Pari"
+      },
+      {
+        "num": 7,
+        "name": "Alluri"
+      },
+      {
+        "num": 8,
+        "name": "Nidhi"
+      },
+      {
+        "num": 9,
+        "name": "Dan"
+      },
+      {
+        "num": 10,
+        "name": "Ipshita"
+      },
+      {
+        "num": 11,
+        "name": "Kambe"
+      },
+      {
+        "num": 12,
+        "name": "Dipti"
+      },
+      {
+        "num": 13,
+        "name": "Anjali"
+      },
+      {
+        "num": 14,
+        "name": "Challa"
+      }
+    ],
+    "reservations": [
+      {
+        "dateRange": "19 – 26 JUN",
+        "city": "Mexico City",
+        "place": "Hotel Carlota · Roma Norte",
+        "status": "Holding · to confirm"
+      },
+      {
+        "dateRange": "26 – 28 JUN",
+        "city": "Guadalajara",
+        "place": "Casa Habita · Lafayette",
+        "status": "Holding · to confirm"
+      },
+      {
+        "dateRange": "28 JUN – 2 JUL",
+        "city": "Oaxaca",
+        "place": "Hotel Sin Nombre · Centro Histórico",
+        "status": "Holding · to confirm"
+      },
+      {
+        "dateRange": "2 – 10 JUL",
+        "city": "New York City",
+        "place": "The Standard · East Village",
+        "status": "Holding · to confirm"
+      }
+    ]
+  },
+  "countries": {
+    "argentina": {
+      "code": "ARG",
+      "flag": "🇦🇷",
+      "appearances": 18,
+      "titles": 3,
+      "titleYears": [
+        1978,
+        1986,
+        2022
+      ],
+      "finals": 6,
+      "semifinals": 6,
+      "bestFinish": "Champions (1978, 1986, 2022)",
+      "firstAppearance": 1930,
+      "blurb": "Defending champions. Won Qatar 2022 led by Messi. Three-time winners — joint third in all-time titles."
+    },
+    "brazil": {
+      "code": "BRA",
+      "flag": "🇧🇷",
+      "appearances": 22,
+      "titles": 5,
+      "titleYears": [
+        1958,
+        1962,
+        1970,
+        1994,
+        2002
+      ],
+      "finals": 7,
+      "semifinals": 11,
+      "bestFinish": "Champions (5×)",
+      "firstAppearance": 1930,
+      "blurb": "The only nation to play every World Cup. Five-time champions — most successful country in the tournament's history."
+    },
+    "france": {
+      "code": "FRA",
+      "flag": "🇫🇷",
+      "appearances": 16,
+      "titles": 2,
+      "titleYears": [
+        1998,
+        2018
+      ],
+      "finals": 4,
+      "semifinals": 7,
+      "bestFinish": "Champions (1998, 2018)",
+      "firstAppearance": 1930,
+      "blurb": "Won at home in 1998 and again in Russia 2018. Runners-up in 2022 — back-to-back finals."
+    },
+    "spain": {
+      "code": "ESP",
+      "flag": "🇪🇸",
+      "appearances": 16,
+      "titles": 1,
+      "titleYears": [
+        2010
+      ],
+      "finals": 1,
+      "semifinals": 3,
+      "bestFinish": "Champions (2010)",
+      "firstAppearance": 1934,
+      "blurb": "Tiki-taka era peaked in South Africa 2010 — won every knockout 1–0. New golden generation rising again."
+    },
+    "germany": {
+      "code": "GER",
+      "flag": "🇩🇪",
+      "appearances": 20,
+      "titles": 4,
+      "titleYears": [
+        1954,
+        1974,
+        1990,
+        2014
+      ],
+      "finals": 8,
+      "semifinals": 13,
+      "bestFinish": "Champions (4×)",
+      "firstAppearance": 1934,
+      "blurb": "Four-time champions, joint second with Italy. Most semifinals of any nation — perennial contender."
+    },
+    "england": {
+      "code": "ENG",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "appearances": 16,
+      "titles": 1,
+      "titleYears": [
+        1966
+      ],
+      "finals": 1,
+      "semifinals": 3,
+      "bestFinish": "Champions (1966)",
+      "firstAppearance": 1950,
+      "blurb": "Hosted and won in 1966. Semifinalists in 2018, quarter-final exits in 2022 — golden generation chasing first title since."
+    },
+    "portugal": {
+      "code": "POR",
+      "flag": "🇵🇹",
+      "appearances": 8,
+      "titles": 0,
+      "titleYears": [],
+      "finals": 0,
+      "semifinals": 2,
+      "bestFinish": "3rd place (1966)",
+      "firstAppearance": 1966,
+      "blurb": "Eusébio's third-place run in 1966 remains the high point. Ronaldo's swan song in 2026."
+    },
+    "netherlands": {
+      "code": "NED",
+      "flag": "🇳🇱",
+      "appearances": 11,
+      "titles": 0,
+      "titleYears": [],
+      "finals": 3,
+      "semifinals": 5,
+      "bestFinish": "Runners-up (1974, 1978, 2010)",
+      "firstAppearance": 1934,
+      "blurb": "Total Football pioneers — three final defeats. Quarter-final exits in 2014 and 2022."
+    },
+    "belgium": {
+      "code": "BEL",
+      "flag": "🇧🇪",
+      "appearances": 14,
+      "titles": 0,
+      "titleYears": [],
+      "finals": 0,
+      "semifinals": 2,
+      "bestFinish": "3rd place (2018)",
+      "firstAppearance": 1930,
+      "blurb": "Golden generation's best finish was 3rd in 2018. New cycle under García."
+    },
+    "japan": {
+      "code": "JPN",
+      "flag": "🇯🇵",
+      "appearances": 7,
+      "titles": 0,
+      "titleYears": [],
+      "finals": 0,
+      "semifinals": 0,
+      "bestFinish": "Round of 16 (2002, 2010, 2018, 2022)",
+      "firstAppearance": 1998,
+      "blurb": "Four R16 exits in five attempts since 1998. Beat Germany and Spain in 2022 group stage — Asia's bellwether."
+    }
+  },
+  "teams": {
+    "argentina": {
+      "code": "ARG",
+      "name": "Argentina",
+      "manager": "DEFENDING CHAMPIONS",
+      "formation": "LIONEL SCALONI · 4-3-3 · GROUP J",
+      "group": "MESSI'S LAST DANCE",
+      "squad": [
+        {
+          "id": "ARG-EMARTINEZ",
+          "name": "E. Martínez",
+          "position": "GK",
+          "club": "Aston Villa",
+          "age": 33,
+          "caps": 56,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 26,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-MOLINA",
+          "name": "N. Molina",
+          "position": "RB",
+          "club": "Atlético Madrid",
+          "age": 28,
+          "caps": 32,
+          "goals": 1,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "⚠️ Fitness concern — could miss group stage."
+        },
+        {
+          "id": "ARG-ROMERO",
+          "name": "C. Romero",
+          "position": "RCB",
+          "club": "Tottenham",
+          "age": 28,
+          "caps": 38,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "⚠️ MCL injury — fitness in doubt."
+        },
+        {
+          "id": "ARG-LMARTINEZ-D",
+          "name": "L. Martínez",
+          "position": "LCB",
+          "club": "Manchester United",
+          "age": 28,
+          "caps": 25,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ARG-TAGLIAFICO",
+          "name": "N. Tagliafico",
+          "position": "LB",
+          "club": "Lyon",
+          "age": 34,
+          "caps": 64,
+          "goals": 1,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ARG-DEPAUL",
+          "name": "R. De Paul",
+          "position": "RCM",
+          "club": "Inter Miami",
+          "age": 32,
+          "caps": 73,
+          "goals": 4,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-PAREDES",
+          "name": "L. Paredes",
+          "position": "DM",
+          "club": "Boca Juniors",
+          "age": 32,
+          "caps": 65,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ARG-MACALLISTER",
+          "name": "A. Mac Allister",
+          "position": "LCM",
+          "club": "Liverpool",
+          "age": 27,
+          "caps": 36,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-NICOG",
+          "name": "N. González",
+          "position": "LW",
+          "club": "Juventus",
+          "age": 28,
+          "caps": 29,
+          "goals": 10,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ARG-LAUTARO",
+          "name": "L. Martínez",
+          "position": "ST",
+          "club": "Inter",
+          "age": 29,
+          "caps": 54,
+          "goals": 11,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-MESSI",
+          "name": "L. Messi",
+          "position": "RW",
+          "club": "Inter Miami",
+          "age": 39,
+          "caps": 193,
+          "goals": 113,
+          "assists": 58,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "ARG-RULLI",
+          "name": "G. Rulli",
+          "position": "GK",
+          "club": "Marseille",
+          "age": 34,
+          "caps": 17,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 7,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-ARMANI",
+          "name": "F. Armani",
+          "position": "GK",
+          "club": "River Plate",
+          "age": 39,
+          "caps": 16,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 7,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-MONTIEL",
+          "name": "G. Montiel",
+          "position": "RB",
+          "club": "Sevilla",
+          "age": 29,
+          "caps": 43,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-OTAMENDI",
+          "name": "N. Otamendi",
+          "position": "CB",
+          "club": "Benfica",
+          "age": 38,
+          "caps": 119,
+          "goals": 5,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-MEDINA",
+          "name": "F. Medina",
+          "position": "CB",
+          "club": "PSG",
+          "age": 26,
+          "caps": 34,
+          "goals": 0,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-CAPALDO",
+          "name": "F. Capaldo",
+          "position": "CM",
+          "club": "HSV",
+          "age": 27,
+          "caps": 23,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-ACUNA",
+          "name": "M. Acuña",
+          "position": "LB",
+          "club": "River Plate",
+          "age": 34,
+          "caps": 48,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-FERNANDEZ",
+          "name": "E. Fernández",
+          "position": "CM",
+          "club": "Chelsea",
+          "age": 25,
+          "caps": 38,
+          "goals": 3,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-LOCELSO",
+          "name": "G. Lo Celso",
+          "position": "CM",
+          "club": "Real Betis",
+          "age": 30,
+          "caps": 54,
+          "goals": 9,
+          "assists": 12,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-PALACIOS",
+          "name": "E. Palacios",
+          "position": "CM",
+          "club": "Leverkusen",
+          "age": 27,
+          "caps": 32,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-MASTANTUONO",
+          "name": "F. Mastantuono",
+          "position": "AM",
+          "club": "Real Madrid",
+          "age": 18,
+          "caps": 2,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-NPAZ",
+          "name": "N. Paz",
+          "position": "AM",
+          "club": "Como",
+          "age": 21,
+          "caps": 7,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-ALMADA",
+          "name": "T. Almada",
+          "position": "AM",
+          "club": "Lyon",
+          "age": 25,
+          "caps": 25,
+          "goals": 1,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ARG-GARNACHO",
+          "name": "A. Garnacho",
+          "position": "LW",
+          "club": "Chelsea",
+          "age": 21,
+          "caps": 10,
+          "goals": 3,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ARG-ALVAREZ",
+          "name": "J. Álvarez",
+          "position": "ST",
+          "club": "Atlético Madrid",
+          "age": 26,
+          "caps": 33,
+          "goals": 11,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        }
+      ],
+      "captain": "L. Messi",
+      "fifaRank": 3,
+      "fifaPoints": 1874.81
+    },
+    "belgium": {
+      "code": "BEL",
+      "name": "Belgium",
+      "manager": "GOLDEN GENERATION 2.0",
+      "formation": "RUDI GARCÍA · 4-3-3 · GROUP G",
+      "group": "REBUILD ERA",
+      "squad": [
+        {
+          "id": "BEL-COURTOIS",
+          "name": "T. Courtois",
+          "position": "GK",
+          "club": "Real Madrid",
+          "age": 33,
+          "caps": 102,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 45,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "BEL-CASTAGNE",
+          "name": "T. Castagne",
+          "position": "RB",
+          "club": "Fulham",
+          "age": 30,
+          "caps": 32,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BEL-FAES",
+          "name": "W. Faes",
+          "position": "RCB",
+          "club": "Leicester",
+          "age": 28,
+          "caps": 26,
+          "goals": 1,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BEL-VERTONGHEN",
+          "name": "J. Vertonghen",
+          "position": "LCB",
+          "club": "Anderlecht",
+          "age": 38,
+          "caps": 51,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BEL-THEATE",
+          "name": "A. Theate",
+          "position": "LB",
+          "club": "Eintracht",
+          "age": 25,
+          "caps": 19,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BEL-ONANA",
+          "name": "A. Onana",
+          "position": "DM",
+          "club": "Aston Villa",
+          "age": 24,
+          "caps": 15,
+          "goals": 0,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-TIELEMANS",
+          "name": "Y. Tielemans",
+          "position": "LCM",
+          "club": "Aston Villa",
+          "age": 28,
+          "caps": 43,
+          "goals": 3,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-DEBRUYNE",
+          "name": "K. De Bruyne",
+          "position": "CAM",
+          "club": "Napoli",
+          "age": 34,
+          "caps": 109,
+          "goals": 30,
+          "assists": 50,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "BEL-DOKU",
+          "name": "J. Doku",
+          "position": "LW",
+          "club": "Manchester City",
+          "age": 23,
+          "caps": 28,
+          "goals": 7,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-LUKAKU",
+          "name": "R. Lukaku",
+          "position": "ST",
+          "club": "Napoli",
+          "age": 32,
+          "caps": 121,
+          "goals": 88,
+          "assists": 18,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-TROSSARD",
+          "name": "L. Trossard",
+          "position": "RW",
+          "club": "Arsenal",
+          "age": 31,
+          "caps": 50,
+          "goals": 17,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BEL-MIGNOLET",
+          "name": "S. Mignolet",
+          "position": "GK",
+          "club": "Club Brugge",
+          "age": 38,
+          "caps": 20,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 8,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-CASTEELS",
+          "name": "K. Casteels",
+          "position": "GK",
+          "club": "Al-Qadsiah",
+          "age": 33,
+          "caps": 15,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 5,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-DEKETELAERE",
+          "name": "C. De Ketelaere",
+          "position": "LW",
+          "club": "Atalanta",
+          "age": 25,
+          "caps": 23,
+          "goals": 11,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-DEBAST",
+          "name": "Z. Debast",
+          "position": "CB",
+          "club": "Sporting",
+          "age": 23,
+          "caps": 17,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-DENDONCKER",
+          "name": "L. Dendoncker",
+          "position": "CM",
+          "club": "Anderlecht",
+          "age": 31,
+          "caps": 30,
+          "goals": 4,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-MEUNIER",
+          "name": "T. Meunier",
+          "position": "RB",
+          "club": "Lille",
+          "age": 34,
+          "caps": 53,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-VANAKEN",
+          "name": "H. Vanaken",
+          "position": "CM",
+          "club": "Club Brugge",
+          "age": 33,
+          "caps": 34,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-MANGALA",
+          "name": "O. Mangala",
+          "position": "CM",
+          "club": "Everton",
+          "age": 27,
+          "caps": 26,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-CARRASCO",
+          "name": "Y. Carrasco",
+          "position": "LW",
+          "club": "Al-Shabab",
+          "age": 32,
+          "caps": 70,
+          "goals": 11,
+          "assists": 9,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-VANHOUTTE",
+          "name": "C. Vanhoutte",
+          "position": "CM",
+          "club": "Marseille",
+          "age": 27,
+          "caps": 31,
+          "goals": 3,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-WITSEL",
+          "name": "A. Witsel",
+          "position": "CB",
+          "club": "Atlético Madrid",
+          "age": 37,
+          "caps": 132,
+          "goals": 12,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-OPENDA",
+          "name": "L. Openda",
+          "position": "ST",
+          "club": "RB Leipzig",
+          "age": 26,
+          "caps": 22,
+          "goals": 7,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BEL-DEBRUYN",
+          "name": "M. Vermeeren",
+          "position": "AM",
+          "club": "RB Leipzig",
+          "age": 21,
+          "caps": 12,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-VLIEGEN",
+          "name": "S. Castagne",
+          "position": "LB",
+          "club": "Fulham",
+          "age": 30,
+          "caps": 41,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BEL-AMURA",
+          "name": "A. Vermant",
+          "position": "CM",
+          "club": "Club Brugge",
+          "age": 20,
+          "caps": 6,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        }
+      ],
+      "captain": "K. De Bruyne",
+      "fifaRank": 9,
+      "fifaPoints": 1734.71
+    },
+    "brazil": {
+      "code": "BRA",
+      "name": "Brazil",
+      "manager": "5x CHAMPIONS",
+      "formation": "CARLO ANCELOTTI · 4-3-3 · GROUP C",
+      "group": "ANCELOTTI ERA BEGINS",
+      "squad": [
+        {
+          "id": "BRA-ALISSON",
+          "name": "Alisson",
+          "position": "GK",
+          "club": "Liverpool",
+          "age": 33,
+          "caps": 73,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 35,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BRA-DANILO",
+          "name": "Danilo",
+          "position": "RB",
+          "club": "Flamengo",
+          "age": 34,
+          "caps": 60,
+          "goals": 1,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BRA-MILITAO",
+          "name": "É. Militão",
+          "position": "RCB",
+          "club": "Real Madrid",
+          "age": 28,
+          "caps": 26,
+          "goals": 1,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "⚠️ Returning from ACL surgery."
+        },
+        {
+          "id": "BRA-MARQUINHOS",
+          "name": "Marquinhos",
+          "position": "LCB",
+          "club": "PSG",
+          "age": 31,
+          "caps": 88,
+          "goals": 7,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI.",
+          "captain": true
+        },
+        {
+          "id": "BRA-WENDELL",
+          "name": "Wendell",
+          "position": "LB",
+          "club": "Porto",
+          "age": 32,
+          "caps": 56,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BRA-CASEMIRO",
+          "name": "Casemiro",
+          "position": "DM",
+          "club": "Manchester United",
+          "age": 34,
+          "caps": 78,
+          "goals": 7,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BRA-BRUNOG",
+          "name": "B. Guimarães",
+          "position": "LCM",
+          "club": "Newcastle",
+          "age": 28,
+          "caps": 44,
+          "goals": 7,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BRA-PAQUETA",
+          "name": "L. Paquetá",
+          "position": "RCM",
+          "club": "West Ham",
+          "age": 28,
+          "caps": 33,
+          "goals": 2,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "BRA-NEYMAR",
+          "name": "Neymar Jr",
+          "position": "LW",
+          "club": "Santos",
+          "age": 34,
+          "caps": 128,
+          "goals": 79,
+          "assists": 60,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "BRA-VINICIUS",
+          "name": "Vinícius Jr",
+          "position": "ST",
+          "club": "Real Madrid",
+          "age": 25,
+          "caps": 27,
+          "goals": 5,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "👑 Team captain — leads from the front."
+        },
+        {
+          "id": "BRA-RAPHINHA",
+          "name": "Raphinha",
+          "position": "RW",
+          "club": "Barcelona",
+          "age": 29,
+          "caps": 25,
+          "goals": 5,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "BRA-EDERSON",
+          "name": "Éderson",
+          "position": "GK",
+          "club": "Fenerbahçe",
+          "age": 32,
+          "caps": 30,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": 11,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-WEVERTON",
+          "name": "Weverton",
+          "position": "GK",
+          "club": "Palmeiras",
+          "age": 38,
+          "caps": 15,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 5,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-VANDERSON",
+          "name": "Vanderson",
+          "position": "RB",
+          "club": "Monaco",
+          "age": 24,
+          "caps": 13,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-GLEISON",
+          "name": "G. Bremer",
+          "position": "CB",
+          "club": "Juventus",
+          "age": 28,
+          "caps": 28,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-BEZERRA",
+          "name": "B. Magalhães",
+          "position": "CB",
+          "club": "Arsenal",
+          "age": 28,
+          "caps": 42,
+          "goals": 2,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-AYDAVID",
+          "name": "A. Telles",
+          "position": "LB",
+          "club": "Botafogo",
+          "age": 33,
+          "caps": 45,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-DIBARI",
+          "name": "A. Pereira",
+          "position": "CM",
+          "club": "Fulham",
+          "age": 30,
+          "caps": 28,
+          "goals": 3,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-FABINHO",
+          "name": "Fabinho",
+          "position": "DM",
+          "club": "Al-Ittihad",
+          "age": 32,
+          "caps": 49,
+          "goals": 5,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-MAJOR",
+          "name": "João Pedro",
+          "position": "AM",
+          "club": "Chelsea",
+          "age": 24,
+          "caps": 17,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-DANIROCHA",
+          "name": "A. Pereira",
+          "position": "AM",
+          "club": "Lazio",
+          "age": 28,
+          "caps": 44,
+          "goals": 7,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-RODRYGO",
+          "name": "Rodrygo",
+          "position": "LW",
+          "club": "Real Madrid",
+          "age": 25,
+          "caps": 33,
+          "goals": 7,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BRA-MARTINELLI",
+          "name": "G. Martinelli",
+          "position": "LW",
+          "club": "Arsenal",
+          "age": 25,
+          "caps": 20,
+          "goals": 8,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BRA-ANDREAS",
+          "name": "Andreas Pereira",
+          "position": "CM",
+          "club": "Fulham",
+          "age": 30,
+          "caps": 38,
+          "goals": 6,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "BRA-RICHARLISON",
+          "name": "Richarlison",
+          "position": "ST",
+          "club": "Tottenham",
+          "age": 29,
+          "caps": 41,
+          "goals": 18,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "BRA-ENDRICK",
+          "name": "Endrick",
+          "position": "ST",
+          "club": "Real Madrid",
+          "age": 20,
+          "caps": 6,
+          "goals": 1,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        }
+      ],
+      "captain": "Marquinhos",
+      "fifaRank": 6,
+      "fifaPoints": 1761.16
+    },
+    "england": {
+      "code": "ENG",
+      "name": "England",
+      "manager": "THREE LIONS",
+      "formation": "THOMAS TUCHEL · 4-2-3-1 · GROUP L",
+      "group": "60 YEARS OF HURT",
+      "squad": [
+        {
+          "id": "ENG-PICKFORD",
+          "name": "J. Pickford",
+          "position": "GK",
+          "club": "Everton",
+          "age": 32,
+          "caps": 71,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 35,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-WALKER",
+          "name": "K. Walker",
+          "position": "RB",
+          "club": "Burnley",
+          "age": 35,
+          "caps": 89,
+          "goals": 1,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ENG-STONES",
+          "name": "J. Stones",
+          "position": "RCB",
+          "club": "Manchester City",
+          "age": 31,
+          "caps": 76,
+          "goals": 3,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-GUEHI",
+          "name": "M. Guéhi",
+          "position": "LCB",
+          "club": "Crystal Palace",
+          "age": 25,
+          "caps": 30,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-LSHAW",
+          "name": "L. Shaw",
+          "position": "LB",
+          "club": "Manchester United",
+          "age": 30,
+          "caps": 42,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ENG-RICE",
+          "name": "D. Rice",
+          "position": "DM",
+          "club": "Arsenal",
+          "age": 27,
+          "caps": 60,
+          "goals": 5,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-MAINOO",
+          "name": "K. Mainoo",
+          "position": "RCM",
+          "club": "Manchester United",
+          "age": 20,
+          "caps": 7,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-BELLINGHAM",
+          "name": "J. Bellingham",
+          "position": "CAM",
+          "club": "Real Madrid",
+          "age": 22,
+          "caps": 39,
+          "goals": 7,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-FODEN",
+          "name": "P. Foden",
+          "position": "LW",
+          "club": "Manchester City",
+          "age": 25,
+          "caps": 41,
+          "goals": 6,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-KANE",
+          "name": "H. Kane",
+          "position": "ST",
+          "club": "Bayern Munich",
+          "age": 32,
+          "caps": 100,
+          "goals": 68,
+          "assists": 18,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "ENG-SAKA",
+          "name": "B. Saka",
+          "position": "RW",
+          "club": "Arsenal",
+          "age": 24,
+          "caps": 38,
+          "goals": 12,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-RAMSDALE",
+          "name": "A. Ramsdale",
+          "position": "GK",
+          "club": "Southampton",
+          "age": 27,
+          "caps": 6,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 2,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-HENDERSON",
+          "name": "D. Henderson",
+          "position": "GK",
+          "club": "Crystal Palace",
+          "age": 28,
+          "caps": 10,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 3,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-TRIPPIER",
+          "name": "K. Trippier",
+          "position": "RB",
+          "club": "Newcastle",
+          "age": 35,
+          "caps": 58,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-KONSA",
+          "name": "E. Konsa",
+          "position": "CB",
+          "club": "Aston Villa",
+          "age": 28,
+          "caps": 36,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-BRANTHWAITE",
+          "name": "J. Branthwaite",
+          "position": "CB",
+          "club": "Everton",
+          "age": 24,
+          "caps": 15,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-LEWIS",
+          "name": "R. Lewis",
+          "position": "LB",
+          "club": "Manchester City",
+          "age": 24,
+          "caps": 16,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-PHILLIPS",
+          "name": "K. Phillips",
+          "position": "DM",
+          "club": "Ipswich",
+          "age": 30,
+          "caps": 31,
+          "goals": 4,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-MADDISON",
+          "name": "J. Maddison",
+          "position": "CM",
+          "club": "Tottenham",
+          "age": 29,
+          "caps": 49,
+          "goals": 8,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-WHARTON",
+          "name": "A. Wharton",
+          "position": "CM",
+          "club": "Crystal Palace",
+          "age": 22,
+          "caps": 13,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-PALMER",
+          "name": "C. Palmer",
+          "position": "AM",
+          "club": "Chelsea",
+          "age": 23,
+          "caps": 25,
+          "goals": 1,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-GORDON",
+          "name": "A. Gordon",
+          "position": "LW",
+          "club": "Newcastle",
+          "age": 25,
+          "caps": 22,
+          "goals": 7,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-WATKINS",
+          "name": "O. Watkins",
+          "position": "ST",
+          "club": "Aston Villa",
+          "age": 30,
+          "caps": 29,
+          "goals": 8,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-SOLANKE",
+          "name": "D. Solanke",
+          "position": "ST",
+          "club": "Tottenham",
+          "age": 28,
+          "caps": 33,
+          "goals": 11,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ENG-EZE",
+          "name": "E. Eze",
+          "position": "AM",
+          "club": "Arsenal",
+          "age": 27,
+          "caps": 33,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ENG-ROGERS",
+          "name": "M. Rogers",
+          "position": "AM",
+          "club": "Aston Villa",
+          "age": 23,
+          "caps": 16,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        }
+      ],
+      "captain": "H. Kane",
+      "fifaRank": 4,
+      "fifaPoints": 1825.97
+    },
+    "france": {
+      "code": "FRA",
+      "name": "France",
+      "manager": "BACK-TO-BACK FINALS",
+      "formation": "DIDIER DESCHAMPS · 4-3-3 · GROUP I",
+      "group": "DESCHAMPS' LAST RIDE",
+      "squad": [
+        {
+          "id": "FRA-MAIGNAN",
+          "name": "M. Maignan",
+          "position": "GK",
+          "club": "Milan",
+          "age": 30,
+          "caps": 25,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 12,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-KOUNDE",
+          "name": "J. Koundé",
+          "position": "RB",
+          "club": "Barcelona",
+          "age": 27,
+          "caps": 42,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "FRA-UPAMECANO",
+          "name": "D. Upamecano",
+          "position": "RCB",
+          "club": "Bayern Munich",
+          "age": 27,
+          "caps": 26,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-SALIBA",
+          "name": "W. Saliba",
+          "position": "LCB",
+          "club": "Arsenal",
+          "age": 25,
+          "caps": 19,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · First-choice starter in this XI."
+        },
+        {
+          "id": "FRA-THERNANDEZ",
+          "name": "T. Hernández",
+          "position": "LB",
+          "club": "Milan",
+          "age": 30,
+          "caps": 39,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "FRA-CAMAVINGA",
+          "name": "E. Camavinga",
+          "position": "DM",
+          "club": "Real Madrid",
+          "age": 23,
+          "caps": 21,
+          "goals": 2,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-TCHOUAMENI",
+          "name": "A. Tchouaméni",
+          "position": "LCM",
+          "club": "Real Madrid",
+          "age": 26,
+          "caps": 30,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-GRIEZMANN",
+          "name": "A. Griezmann",
+          "position": "RCM",
+          "club": "Atlético Madrid",
+          "age": 35,
+          "caps": 137,
+          "goals": 44,
+          "assists": 33,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-DEMBELE",
+          "name": "O. Dembélé",
+          "position": "LW",
+          "club": "PSG",
+          "age": 29,
+          "caps": 53,
+          "goals": 21,
+          "assists": 13,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · Squad member."
+        },
+        {
+          "id": "FRA-MBAPPE",
+          "name": "K. Mbappé",
+          "position": "ST",
+          "club": "Real Madrid",
+          "age": 27,
+          "caps": 83,
+          "goals": 48,
+          "assists": 27,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "FRA-OLISE",
+          "name": "M. Olise",
+          "position": "RW",
+          "club": "Bayern Munich",
+          "age": 24,
+          "caps": 21,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-CHEVALIER",
+          "name": "L. Chevalier",
+          "position": "GK",
+          "club": "Lille",
+          "age": 24,
+          "caps": 6,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 2,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-SAMBA",
+          "name": "B. Samba",
+          "position": "GK",
+          "club": "Rennes",
+          "age": 31,
+          "caps": 12,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 5,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-CLAUSS",
+          "name": "J. Clauss",
+          "position": "RB",
+          "club": "Nice",
+          "age": 33,
+          "caps": 32,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-KONATE",
+          "name": "I. Konaté",
+          "position": "CB",
+          "club": "Liverpool",
+          "age": 26,
+          "caps": 32,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-DISASI",
+          "name": "A. Disasi",
+          "position": "CB",
+          "club": "Chelsea",
+          "age": 27,
+          "caps": 46,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-MENDY",
+          "name": "F. Mendy",
+          "position": "LB",
+          "club": "Real Madrid",
+          "age": 30,
+          "caps": 55,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-LMARTINEZ",
+          "name": "M. Khéphren Thuram",
+          "position": "CM",
+          "club": "Juventus",
+          "age": 24,
+          "caps": 25,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-RABIOT",
+          "name": "A. Rabiot",
+          "position": "CM",
+          "club": "Marseille",
+          "age": 30,
+          "caps": 53,
+          "goals": 5,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-AKLIOUCHE",
+          "name": "M. Akliouche",
+          "position": "AM",
+          "club": "Monaco",
+          "age": 23,
+          "caps": 20,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-DOUE",
+          "name": "D. Doué",
+          "position": "AM",
+          "club": "PSG",
+          "age": 20,
+          "caps": 6,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-CHERKI",
+          "name": "R. Cherki",
+          "position": "AM",
+          "club": "Dortmund",
+          "age": 22,
+          "caps": 20,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-THURAM",
+          "name": "M. Thuram",
+          "position": "ST",
+          "club": "Inter",
+          "age": 28,
+          "caps": 26,
+          "goals": 5,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "FRA-NKUNKU",
+          "name": "C. Nkunku",
+          "position": "ST",
+          "club": "Chelsea",
+          "age": 28,
+          "caps": 29,
+          "goals": 12,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-COLOM",
+          "name": "J. Kolo Muani",
+          "position": "ST",
+          "club": "Juventus",
+          "age": 27,
+          "caps": 46,
+          "goals": 13,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "FRA-BARCOLA",
+          "name": "B. Barcola",
+          "position": "LW",
+          "club": "PSG",
+          "age": 23,
+          "caps": 21,
+          "goals": 8,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        }
+      ],
+      "captain": "K. Mbappé",
+      "fifaRank": 1,
+      "fifaPoints": 1877.32
+    },
+    "germany": {
+      "code": "GER",
+      "name": "Germany",
+      "manager": "DIE MANNSCHAFT",
+      "formation": "JULIAN NAGELSMANN · 4-2-3-1 · GROUP E",
+      "group": "REBUILD COMPLETE",
+      "squad": [
+        {
+          "id": "GER-TERSTEGEN",
+          "name": "M. ter Stegen",
+          "position": "GK",
+          "club": "Barcelona",
+          "age": 33,
+          "caps": 76,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 29,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-HENRICHS",
+          "name": "B. Henrichs",
+          "position": "RB",
+          "club": "RB Leipzig",
+          "age": 29,
+          "caps": 36,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "GER-TAH",
+          "name": "J. Tah",
+          "position": "RCB",
+          "club": "Bayern Munich",
+          "age": 30,
+          "caps": 53,
+          "goals": 2,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-RUDIGER",
+          "name": "A. Rüdiger",
+          "position": "LCB",
+          "club": "Real Madrid",
+          "age": 33,
+          "caps": 76,
+          "goals": 4,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-RAUM",
+          "name": "D. Raum",
+          "position": "LB",
+          "club": "RB Leipzig",
+          "age": 28,
+          "caps": 43,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "GER-KIMMICH",
+          "name": "J. Kimmich",
+          "position": "DM",
+          "club": "Bayern Munich",
+          "age": 31,
+          "caps": 92,
+          "goals": 6,
+          "assists": 14,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "GER-PAVLOVIC",
+          "name": "A. Pavlović",
+          "position": "RCM",
+          "club": "Bayern Munich",
+          "age": 21,
+          "caps": 10,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-WIRTZ",
+          "name": "F. Wirtz",
+          "position": "CAM",
+          "club": "Liverpool",
+          "age": 22,
+          "caps": 30,
+          "goals": 7,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-SANE",
+          "name": "L. Sané",
+          "position": "LW",
+          "club": "Galatasaray",
+          "age": 30,
+          "caps": 22,
+          "goals": 9,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "GER-FULLKRUG",
+          "name": "N. Füllkrug",
+          "position": "ST",
+          "club": "West Ham",
+          "age": 33,
+          "caps": 21,
+          "goals": 13,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "GER-MUSIALA",
+          "name": "J. Musiala",
+          "position": "RW",
+          "club": "Bayern Munich",
+          "age": 23,
+          "caps": 36,
+          "goals": 7,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "GER-NEUER",
+          "name": "M. Neuer",
+          "position": "GK",
+          "club": "Bayern Munich",
+          "age": 40,
+          "caps": 124,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 52,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-BAUMANN",
+          "name": "O. Baumann",
+          "position": "GK",
+          "club": "Hoffenheim",
+          "age": 36,
+          "caps": 18,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 6,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-MITTELSTADT",
+          "name": "M. Mittelstädt",
+          "position": "LB",
+          "club": "Stuttgart",
+          "age": 29,
+          "caps": 44,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-KEHRER",
+          "name": "T. Kehrer",
+          "position": "CB",
+          "club": "Monaco",
+          "age": 30,
+          "caps": 42,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-SCHLOTTERBECK",
+          "name": "N. Schlotterbeck",
+          "position": "CB",
+          "club": "Dortmund",
+          "age": 26,
+          "caps": 36,
+          "goals": 0,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-KOCH",
+          "name": "R. Koch",
+          "position": "CB",
+          "club": "Eintracht",
+          "age": 30,
+          "caps": 24,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-ANTON",
+          "name": "W. Anton",
+          "position": "CB",
+          "club": "Dortmund",
+          "age": 30,
+          "caps": 52,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-GROSS",
+          "name": "P. Groß",
+          "position": "CM",
+          "club": "Dortmund",
+          "age": 34,
+          "caps": 66,
+          "goals": 6,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-GORETZKA",
+          "name": "L. Goretzka",
+          "position": "CM",
+          "club": "Bayern Munich",
+          "age": 31,
+          "caps": 59,
+          "goals": 14,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-ANDRICH",
+          "name": "R. Andrich",
+          "position": "CM",
+          "club": "Leverkusen",
+          "age": 31,
+          "caps": 28,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-GUNDOGAN",
+          "name": "İ. Gündoğan",
+          "position": "CM",
+          "club": "Galatasaray",
+          "age": 35,
+          "caps": 34,
+          "goals": 4,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-HAVERTZ",
+          "name": "K. Havertz",
+          "position": "ST",
+          "club": "Arsenal",
+          "age": 27,
+          "caps": 53,
+          "goals": 18,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "GER-WOLT",
+          "name": "J. Wolt",
+          "position": "LW",
+          "club": "Frankfurt",
+          "age": 25,
+          "caps": 24,
+          "goals": 9,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-ADEYEMI",
+          "name": "K. Adeyemi",
+          "position": "LW",
+          "club": "Dortmund",
+          "age": 24,
+          "caps": 19,
+          "goals": 4,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "GER-WOLTEMADE",
+          "name": "N. Woltemade",
+          "position": "ST",
+          "club": "Stuttgart",
+          "age": 24,
+          "caps": 17,
+          "goals": 5,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        }
+      ],
+      "captain": "J. Kimmich",
+      "fifaRank": 10,
+      "fifaPoints": 1730.37
+    },
+    "japan": {
+      "code": "JAP",
+      "name": "Japan",
+      "manager": "SAMURAI BLUE",
+      "formation": "HAJIME MORIYASU · 4-2-3-1 · GROUP F",
+      "group": "4-1 OVER GERMANY IN 2022",
+      "squad": [
+        {
+          "id": "JPN-SUZUKI",
+          "name": "Z. Suzuki",
+          "position": "GK",
+          "club": "Parma",
+          "age": 22,
+          "caps": 2,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": 0,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "JPN-SUGAWARA",
+          "name": "Y. Sugawara",
+          "position": "RB",
+          "club": "Southampton",
+          "age": 26,
+          "caps": 26,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-TOMIYASU",
+          "name": "T. Tomiyasu",
+          "position": "RCB",
+          "club": "Arsenal",
+          "age": 27,
+          "caps": 46,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-ITAKURA",
+          "name": "K. Itakura",
+          "position": "LCB",
+          "club": "Borussia M.",
+          "age": 29,
+          "caps": 32,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "JPN-NAGATOMO",
+          "name": "Y. Nagatomo",
+          "position": "LB",
+          "club": "Tokyo Verdy",
+          "age": 39,
+          "caps": 59,
+          "goals": 1,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-ENDO",
+          "name": "W. Endō",
+          "position": "DM",
+          "club": "Liverpool",
+          "age": 33,
+          "caps": 64,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "JPN-KAMADA",
+          "name": "D. Kamada",
+          "position": "LCM",
+          "club": "Crystal Palace",
+          "age": 30,
+          "caps": 40,
+          "goals": 7,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-MINAMINO",
+          "name": "T. Minamino",
+          "position": "RCM",
+          "club": "Monaco",
+          "age": 31,
+          "caps": 51,
+          "goals": 18,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-MITOMA",
+          "name": "K. Mitoma",
+          "position": "LW",
+          "club": "Brighton",
+          "age": 29,
+          "caps": 33,
+          "goals": 7,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "JPN-UEDA",
+          "name": "A. Ueda",
+          "position": "ST",
+          "club": "Feyenoord",
+          "age": 27,
+          "caps": 30,
+          "goals": 14,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "JPN-KUBO",
+          "name": "T. Kubo",
+          "position": "RW",
+          "club": "Real Sociedad",
+          "age": 25,
+          "caps": 35,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "JPN-OSAKO",
+          "name": "K. Osako",
+          "position": "GK",
+          "club": "Sanfrecce",
+          "age": 33,
+          "caps": 11,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": 5,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-NOZAWA",
+          "name": "D. Schmidt",
+          "position": "GK",
+          "club": "Sint-Truiden",
+          "age": 33,
+          "caps": 9,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 3,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-HASHIOKA",
+          "name": "D. Hashioka",
+          "position": "RB",
+          "club": "Hamilton",
+          "age": 26,
+          "caps": 17,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-TANIGUCHI",
+          "name": "S. Taniguchi",
+          "position": "CB",
+          "club": "Al-Rayyan",
+          "age": 34,
+          "caps": 44,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-WATANABE",
+          "name": "G. Watanabe",
+          "position": "CB",
+          "club": "Feyenoord",
+          "age": 27,
+          "caps": 25,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-BANDAI",
+          "name": "T. Bandai",
+          "position": "LB",
+          "club": "Westerlo",
+          "age": 28,
+          "caps": 20,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-ITO",
+          "name": "A. Itō",
+          "position": "CM",
+          "club": "Stuttgart",
+          "age": 26,
+          "caps": 33,
+          "goals": 5,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-MORITA",
+          "name": "H. Morita",
+          "position": "CM",
+          "club": "Sporting",
+          "age": 28,
+          "caps": 40,
+          "goals": 5,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-TANAKA",
+          "name": "A. Tanaka",
+          "position": "CM",
+          "club": "Leeds",
+          "age": 27,
+          "caps": 22,
+          "goals": 3,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-NAKAMURA",
+          "name": "K. Nakamura",
+          "position": "AM",
+          "club": "Reims",
+          "age": 26,
+          "caps": 25,
+          "goals": 4,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-DOAN",
+          "name": "R. Doan",
+          "position": "RW",
+          "club": "Eintracht",
+          "age": 27,
+          "caps": 31,
+          "goals": 6,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "JPN-FURUHASHI",
+          "name": "K. Furuhashi",
+          "position": "ST",
+          "club": "Birmingham",
+          "age": 31,
+          "caps": 28,
+          "goals": 13,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-MAEDA",
+          "name": "D. Maeda",
+          "position": "ST",
+          "club": "Celtic",
+          "age": 28,
+          "caps": 28,
+          "goals": 14,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-AYASE",
+          "name": "A. Ueda",
+          "position": "ST",
+          "club": "Feyenoord",
+          "age": 27,
+          "caps": 31,
+          "goals": 11,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "JPN-NUMATA",
+          "name": "T. Numata",
+          "position": "LW",
+          "club": "Tokyo",
+          "age": 24,
+          "caps": 12,
+          "goals": 4,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        }
+      ],
+      "captain": "W. Endō",
+      "fifaRank": 18,
+      "fifaPoints": 1660.43
+    },
+    "netherlands": {
+      "code": "NET",
+      "name": "Netherlands",
+      "manager": "ORANJE",
+      "formation": "RONALD KOEMAN · 4-3-3 · GROUP F",
+      "group": "52 YEARS WITHOUT THE TROPHY",
+      "squad": [
+        {
+          "id": "NED-VERBRUGGEN",
+          "name": "B. Verbruggen",
+          "position": "GK",
+          "club": "Brighton",
+          "age": 23,
+          "caps": 10,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 4,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "NED-DUMFRIES",
+          "name": "D. Dumfries",
+          "position": "RB",
+          "club": "Inter",
+          "age": 30,
+          "caps": 60,
+          "goals": 8,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-DELIGT",
+          "name": "M. de Ligt",
+          "position": "RCB",
+          "club": "Manchester United",
+          "age": 26,
+          "caps": 36,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-VVD",
+          "name": "V. van Dijk",
+          "position": "LCB",
+          "club": "Liverpool",
+          "age": 35,
+          "caps": 46,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "NED-AKE",
+          "name": "N. Aké",
+          "position": "LB",
+          "club": "Manchester City",
+          "age": 31,
+          "caps": 39,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "NED-KOOPMEINERS",
+          "name": "T. Koopmeiners",
+          "position": "DM",
+          "club": "Juventus",
+          "age": 28,
+          "caps": 35,
+          "goals": 6,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "NED-FRENKIE",
+          "name": "F. de Jong",
+          "position": "LCM",
+          "club": "Barcelona",
+          "age": 29,
+          "caps": 50,
+          "goals": 3,
+          "assists": 9,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · Squad member."
+        },
+        {
+          "id": "NED-REIJNDERS",
+          "name": "T. Reijnders",
+          "position": "RCM",
+          "club": "Milan",
+          "age": 27,
+          "caps": 35,
+          "goals": 3,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-GAKPO",
+          "name": "C. Gakpo",
+          "position": "LW",
+          "club": "Liverpool",
+          "age": 27,
+          "caps": 30,
+          "goals": 11,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-DEPAY",
+          "name": "M. Depay",
+          "position": "ST",
+          "club": "Corinthians",
+          "age": 32,
+          "caps": 99,
+          "goals": 47,
+          "assists": 27,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-XSIMONS",
+          "name": "X. Simons",
+          "position": "RW",
+          "club": "RB Leipzig",
+          "age": 23,
+          "caps": 21,
+          "goals": 10,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "⚠️ Knee injury — uncertain participation."
+        },
+        {
+          "id": "NED-FLEKKEN",
+          "name": "M. Flekken",
+          "position": "GK",
+          "club": "Leverkusen",
+          "age": 33,
+          "caps": 9,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 3,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-BIJLOW",
+          "name": "J. Bijlow",
+          "position": "GK",
+          "club": "Genoa",
+          "age": 28,
+          "caps": 8,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 3,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-VANDEVEN",
+          "name": "M. van de Ven",
+          "position": "CB",
+          "club": "Tottenham",
+          "age": 25,
+          "caps": 27,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-VRIJ",
+          "name": "S. de Vrij",
+          "position": "CB",
+          "club": "Inter",
+          "age": 34,
+          "caps": 42,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-VANHECKE",
+          "name": "J. van Hecke",
+          "position": "CB",
+          "club": "Brighton",
+          "age": 26,
+          "caps": 22,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-FRIMPONG",
+          "name": "J. Frimpong",
+          "position": "RB",
+          "club": "Liverpool",
+          "age": 25,
+          "caps": 20,
+          "goals": 1,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-HATO",
+          "name": "J. Hato",
+          "position": "LB",
+          "club": "Ajax",
+          "age": 20,
+          "caps": 6,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "NED-VEERMAN",
+          "name": "J. Veerman",
+          "position": "CM",
+          "club": "PSV",
+          "age": 27,
+          "caps": 26,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-SCHOUTEN",
+          "name": "J. Schouten",
+          "position": "CM",
+          "club": "PSV",
+          "age": 29,
+          "caps": 37,
+          "goals": 2,
+          "assists": 6,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-WIEFFER",
+          "name": "M. Wieffer",
+          "position": "CM",
+          "club": "Brighton",
+          "age": 26,
+          "caps": 33,
+          "goals": 4,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-MALEN",
+          "name": "D. Malen",
+          "position": "RW",
+          "club": "Aston Villa",
+          "age": 27,
+          "caps": 32,
+          "goals": 6,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-BERGWIJN",
+          "name": "S. Bergwijn",
+          "position": "LW",
+          "club": "Al-Ittihad",
+          "age": 28,
+          "caps": 19,
+          "goals": 6,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-BRORBBEY",
+          "name": "B. Brobbey",
+          "position": "ST",
+          "club": "RB Leipzig",
+          "age": 24,
+          "caps": 23,
+          "goals": 5,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-WEGHORST",
+          "name": "W. Weghorst",
+          "position": "ST",
+          "club": "Ajax",
+          "age": 33,
+          "caps": 40,
+          "goals": 11,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "NED-KLUIVERT",
+          "name": "J. Kluivert",
+          "position": "AM",
+          "club": "Bournemouth",
+          "age": 27,
+          "caps": 27,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "⚠️ Calf strain — late call-up."
+        }
+      ],
+      "captain": "V. van Dijk",
+      "fifaRank": 7,
+      "fifaPoints": 1757.87
+    },
+    "portugal": {
+      "code": "POR",
+      "name": "Portugal",
+      "manager": "SELEÇÃO",
+      "formation": "ROBERTO MARTÍNEZ · 4-3-3 · GROUP K",
+      "group": "CR7 FAREWELL TOUR",
+      "squad": [
+        {
+          "id": "POR-DCOSTA",
+          "name": "D. Costa",
+          "position": "GK",
+          "club": "Porto",
+          "age": 25,
+          "caps": 5,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 1,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-CANCELO",
+          "name": "J. Cancelo",
+          "position": "RB",
+          "club": "Al-Hilal",
+          "age": 32,
+          "caps": 56,
+          "goals": 10,
+          "assists": 12,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "POR-RDIAS",
+          "name": "R. Dias",
+          "position": "RCB",
+          "club": "Manchester City",
+          "age": 29,
+          "caps": 49,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-ANTONIO",
+          "name": "A. Silva",
+          "position": "LCB",
+          "club": "Chelsea",
+          "age": 26,
+          "caps": 29,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "POR-NMENDES",
+          "name": "N. Mendes",
+          "position": "LB",
+          "club": "PSG",
+          "age": 23,
+          "caps": 15,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-VITINHA",
+          "name": "Vitinha",
+          "position": "DM",
+          "club": "PSG",
+          "age": 26,
+          "caps": 23,
+          "goals": 2,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "POR-BFERNANDES",
+          "name": "B. Fernandes",
+          "position": "LCM",
+          "club": "Manchester United",
+          "age": 31,
+          "caps": 75,
+          "goals": 26,
+          "assists": 23,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-RNEVES",
+          "name": "R. Neves",
+          "position": "RCM",
+          "club": "Al-Hilal",
+          "age": 29,
+          "caps": 26,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "POR-RLEAO",
+          "name": "R. Leão",
+          "position": "LW",
+          "club": "Milan",
+          "age": 27,
+          "caps": 27,
+          "goals": 10,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-RONALDO",
+          "name": "C. Ronaldo",
+          "position": "ST",
+          "club": "Al-Nassr",
+          "age": 41,
+          "caps": 218,
+          "goals": 137,
+          "assists": 45,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front.",
+          "captain": true
+        },
+        {
+          "id": "POR-BSILVA",
+          "name": "B. Silva",
+          "position": "RW",
+          "club": "Manchester City",
+          "age": 31,
+          "caps": 99,
+          "goals": 13,
+          "assists": 11,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-RUI",
+          "name": "R. Patrício",
+          "position": "GK",
+          "club": "Atalanta",
+          "age": 38,
+          "caps": 26,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 9,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-JSA",
+          "name": "J. Sá",
+          "position": "GK",
+          "club": "Wolves",
+          "age": 33,
+          "caps": 10,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 4,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-DALOT",
+          "name": "D. Dalot",
+          "position": "RB",
+          "club": "Manchester United",
+          "age": 27,
+          "caps": 24,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-SEMEDO",
+          "name": "N. Semedo",
+          "position": "RB",
+          "club": "Wolves",
+          "age": 32,
+          "caps": 33,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-INACIO",
+          "name": "G. Inácio",
+          "position": "CB",
+          "club": "Sporting",
+          "age": 24,
+          "caps": 26,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-VEIGA",
+          "name": "D. Pereira",
+          "position": "CB",
+          "club": "Porto",
+          "age": 29,
+          "caps": 41,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-NUNORE",
+          "name": "N. Tavares",
+          "position": "LB",
+          "club": "Lazio",
+          "age": 26,
+          "caps": 24,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-OTAVIO",
+          "name": "Otávio",
+          "position": "CM",
+          "club": "Al-Nassr",
+          "age": 31,
+          "caps": 40,
+          "goals": 2,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-JNEVES",
+          "name": "João Neves",
+          "position": "CM",
+          "club": "PSG",
+          "age": 22,
+          "caps": 13,
+          "goals": 1,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-PALHINHA",
+          "name": "J. Palhinha",
+          "position": "DM",
+          "club": "Tottenham",
+          "age": 30,
+          "caps": 44,
+          "goals": 6,
+          "assists": 7,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-MATHEUS",
+          "name": "M. Nunes",
+          "position": "AM",
+          "club": "Manchester City",
+          "age": 28,
+          "caps": 49,
+          "goals": 4,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "POR-CONCEICAO",
+          "name": "F. Conceição",
+          "position": "RW",
+          "club": "Juventus",
+          "age": 23,
+          "caps": 16,
+          "goals": 3,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-PEDRONETO",
+          "name": "P. Neto",
+          "position": "LW",
+          "club": "Chelsea",
+          "age": 26,
+          "caps": 26,
+          "goals": 4,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-GRAMOS",
+          "name": "G. Ramos",
+          "position": "ST",
+          "club": "PSG",
+          "age": 25,
+          "caps": 26,
+          "goals": 7,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "POR-JESUS",
+          "name": "J. Felix",
+          "position": "ST",
+          "club": "Chelsea",
+          "age": 26,
+          "caps": 22,
+          "goals": 9,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        }
+      ],
+      "captain": "C. Ronaldo",
+      "fifaRank": 5,
+      "fifaPoints": 1763.83
+    },
+    "spain": {
+      "code": "SPA",
+      "name": "Spain",
+      "manager": "EURO 2024 CHAMPIONS",
+      "formation": "LUIS DE LA FUENTE · 4-3-3 · GROUP H",
+      "group": "NO REAL MADRID PLAYERS",
+      "squad": [
+        {
+          "id": "ESP-USIMON",
+          "name": "U. Simón",
+          "position": "GK",
+          "club": "Athletic Bilbao",
+          "age": 29,
+          "caps": 7,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 2,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-VMUNOZ",
+          "name": "V. Muñoz",
+          "position": "RB",
+          "club": "Wolves",
+          "age": 24,
+          "caps": 13,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-CUBARSI",
+          "name": "P. Cubarsí",
+          "position": "RCB",
+          "club": "Barcelona",
+          "age": 19,
+          "caps": 3,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ESP-LAPORTE",
+          "name": "A. Laporte",
+          "position": "LCB",
+          "club": "Athletic Bilbao",
+          "age": 32,
+          "caps": 41,
+          "goals": 2,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-CUCURELLA",
+          "name": "M. Cucurella",
+          "position": "LB",
+          "club": "Chelsea",
+          "age": 28,
+          "caps": 45,
+          "goals": 2,
+          "assists": 2,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-RODRI",
+          "name": "Rodri",
+          "position": "DM",
+          "club": "Manchester City",
+          "age": 30,
+          "caps": 56,
+          "goals": 3,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star · 👑 Team captain — leads from the front."
+        },
+        {
+          "id": "ESP-PEDRI",
+          "name": "Pedri",
+          "position": "LCM",
+          "club": "Barcelona",
+          "age": 23,
+          "caps": 27,
+          "goals": 2,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "ESP-ZUBIMENDI",
+          "name": "M. Zubimendi",
+          "position": "RCM",
+          "club": "Arsenal",
+          "age": 27,
+          "caps": 26,
+          "goals": 2,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-NWILLIAMS",
+          "name": "N. Williams",
+          "position": "LW",
+          "club": "Athletic Bilbao",
+          "age": 24,
+          "caps": 16,
+          "goals": 6,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ESP-OYARZABAL",
+          "name": "M. Oyarzabal",
+          "position": "ST",
+          "club": "Real Sociedad",
+          "age": 29,
+          "caps": 49,
+          "goals": 24,
+          "assists": 10,
+          "cleanSheets": null,
+          "star": false,
+          "note": "First-choice starter in this XI."
+        },
+        {
+          "id": "ESP-YAMAL",
+          "name": "L. Yamal",
+          "position": "RW",
+          "club": "Barcelona",
+          "age": 18,
+          "caps": 19,
+          "goals": 7,
+          "assists": 8,
+          "cleanSheets": null,
+          "star": true,
+          "note": "⭐ Star player — key match-winner."
+        },
+        {
+          "id": "ESP-RAYA",
+          "name": "D. Raya",
+          "position": "GK",
+          "club": "Arsenal",
+          "age": 30,
+          "caps": 42,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": 18,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-REMIRO",
+          "name": "A. Remiro",
+          "position": "GK",
+          "club": "Real Sociedad",
+          "age": 31,
+          "caps": 11,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": 5,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-PORRO",
+          "name": "P. Porro",
+          "position": "RB",
+          "club": "Tottenham",
+          "age": 26,
+          "caps": 21,
+          "goals": 0,
+          "assists": 0,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-LENORMAND",
+          "name": "R. Le Normand",
+          "position": "CB",
+          "club": "Atlético Madrid",
+          "age": 29,
+          "caps": 52,
+          "goals": 1,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-GAYA",
+          "name": "J. Gayà",
+          "position": "LB",
+          "club": "Valencia",
+          "age": 31,
+          "caps": 28,
+          "goals": 0,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-MERINO",
+          "name": "M. Merino",
+          "position": "CM",
+          "club": "Arsenal",
+          "age": 30,
+          "caps": 44,
+          "goals": 3,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-FRUIZ",
+          "name": "F. Ruiz",
+          "position": "CM",
+          "club": "PSG",
+          "age": 30,
+          "caps": 44,
+          "goals": 2,
+          "assists": 9,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-GAVI",
+          "name": "Gavi",
+          "position": "CM",
+          "club": "Barcelona",
+          "age": 21,
+          "caps": 25,
+          "goals": 5,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ESP-BAENA",
+          "name": "Á. Baena",
+          "position": "AM",
+          "club": "Villarreal",
+          "age": 24,
+          "caps": 22,
+          "goals": 3,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-DOLMO",
+          "name": "D. Olmo",
+          "position": "AM",
+          "club": "Barcelona",
+          "age": 28,
+          "caps": 34,
+          "goals": 4,
+          "assists": 3,
+          "cleanSheets": null,
+          "star": false,
+          "note": "Squad member."
+        },
+        {
+          "id": "ESP-OLMOJ",
+          "name": "J. Olmo",
+          "position": "AM",
+          "club": "Como",
+          "age": 23,
+          "caps": 13,
+          "goals": 1,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-PINO",
+          "name": "Y. Pino",
+          "position": "RW",
+          "club": "Crystal Palace",
+          "age": 23,
+          "caps": 15,
+          "goals": 4,
+          "assists": 1,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-FTORRES",
+          "name": "F. Torres",
+          "position": "ST",
+          "club": "Barcelona",
+          "age": 26,
+          "caps": 42,
+          "goals": 20,
+          "assists": 5,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-BIGLESIAS",
+          "name": "B. Iglesias",
+          "position": "ST",
+          "club": "Real Sociedad",
+          "age": 32,
+          "caps": 40,
+          "goals": 20,
+          "assists": 9,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        },
+        {
+          "id": "ESP-AYOSE",
+          "name": "A. Pérez",
+          "position": "ST",
+          "club": "Las Palmas",
+          "age": 33,
+          "caps": 41,
+          "goals": 12,
+          "assists": 4,
+          "cleanSheets": null,
+          "star": false,
+          "note": "🪑 Squad depth — impact sub option."
+        }
+      ],
+      "captain": "Á. Morata",
+      "fifaRank": 2,
+      "fifaPoints": 1876.4
+    }
+  },
+  "topScorers": []
+}
