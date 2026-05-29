@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2006 · Don Bobby's Club</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background:
+      radial-gradient(circle at 12% 8%,  rgba(184,134,11,0.10) 0%, transparent 55%),
+      radial-gradient(circle at 88% 90%, rgba(139,42,51,0.07) 0%, transparent 55%),
+      #C4DBC0;
+    color: #1F2E1F;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.01em;
+  }
+  .container { max-width: 920px; }
+  .postal-stripe {
+    position: fixed; top: 0; left: 0; right: 0; height: 10px; z-index: 5;
+    background: repeating-linear-gradient(45deg,
+      #8B2A33 0 14px, #2F5233 14px 28px, #B8860B 28px 42px,
+      #1E3A5F 42px 56px, #C9923B 56px 70px);
+    border-bottom: 1px solid rgba(31,46,31,0.25);
+  }
+  .back-link {
+    display: inline-block; margin-top: 30px;
+    font-size: 11px; letter-spacing: 3px; font-weight: 700;
+    color: #2F5233; text-decoration: none;
+    text-transform: uppercase;
+  }
+  .back-link:hover { color: #8B2A33; }
+  .t-header {
+    text-align: center; margin-top: 16px; margin-bottom: 26px;
+  }
+  .t-eyebrow {
+    font-size: 11px; letter-spacing: 5px; font-weight: 600;
+    color: #8B2A33; text-transform: uppercase;
+  }
+  .t-eyebrow::before, .t-eyebrow::after {
+    content: "✦"; margin: 0 10px; color: #B8860B;
+  }
+  .t-title {
+    font-size: clamp(34px, 6vw, 56px); font-weight: 800;
+    color: #1F2E1F; margin-top: 8px; line-height: 1; letter-spacing: -1px;
+  }
+  .t-title em { color: #8B2A33; font-style: italic; }
+  .t-sub {
+    font-size: 13px; letter-spacing: 3px; color: #5A6B5A;
+    margin-top: 12px; font-weight: 500;
+  }
+
+  .t-hero {
+    display: grid; grid-template-columns: 1fr; gap: 22px;
+    align-items: stretch; margin-bottom: 30px;
+  }
+  @media (min-width: 800px) {
+    .t-hero { grid-template-columns: 1fr 1.1fr; gap: 28px; }
+  }
+  .t-stamps { display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .t-stamp {
+    width: 200px; padding: 10px 10px 6px;
+    background: #F5EBD3;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    position: relative;
+    transform: rotate(-2deg);
+  }
+  .t-stamp:nth-child(2) { transform: rotate(2deg); }
+  .t-stamp::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(circle at 6px 6px, #15110D 3.5px, transparent 4.5px) top left / 12px 12px repeat-x,
+      radial-gradient(circle at 6px 6px, #15110D 3.5px, transparent 4.5px) bottom left / 12px 12px repeat-x,
+      radial-gradient(circle at 6px 6px, #15110D 3.5px, transparent 4.5px) top left / 12px 12px repeat-y,
+      radial-gradient(circle at 6px 6px, #15110D 3.5px, transparent 4.5px) top right / 12px 12px repeat-y;
+  }
+  .t-stamp img {
+    width: 100%; aspect-ratio: 4 / 3; display: block;
+    object-fit: cover;
+    border: 1px solid rgba(21,17,13,0.3);
+    filter: sepia(0.10) saturate(0.95);
+  }
+  .t-stamp-cap {
+    text-align: center; margin-top: 6px;
+    font-size: 9.5px; letter-spacing: 1.5px; font-weight: 700;
+    color: #5C4E2A; text-transform: uppercase;
+  }
+
+  .t-winner-card {
+    background: #FFFFFF; border: 1px solid rgba(31,46,31,0.18);
+    border-radius: 6px; padding: 22px 24px;
+    box-shadow: 0 6px 18px rgba(31,46,31,0.10);
+    position: relative; overflow: hidden;
+  }
+  .t-winner-card::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 8px;
+    background: linear-gradient(to right, #B8860B, #8B2A33);
+  }
+  .t-winner-eyebrow {
+    margin-top: 6px;
+    color: #B8860B; font-style: italic;
+    font-size: 11px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .t-winner-name {
+    font-size: 38px; font-weight: 800;
+    color: #1F2E1F; margin-top: 4px; line-height: 1;
+  }
+  .t-winner-meta {
+    color: #5A6B5A; font-size: 13px; line-height: 1.55;
+    margin-top: 14px;
+  }
+  .t-winner-meta strong { color: #1F2E1F; font-weight: 700; }
+
+  .t-grid {
+    display: grid; grid-template-columns: 1fr; gap: 14px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 700px) { .t-grid { grid-template-columns: 1fr 1fr; } }
+  .t-row {
+    background: #FFFFFF; border: 1px solid rgba(31,46,31,0.15);
+    border-radius: 5px; padding: 14px 18px;
+    box-shadow: 0 2px 6px rgba(31,46,31,0.06);
+  }
+  .t-row .lbl {
+    font-size: 10px; letter-spacing: 3px; font-weight: 700;
+    color: #5A6B5A; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .t-row .val {
+    font-size: 14px; font-weight: 600; color: #1F2E1F; line-height: 1.4;
+  }
+  .t-row .val .accent { color: #8B2A33; font-weight: 800; }
+
+  .t-stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 10px; margin-bottom: 30px;
+  }
+  .t-stat {
+    background: #FFF7E2; border: 1px solid rgba(184,134,11,0.35);
+    border-radius: 4px; padding: 14px 12px; text-align: center;
+  }
+  .t-stat-lbl {
+    font-size: 9.5px; letter-spacing: 2px; font-weight: 700;
+    color: #8B6914; text-transform: uppercase;
+  }
+  .t-stat-val {
+    font-size: 22px; font-weight: 800;
+    color: #1F2E1F; margin-top: 4px; line-height: 1;
+  }
+
+  .t-notes {
+    background: rgba(255,247,226,0.7);
+    border: 1.5px dashed rgba(31,46,31,0.35);
+    border-radius: 6px; padding: 18px 22px;
+    font-style: italic; font-size: 13.5px; line-height: 1.6;
+    color: #5A6B5A; margin-bottom: 36px;
+  }
+  .t-notes strong { color: #1F2E1F; font-style: normal; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="postal-stripe"></div>
+<div class="container">
+
+  <a href="index.html" class="back-link">← Back to Don Bobby's Club</a>
+
+  <div class="t-header">
+    <div class="t-eyebrow">From the postage album</div>
+    <div class="t-title">FIFA World <em>Cup</em> 2006</div>
+    <div class="t-sub">Germany · 9 June – 9 July 2006</div>
+  </div>
+
+  <div class="t-hero">
+    <div class="t-stamps">
+      <div class="t-stamp"><img src="stamp-2-germany.png" alt="FIFA World Cup 2006"><div class="t-stamp-cap">Munich · Beer Garden</div></div>
+    </div>
+    <div class="t-winner-card">
+      <div class="t-winner-eyebrow">★ Champion ★</div>
+      <div class="t-winner-name">Italy</div>
+      <div class="t-winner-meta">
+        <strong>Final:</strong> Italy 1 – 1 France (a.e.t.) · Italy 5–3 on penalties<br>
+        <strong>Venue:</strong> Olympiastadion · Berlin · 9 July<br>
+        <strong>Runner-up:</strong> France<br>
+        <strong>Bronze:</strong> Germany<br><strong>Fourth:</strong> Portugal
+      </div>
+    </div>
+  </div>
+
+  <div class="t-grid">
+    <div class="t-row">
+      <div class="lbl">Top Scorer · Golden Boot</div>
+      <div class="val"><span class="accent">Miroslav Klose (Germany) · 5 goals · Golden Boot</span></div>
+    </div>
+    <div class="t-row">
+      <div class="lbl">Final · Man of the Match</div>
+      <div class="val"><span class="accent">Andrea Pirlo (Italy)</span></div>
+    </div>
+    <div class="t-row">
+      <div class="lbl">Player of the Tournament</div>
+      <div class="val"><span class="accent">Zinédine Zidane (France) · Golden Ball</span></div>
+    </div>
+    <div class="t-row">
+      <div class="lbl">Best Young Player</div>
+      <div class="val">Lukas Podolski (Germany)</div>
+    </div>
+    <div class="t-row">
+      <div class="lbl">Best Goalkeeper</div>
+      <div class="val">Gianluigi Buffon (Italy) · Lev Yashin Award</div>
+    </div>
+    <div class="t-row">
+      <div class="lbl">Fair Play Award</div>
+      <div class="val">Brazil & Spain</div>
+    </div>
+  </div>
+
+  <div class="t-stats">
+    <div class="t-stat">
+      <div class="t-stat-lbl">Matches</div>
+      <div class="t-stat-val">64</div>
+    </div>
+    <div class="t-stat">
+      <div class="t-stat-lbl">Goals</div>
+      <div class="t-stat-val">147 (2.30 / match)</div>
+    </div>
+    <div class="t-stat">
+      <div class="t-stat-lbl">Attendance</div>
+      <div class="t-stat-val">3,359,439</div>
+    </div>
+  </div>
+
+  <div class="t-notes">
+    <strong>From the Don Bobby annals —</strong> Italy lifted their 4th title. Zidane's headbutt on Materazzi in extra time ended his career. Germany's "summer fairy tale" — Klinsmann’s side took bronze and re-introduced the world to a young Schweinsteiger, Lahm and Podolski.
+  </div>
+
+</div>
+</body>
+</html>

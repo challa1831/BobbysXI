@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Today on tour · Don Bobby's Club</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background:
+      radial-gradient(circle at 10% 10%, rgba(56,189,248,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 90% 60%, rgba(20,184,166,0.18) 0%, transparent 50%),
+      radial-gradient(circle at 50% 100%, rgba(30,64,175,0.22) 0%, transparent 50%),
+      linear-gradient(180deg, #020617 0%, #0F172A 50%, #020617 100%);
+    color: #E2E8F0;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: ""; display: block; height: 4px;
+    background: linear-gradient(90deg, #38BDF8 0% 20%, #14B8A6 20% 40%, #0EA5E9 40% 60%, #1E40AF 60% 80%, #38BDF8 80% 100%);
+    margin: -14px -12px 16px;
+  }
+  .container { max-width: 760px; }
+
+  /* Back-to-hub button (mirror of trip.html) */
+  .back-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 8px 14px;
+    background: rgba(2,6,23,0.55);
+    color: #E2E8F0;
+    border: 1.5px solid rgba(56,189,248,0.4);
+    border-radius: 8px;
+    font-size: 11px; letter-spacing: 2px; font-weight: 800; text-transform: uppercase;
+    text-decoration: none;
+  }
+  .back-btn:hover { background: rgba(56,189,248,0.12); }
+
+  /* Hero header (mirror of trip.html title block) */
+  .today-header {
+    text-align: center; padding: 10px 0 18px;
+  }
+  .today-eyebrow {
+    font-size: 11px; letter-spacing: 4px; font-weight: 800;
+    color: #38BDF8; margin-bottom: 12px;
+  }
+  .today-title {
+    font-size: clamp(38px, 9vw, 64px); line-height: 0.95; font-weight: 900;
+    background: linear-gradient(135deg, #7DD3FC, #38BDF8, #14B8A6);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; color: transparent;
+  }
+  .today-sub {
+    font-style: italic; font-weight: 600; margin-top: 4px; color: #CBD5E1;
+  }
+  .today-meta {
+    margin-top: 10px; font-size: 12px; letter-spacing: 2px;
+    color: #38BDF8; font-weight: 700;
+  }
+
+  /* Day navigator */
+  .day-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center; gap: 12px;
+    margin: 18px 0 14px;
+  }
+  .day-nav button {
+    padding: 10px 14px;
+    background: rgba(15,23,42,0.6);
+    color: #E2E8F0;
+    border: 1.5px solid rgba(56,189,248,0.4);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+  }
+  .day-nav button:hover {
+    background: rgba(56,189,248,0.12);
+    border-color: #38BDF8;
+    transform: translateY(-1px);
+  }
+  .day-nav button:disabled { opacity: 0.35; cursor: not-allowed; }
+  .day-nav .prev { justify-self: start; }
+  .day-nav .next { justify-self: end; }
+  .day-nav .day-pill {
+    text-align: center;
+    font-size: 11px; letter-spacing: 3px; font-weight: 800; text-transform: uppercase;
+    color: #94A3B8;
+  }
+  .day-nav .day-pill .num {
+    background: rgba(56,189,248,0.16);
+    border: 1px solid rgba(56,189,248,0.4);
+    color: #7DD3FC;
+    padding: 3px 10px; border-radius: 12px;
+    font-weight: 800;
+  }
+
+  .day-title {
+    text-align: center;
+    font-size: clamp(26px, 5vw, 36px); font-weight: 900; letter-spacing: -0.5px;
+    color: #E2E8F0; margin: 4px 0 4px;
+  }
+  .day-where {
+    text-align: center;
+    font-size: 13px; font-style: italic; color: #94A3B8;
+    margin-bottom: 20px;
+  }
+  .day-where strong {
+    color: #7DD3FC; font-weight: 800; font-style: normal;
+    letter-spacing: 0.5px;
+  }
+
+  /* Section banner — mirror of trip.html */
+  .section-banner {
+    margin: 14px 0 10px;
+  }
+  .section-banner h2 {
+    font-size: 12px; letter-spacing: 3px; color: #38BDF8;
+    font-weight: 800; text-transform: uppercase;
+    display: flex; align-items: center; gap: 10px;
+    margin: 0;
+  }
+  .section-banner h2::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(to right, rgba(56,189,248,0.4), transparent);
+  }
+
+  /* Panel — mirror trip.html .panel */
+  .panel {
+    background: rgba(2,6,23,0.5);
+    border: 1.5px solid rgba(56,189,248,0.3);
+    border-radius: 12px;
+    padding: 14px 16px 18px;
+    margin-bottom: 18px;
+  }
+  .panel-count {
+    font-size: 11px; letter-spacing: 1.5px; color: #94A3B8;
+    font-weight: 700; text-transform: uppercase;
+    text-align: right; margin-top: -6px; margin-bottom: 6px;
+  }
+
+  /* Flight / day card — mirror .leg style from trip.html */
+  .flight {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px; align-items: center;
+    background: rgba(15,23,42,0.6);
+    border: 1.5px solid rgba(56,189,248,0.35);
+    border-left: 5px solid #38BDF8;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .flight:last-child { margin-bottom: 0; }
+  .flight-icon {
+    text-align: center;
+    background: rgba(56,189,248,0.12);
+    border: 1px solid rgba(56,189,248,0.4);
+    border-radius: 8px;
+    padding: 10px 4px;
+    color: #7DD3FC; font-weight: 900; letter-spacing: 1px;
+    font-size: 22px;
+  }
+  .flight-route {
+    font-size: 15px; font-weight: 800; color: #E2E8F0;
+    letter-spacing: 0.5px;
+  }
+  .flight-meta {
+    font-size: 11px; letter-spacing: 1.2px; color: #38BDF8;
+    opacity: 0.85; margin-top: 4px; font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  /* Match row — same look-and-feel as flight, but with kickoff pill */
+  .match {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 12px; align-items: center;
+    background: rgba(15,23,42,0.6);
+    border: 1.5px solid rgba(20,184,166,0.35);
+    border-left: 5px solid #14B8A6;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .match:last-child { margin-bottom: 0; }
+  .match-time {
+    text-align: center;
+    background: rgba(20,184,166,0.12);
+    border: 1px solid rgba(20,184,166,0.4);
+    border-radius: 8px;
+    padding: 8px 4px;
+    color: #5EEAD4; font-weight: 900;
+  }
+  .match-time .h { display: block; font-size: 16px; line-height: 1; letter-spacing: 0.5px; }
+  .match-time .tz { display: block; font-size: 9px; letter-spacing: 1px; opacity: 0.85; margin-top: 3px; }
+  .match-teams { display: flex; flex-direction: column; }
+  .match-pair { font-size: 15px; font-weight: 800; color: #E2E8F0; letter-spacing: 0.5px; }
+  .match-pair .vs { color: #14B8A6; font-style: normal; font-weight: 900; margin: 0 6px; }
+  .match-where {
+    font-size: 11px; letter-spacing: 1.2px; color: #14B8A6;
+    margin-top: 4px; font-weight: 700; text-transform: uppercase;
+  }
+  .match-grp {
+    background: rgba(56,189,248,0.16); color: #7DD3FC;
+    border: 1px solid rgba(56,189,248,0.4);
+    padding: 4px 10px; border-radius: 12px;
+    font-size: 10px; letter-spacing: 1.5px; font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  /* Empty state */
+  .empty {
+    padding: 18px 8px;
+    text-align: center;
+    font-style: italic; color: #64748B; font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Footer — mirror trip.html footer */
+  .hub-footer {
+    text-align: center; margin-top: 20px;
+    font-size: 11.5px; font-style: italic; color: #64748B;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <a href="index.html" class="back-btn">← BACK TO HUB</a>
+
+  <div class="today-header">
+    <div class="today-eyebrow">⚽ DON BOBBY'S CLUB · TODAY ON TOUR ⚽</div>
+    <h1 class="today-title">TODAY &amp; THE DAY</h1>
+    <div class="today-sub">flights · cities · fixtures</div>
+    <div class="today-meta">19 JUN – 10 JUL 2026 · 22 DAYS</div>
+  </div>
+
+  <div class="day-nav">
+    <button class="prev" id="prev">◀ Prev day</button>
+    <div class="day-pill"><span class="num" id="day-num">Day 1 / 22</span></div>
+    <button class="next" id="next">Next day ▶</button>
+  </div>
+
+  <div class="day-title" id="day-title">Friday · 19 June 2026</div>
+  <div class="day-where" id="day-where">in <strong>Mumbai</strong> · departure day</div>
+
+  <div class="section-banner"><h2>✈️ OUR DAY</h2></div>
+  <div class="panel">
+    <div class="panel-count" id="trip-count"></div>
+    <div id="trip-body"></div>
+  </div>
+
+  <div class="section-banner"><h2>⚽ FIXTURES TODAY</h2></div>
+  <div class="panel">
+    <div class="panel-count" id="match-count"></div>
+    <div id="match-body"></div>
+  </div>
+
+  <div class="hub-footer">
+    🌮 ¡VAMOS! · DON BOBBY'S CLUB 🗽<br>
+    DAY-BY-DAY · DRIVEN BY <code>data/live.json</code>
+  </div>
+
+</div>
+
+<script src="data-loader.js"></script>
+<script>
+(function(){
+  const TRIP_START = "2026-06-19";
+  const TRIP_END   = "2026-07-10";
+
+  const monthShort = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const dayName    = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function ymd(d) { return d.toISOString().slice(0,10); }
+  function parse(s) { const [y,m,d] = s.split('-').map(Number); return new Date(Date.UTC(y, m-1, d)); }
+  function addDays(d, n) { const x = new Date(d); x.setUTCDate(x.getUTCDate()+n); return x; }
+  function pretty(d) {
+    return `${dayName[d.getUTCDay()]} · ${d.getUTCDate()} ${monthShort[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+  }
+  function dayIndex(d) {
+    const start = parse(TRIP_START);
+    return Math.round((d - start) / 86400000) + 1;
+  }
+  function clampDay(d) {
+    const s = parse(TRIP_START), e = parse(TRIP_END);
+    if (d < s) return s;
+    if (d > e) return e;
+    return d;
+  }
+
+  function cityRanges(cities) {
+    const MAP = { JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11 };
+    return cities.map(c => {
+      let startDay, startMon, endDay, endMon;
+      const parts = c.dates.split(/\s*[–-]\s*/).map(p => p.trim());
+      if (parts.length === 2) {
+        const m1 = parts[0].match(/(\d+)(?:\s+([A-Z]{3}))?/i);
+        const m2 = parts[1].match(/(\d+)(?:\s+([A-Z]{3}))?/i);
+        startDay = parseInt(m1[1], 10);
+        startMon = m1[2];
+        endDay   = parseInt(m2[1], 10);
+        endMon   = m2[2];
+        if (!startMon && endMon) startMon = endMon;
+      }
+      const startMonth = MAP[(startMon||"JUN").toUpperCase()];
+      const endMonth   = MAP[(endMon||"JUN").toUpperCase()];
+      return {
+        name: c.name,
+        emoji: c.emoji,
+        nights: c.nights,
+        dates: c.dates,
+        start: new Date(Date.UTC(2026, startMonth, startDay)),
+        end:   new Date(Date.UTC(2026, endMonth, endDay))
+      };
+    });
+  }
+
+  function cityFor(day, ranges) {
+    for (const r of ranges) {
+      if (day >= r.start && day <= r.end) return r;
+    }
+    return null;
+  }
+
+  let CURRENT;
+  function render(d, data) {
+    CURRENT = d;
+    const today = ymd(d);
+    document.getElementById('day-title').textContent = pretty(d);
+    const idx = dayIndex(d);
+    const total = Math.round((parse(TRIP_END) - parse(TRIP_START))/86400000) + 1;
+    document.getElementById('day-num').textContent = `Day ${idx} / ${total}`;
+    document.getElementById('prev').disabled = ymd(d) <= TRIP_START;
+    document.getElementById('next').disabled = ymd(d) >= TRIP_END;
+
+    const ranges = cityRanges(data.trip.cities);
+    const city = cityFor(d, ranges);
+    const where = document.getElementById('day-where');
+    if (city) where.innerHTML = `in <strong>${city.emoji} ${city.name}</strong>`;
+    else where.textContent = 'on the road';
+
+    const tripBody  = document.getElementById('trip-body');
+    const tripCount = document.getElementById('trip-count');
+    const legs = (data.trip.legs || []).filter(l => {
+      const mon = (l.month || '').toUpperCase();
+      const monIdx = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'].indexOf(mon);
+      return monIdx === d.getUTCMonth() && l.day === d.getUTCDate();
+    });
+    let bits = legs.map(l => `
+      <div class="flight">
+        <div class="flight-icon">✈</div>
+        <div>
+          <div class="flight-route">${l.route}</div>
+          <div class="flight-meta">${l.meta}</div>
+        </div>
+      </div>`).join('');
+    if (city && !legs.length) {
+      bits += `<div class="flight">
+        <div class="flight-icon">🏨</div>
+        <div>
+          <div class="flight-route">Staying in ${city.name}</div>
+          <div class="flight-meta">${city.dates} · ${city.nights} nights</div>
+        </div>
+      </div>`;
+    }
+    tripBody.innerHTML = bits || `<div class="empty">No travel scheduled.</div>`;
+    tripCount.textContent = legs.length ? `${legs.length} flight${legs.length>1?'s':''}` : (city ? city.name : '');
+
+    const matchBody  = document.getElementById('match-body');
+    const matchCount = document.getElementById('match-count');
+    const todays = (data.matches || []).filter(m => m.date === today);
+    if (todays.length === 0) {
+      matchBody.innerHTML = `<div class="empty">No fixtures today — enjoy the day off.</div>`;
+      matchCount.textContent = '';
+    } else {
+      matchBody.innerHTML = todays.map(m => `
+        <div class="match">
+          <div class="match-time"><span class="h">${m.time.replace(' ET','')}</span><span class="tz">ET</span></div>
+          <div class="match-teams">
+            <div class="match-pair">${m.home.flag} ${m.home.code} <span class="vs">vs</span> ${m.away.flag} ${m.away.code}</div>
+            <div class="match-where">📍 ${m.stadium || m.city}</div>
+          </div>
+          <div class="match-grp">GRP ${m.group}</div>
+        </div>`).join('');
+      matchCount.textContent = `${todays.length} match${todays.length>1?'es':''}`;
+    }
+  }
+
+  function init() {
+    document.addEventListener('wc:ready', () => {
+      const data = window.WC.data;
+      const real = new Date();
+      const today = new Date(Date.UTC(real.getUTCFullYear(), real.getUTCMonth(), real.getUTCDate()));
+      let d = clampDay(today);
+      if (today < parse(TRIP_START)) d = parse(TRIP_START);
+      render(d, data);
+
+      document.getElementById('prev').addEventListener('click', () => {
+        const next = addDays(CURRENT, -1);
+        if (next >= parse(TRIP_START)) render(next, data);
+      });
+      document.getElementById('next').addEventListener('click', () => {
+        const next = addDays(CURRENT, 1);
+        if (next <= parse(TRIP_END)) render(next, data);
+      });
+    });
+  }
+  init();
+})();
+</script>
+</body>
+</html>
