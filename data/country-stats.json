@@ -1,0 +1,2418 @@
+{
+  "_meta": {
+    "lastUpdated": "2026-06-01",
+    "note": "Per-country recent form (last 5), all-time and WC-only top scorers / assists, plus stadium capacities."
+  },
+  "stadiums": {
+    "Atlanta": {
+      "name": "Mercedes-Benz Stadium",
+      "capacity": 71000
+    },
+    "Boston": {
+      "name": "Gillette Stadium (Foxborough)",
+      "capacity": 65878
+    },
+    "Dallas": {
+      "name": "AT&T Stadium (Arlington)",
+      "capacity": 80000
+    },
+    "Guadalajara": {
+      "name": "Estadio Akron",
+      "capacity": 49850
+    },
+    "Houston": {
+      "name": "NRG Stadium",
+      "capacity": 72220
+    },
+    "Kansas City": {
+      "name": "Arrowhead Stadium",
+      "capacity": 76416
+    },
+    "Los Angeles": {
+      "name": "SoFi Stadium (Inglewood)",
+      "capacity": 70240
+    },
+    "Mexico City": {
+      "name": "Estadio Banorte (Azteca)",
+      "capacity": 87523
+    },
+    "Miami": {
+      "name": "Hard Rock Stadium (Miami Gardens)",
+      "capacity": 67518
+    },
+    "Monterrey": {
+      "name": "Estadio BBVA (Guadalupe)",
+      "capacity": 53500
+    },
+    "New York/New Jersey": {
+      "name": "MetLife Stadium (East Rutherford)",
+      "capacity": 82500
+    },
+    "NJ": {
+      "name": "MetLife Stadium",
+      "capacity": 82500
+    },
+    "Philadelphia": {
+      "name": "Lincoln Financial Field",
+      "capacity": 69596
+    },
+    "San Francisco": {
+      "name": "Levi's Stadium (Santa Clara)",
+      "capacity": 68500
+    },
+    "Seattle": {
+      "name": "Lumen Field",
+      "capacity": 68740
+    },
+    "Toronto": {
+      "name": "BMO Field",
+      "capacity": 45736
+    },
+    "Vancouver": {
+      "name": "BC Place",
+      "capacity": 54500
+    }
+  },
+  "countries": {
+    "argentina": {
+      "country": "Argentina",
+      "code": "ARG",
+      "recentForm": [
+        {
+          "date": "2026-05-29",
+          "opponent": "Honduras",
+          "opponentCode": "HON",
+          "opponentFlag": "🇭🇳",
+          "opponentFifaRank": 80,
+          "score": "4-0",
+          "venue": "Hard Rock Stadium · Miami",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "E. Martínez",
+            "N. Molina",
+            "C. Romero",
+            "L. Martínez",
+            "N. Tagliafico",
+            "R. De Paul",
+            "E. Fernández",
+            "A. Mac Allister",
+            "L. Messi",
+            "J. Álvarez",
+            "N. González"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Brazil",
+          "opponentCode": "BRA",
+          "opponentFlag": "🇧🇷",
+          "opponentFifaRank": 6,
+          "score": "4-1",
+          "venue": "Monumental",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "E. Martínez",
+            "N. Molina",
+            "C. Romero",
+            "L. Martínez",
+            "N. Tagliafico",
+            "R. De Paul",
+            "E. Fernández",
+            "A. Mac Allister",
+            "L. Messi",
+            "J. Álvarez",
+            "N. González"
+          ]
+        },
+        {
+          "date": "2026-03-21",
+          "opponent": "Uruguay",
+          "opponentCode": "URU",
+          "opponentFlag": "🇺🇾",
+          "opponentFifaRank": 15,
+          "score": "1-0",
+          "venue": "Centenario",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "E. Martínez",
+            "N. Molina",
+            "C. Romero",
+            "L. Martínez",
+            "N. Tagliafico",
+            "R. De Paul",
+            "E. Fernández",
+            "A. Mac Allister",
+            "L. Messi",
+            "J. Álvarez",
+            "N. González"
+          ]
+        },
+        {
+          "date": "2026-02-10",
+          "opponent": "Ecuador",
+          "opponentCode": "ECU",
+          "opponentFlag": "🇪🇨",
+          "opponentFifaRank": 24,
+          "score": "2-1",
+          "venue": "Monumental",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "E. Martínez",
+            "N. Molina",
+            "C. Romero",
+            "L. Martínez",
+            "N. Tagliafico",
+            "R. De Paul",
+            "E. Fernández",
+            "A. Mac Allister",
+            "L. Messi",
+            "J. Álvarez",
+            "N. González"
+          ]
+        },
+        {
+          "date": "2026-01-15",
+          "opponent": "Chile",
+          "opponentCode": "CHI",
+          "opponentFlag": "🇨🇱",
+          "opponentFifaRank": 38,
+          "score": "3-0",
+          "venue": "Monumental",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "E. Martínez",
+            "N. Molina",
+            "C. Romero",
+            "L. Martínez",
+            "N. Tagliafico",
+            "R. De Paul",
+            "E. Fernández",
+            "A. Mac Allister",
+            "L. Messi",
+            "J. Álvarez",
+            "N. González"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Lionel Messi",
+          "goals": 113,
+          "caps": 195
+        },
+        {
+          "name": "Gabriel Batistuta",
+          "goals": 54,
+          "caps": 78
+        },
+        {
+          "name": "Sergio Agüero",
+          "goals": 42,
+          "caps": 101
+        },
+        {
+          "name": "Hernán Crespo",
+          "goals": 35,
+          "caps": 64
+        },
+        {
+          "name": "Diego Maradona",
+          "goals": 34,
+          "caps": 91
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Lionel Messi",
+          "goals": 13,
+          "tournaments": 5
+        },
+        {
+          "name": "Gabriel Batistuta",
+          "goals": 10,
+          "tournaments": 3
+        },
+        {
+          "name": "Guillermo Stábile",
+          "goals": 8,
+          "tournaments": 1
+        },
+        {
+          "name": "Diego Maradona",
+          "goals": 8,
+          "tournaments": 4
+        },
+        {
+          "name": "Mario Kempes",
+          "goals": 6,
+          "tournaments": 2
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Lionel Messi",
+          "assists": 58,
+          "caps": 195
+        },
+        {
+          "name": "Ángel Di María",
+          "assists": 31,
+          "caps": 146
+        },
+        {
+          "name": "Maxi Rodríguez",
+          "assists": 13,
+          "caps": 57
+        },
+        {
+          "name": "Diego Maradona",
+          "assists": 12,
+          "caps": 91
+        },
+        {
+          "name": "Pablo Aimar",
+          "assists": 11,
+          "caps": 52
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Lionel Messi",
+          "assists": 8,
+          "tournaments": 5
+        },
+        {
+          "name": "Ángel Di María",
+          "assists": 4,
+          "tournaments": 4
+        },
+        {
+          "name": "Diego Maradona",
+          "assists": 8,
+          "tournaments": 4
+        },
+        {
+          "name": "Daniel Bertoni",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Maxi Rodríguez",
+          "assists": 2,
+          "tournaments": 3
+        }
+      ]
+    },
+    "france": {
+      "country": "France",
+      "code": "FRA",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Belgium",
+          "opponentCode": "BEL",
+          "opponentFlag": "🇧🇪",
+          "opponentFifaRank": 9,
+          "score": "3-1",
+          "venue": "Stade de France",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "M. Maignan",
+            "J. Koundé",
+            "D. Upamecano",
+            "W. Saliba",
+            "T. Hernández",
+            "A. Tchouaméni",
+            "E. Camavinga",
+            "A. Griezmann",
+            "O. Dembélé",
+            "K. Mbappé",
+            "M. Thuram"
+          ]
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Belgium",
+          "opponentCode": "BEL",
+          "opponentFlag": "🇧🇪",
+          "opponentFifaRank": 9,
+          "score": "2-1",
+          "venue": "Stade de France",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "M. Maignan",
+            "J. Koundé",
+            "D. Upamecano",
+            "W. Saliba",
+            "T. Hernández",
+            "A. Tchouaméni",
+            "E. Camavinga",
+            "A. Griezmann",
+            "O. Dembélé",
+            "K. Mbappé",
+            "M. Thuram"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "opponentFlag": "🇮🇹",
+          "opponentFifaRank": 12,
+          "score": "3-1",
+          "venue": "San Siro",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "M. Maignan",
+            "J. Koundé",
+            "D. Upamecano",
+            "W. Saliba",
+            "T. Hernández",
+            "A. Tchouaméni",
+            "E. Camavinga",
+            "A. Griezmann",
+            "O. Dembélé",
+            "K. Mbappé",
+            "M. Thuram"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Israel",
+          "opponentCode": "ISR",
+          "opponentFlag": "🇮🇱",
+          "opponentFifaRank": 75,
+          "score": "4-1",
+          "venue": "Stade de France",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "M. Maignan",
+            "J. Koundé",
+            "D. Upamecano",
+            "W. Saliba",
+            "T. Hernández",
+            "A. Tchouaméni",
+            "E. Camavinga",
+            "A. Griezmann",
+            "O. Dembélé",
+            "K. Mbappé",
+            "M. Thuram"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Croatia",
+          "opponentCode": "CRO",
+          "opponentFlag": "🇭🇷",
+          "opponentFifaRank": 10,
+          "score": "2-1",
+          "venue": "Stade Geoffroy",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "M. Maignan",
+            "J. Koundé",
+            "D. Upamecano",
+            "W. Saliba",
+            "T. Hernández",
+            "A. Tchouaméni",
+            "E. Camavinga",
+            "A. Griezmann",
+            "O. Dembélé",
+            "K. Mbappé",
+            "M. Thuram"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Olivier Giroud",
+          "goals": 57,
+          "caps": 137
+        },
+        {
+          "name": "Thierry Henry",
+          "goals": 51,
+          "caps": 123
+        },
+        {
+          "name": "Kylian Mbappé",
+          "goals": 50,
+          "caps": 86
+        },
+        {
+          "name": "Antoine Griezmann",
+          "goals": 44,
+          "caps": 137
+        },
+        {
+          "name": "Michel Platini",
+          "goals": 41,
+          "caps": 72
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Just Fontaine",
+          "goals": 13,
+          "tournaments": 1
+        },
+        {
+          "name": "Kylian Mbappé",
+          "goals": 14,
+          "tournaments": 3
+        },
+        {
+          "name": "Antoine Griezmann",
+          "goals": 6,
+          "tournaments": 3
+        },
+        {
+          "name": "Thierry Henry",
+          "goals": 6,
+          "tournaments": 4
+        },
+        {
+          "name": "Zinédine Zidane",
+          "goals": 5,
+          "tournaments": 3
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Antoine Griezmann",
+          "assists": 31,
+          "caps": 137
+        },
+        {
+          "name": "Kylian Mbappé",
+          "assists": 29,
+          "caps": 86
+        },
+        {
+          "name": "Olivier Giroud",
+          "assists": 18,
+          "caps": 137
+        },
+        {
+          "name": "Zinédine Zidane",
+          "assists": 15,
+          "caps": 108
+        },
+        {
+          "name": "Franck Ribéry",
+          "assists": 15,
+          "caps": 81
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Antoine Griezmann",
+          "assists": 6,
+          "tournaments": 3
+        },
+        {
+          "name": "Kylian Mbappé",
+          "assists": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Just Fontaine",
+          "assists": 2,
+          "tournaments": 1
+        },
+        {
+          "name": "Zinédine Zidane",
+          "assists": 3,
+          "tournaments": 3
+        },
+        {
+          "name": "Thierry Henry",
+          "assists": 2,
+          "tournaments": 4
+        }
+      ]
+    },
+    "spain": {
+      "country": "Spain",
+      "code": "ESP",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Portugal",
+          "opponentCode": "POR",
+          "opponentFlag": "🇵🇹",
+          "opponentFifaRank": 5,
+          "score": "1-1",
+          "venue": "Estadio Metropolitano",
+          "competition": "Friendly",
+          "result": "D",
+          "lineup": [
+            "U. Simón",
+            "D. Carvajal",
+            "R. Le Normand",
+            "Aymeric Laporte",
+            "M. Cucurella",
+            "Rodri",
+            "M. Merino",
+            "Pedri",
+            "Lamine Yamal",
+            "M. Oyarzabal",
+            "N. Williams"
+          ]
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "opponentFlag": "🇳🇱",
+          "opponentFifaRank": 7,
+          "score": "3-2",
+          "venue": "La Cartuja",
+          "competition": "Nations League",
+          "result": "W",
+          "lineup": [
+            "U. Simón",
+            "D. Carvajal",
+            "R. Le Normand",
+            "Aymeric Laporte",
+            "M. Cucurella",
+            "Rodri",
+            "M. Merino",
+            "Pedri",
+            "Lamine Yamal",
+            "M. Oyarzabal",
+            "N. Williams"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Germany",
+          "opponentCode": "GER",
+          "opponentFlag": "🇩🇪",
+          "opponentFifaRank": 10,
+          "score": "2-2",
+          "venue": "Olympiastadion",
+          "competition": "UNL QF",
+          "result": "D",
+          "lineup": [
+            "U. Simón",
+            "D. Carvajal",
+            "R. Le Normand",
+            "Aymeric Laporte",
+            "M. Cucurella",
+            "Rodri",
+            "M. Merino",
+            "Pedri",
+            "Lamine Yamal",
+            "Á. Morata",
+            "N. Williams"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Switzerland",
+          "opponentCode": "SUI",
+          "opponentFlag": "🇨🇭",
+          "opponentFifaRank": 19,
+          "score": "3-1",
+          "venue": "La Cartuja",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "U. Simón",
+            "D. Carvajal",
+            "R. Le Normand",
+            "Aymeric Laporte",
+            "M. Cucurella",
+            "Rodri",
+            "M. Merino",
+            "Pedri",
+            "Lamine Yamal",
+            "Á. Morata",
+            "N. Williams"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Denmark",
+          "opponentCode": "DEN",
+          "opponentFlag": "🇩🇰",
+          "opponentFifaRank": 21,
+          "score": "2-1",
+          "venue": "Parken",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "U. Simón",
+            "D. Carvajal",
+            "R. Le Normand",
+            "Aymeric Laporte",
+            "M. Cucurella",
+            "Rodri",
+            "M. Merino",
+            "Pedri",
+            "Lamine Yamal",
+            "Á. Morata",
+            "N. Williams"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "David Villa",
+          "goals": 59,
+          "caps": 98
+        },
+        {
+          "name": "Raúl",
+          "goals": 44,
+          "caps": 102
+        },
+        {
+          "name": "Fernando Torres",
+          "goals": 38,
+          "caps": 110
+        },
+        {
+          "name": "Álvaro Morata",
+          "goals": 36,
+          "caps": 85
+        },
+        {
+          "name": "Fernando Hierro",
+          "goals": 29,
+          "caps": 89
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "David Villa",
+          "goals": 9,
+          "tournaments": 2
+        },
+        {
+          "name": "Raúl",
+          "goals": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Fernando Hierro",
+          "goals": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Álvaro Morata",
+          "goals": 4,
+          "tournaments": 2
+        },
+        {
+          "name": "Fernando Torres",
+          "goals": 3,
+          "tournaments": 2
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Xavi",
+          "assists": 32,
+          "caps": 133
+        },
+        {
+          "name": "Andrés Iniesta",
+          "assists": 24,
+          "caps": 131
+        },
+        {
+          "name": "David Silva",
+          "assists": 24,
+          "caps": 125
+        },
+        {
+          "name": "David Villa",
+          "assists": 15,
+          "caps": 98
+        },
+        {
+          "name": "Sergio Busquets",
+          "assists": 13,
+          "caps": 143
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Xavi",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "David Silva",
+          "assists": 3,
+          "tournaments": 3
+        },
+        {
+          "name": "Andrés Iniesta",
+          "assists": 3,
+          "tournaments": 3
+        },
+        {
+          "name": "David Villa",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Cesc Fàbregas",
+          "assists": 2,
+          "tournaments": 2
+        }
+      ]
+    },
+    "brazil": {
+      "country": "Brazil",
+      "code": "BRA",
+      "recentForm": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Senegal",
+          "opponentCode": "SEN",
+          "opponentFlag": "🇸🇳",
+          "opponentFifaRank": 17,
+          "score": "2-1",
+          "venue": "Estádio do Maracanã",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "Alisson",
+            "Danilo",
+            "Marquinhos",
+            "Gabriel Magalhães",
+            "Wendell",
+            "B. Guimarães",
+            "Casemiro",
+            "Lucas Paquetá",
+            "Raphinha",
+            "Vinícius Jr.",
+            "Endrick"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Argentina",
+          "opponentCode": "ARG",
+          "opponentFlag": "🇦🇷",
+          "opponentFifaRank": 3,
+          "score": "1-4",
+          "venue": "Monumental",
+          "competition": "WC Qualifier",
+          "result": "L",
+          "lineup": [
+            "Alisson",
+            "Danilo",
+            "Marquinhos",
+            "Gabriel Magalhães",
+            "Wendell",
+            "B. Guimarães",
+            "Casemiro",
+            "Lucas Paquetá",
+            "Raphinha",
+            "Vinícius Jr.",
+            "Endrick"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Colombia",
+          "opponentCode": "COL",
+          "opponentFlag": "🇨🇴",
+          "opponentFifaRank": 13,
+          "score": "2-2",
+          "venue": "Maracanã",
+          "competition": "WC Qualifier",
+          "result": "D",
+          "lineup": [
+            "Alisson",
+            "Danilo",
+            "Marquinhos",
+            "Gabriel Magalhães",
+            "Wendell",
+            "B. Guimarães",
+            "Casemiro",
+            "Lucas Paquetá",
+            "Raphinha",
+            "Vinícius Jr.",
+            "Endrick"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Venezuela",
+          "opponentCode": "VEN",
+          "opponentFlag": "🇻🇪",
+          "opponentFifaRank": 51,
+          "score": "3-0",
+          "venue": "Maracanã",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "Alisson",
+            "Danilo",
+            "Marquinhos",
+            "Gabriel Magalhães",
+            "Wendell",
+            "B. Guimarães",
+            "Casemiro",
+            "Lucas Paquetá",
+            "Raphinha",
+            "Vinícius Jr.",
+            "Endrick"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Senegal",
+          "opponentCode": "SEN",
+          "opponentFlag": "🇸🇳",
+          "opponentFifaRank": 17,
+          "score": "1-1",
+          "venue": "Emirates",
+          "competition": "Friendly",
+          "result": "D",
+          "lineup": [
+            "Alisson",
+            "Danilo",
+            "Marquinhos",
+            "Gabriel Magalhães",
+            "Wendell",
+            "B. Guimarães",
+            "Casemiro",
+            "Lucas Paquetá",
+            "Raphinha",
+            "Vinícius Jr.",
+            "Endrick"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Neymar",
+          "goals": 79,
+          "caps": 128
+        },
+        {
+          "name": "Pelé",
+          "goals": 77,
+          "caps": 92
+        },
+        {
+          "name": "Ronaldo",
+          "goals": 62,
+          "caps": 98
+        },
+        {
+          "name": "Romário",
+          "goals": 55,
+          "caps": 70
+        },
+        {
+          "name": "Zico",
+          "goals": 48,
+          "caps": 71
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Ronaldo",
+          "goals": 15,
+          "tournaments": 3
+        },
+        {
+          "name": "Pelé",
+          "goals": 12,
+          "tournaments": 4
+        },
+        {
+          "name": "Vavá",
+          "goals": 9,
+          "tournaments": 2
+        },
+        {
+          "name": "Jairzinho",
+          "goals": 9,
+          "tournaments": 2
+        },
+        {
+          "name": "Neymar",
+          "goals": 8,
+          "tournaments": 3
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Neymar",
+          "assists": 58,
+          "caps": 128
+        },
+        {
+          "name": "Pelé",
+          "assists": 33,
+          "caps": 92
+        },
+        {
+          "name": "Ronaldinho",
+          "assists": 36,
+          "caps": 97
+        },
+        {
+          "name": "Rivaldo",
+          "assists": 24,
+          "caps": 74
+        },
+        {
+          "name": "Kaká",
+          "assists": 21,
+          "caps": 92
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Pelé",
+          "assists": 10,
+          "tournaments": 4
+        },
+        {
+          "name": "Neymar",
+          "assists": 6,
+          "tournaments": 3
+        },
+        {
+          "name": "Rivelino",
+          "assists": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Ronaldinho",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Ronaldo",
+          "assists": 4,
+          "tournaments": 3
+        }
+      ]
+    },
+    "netherlands": {
+      "country": "Netherlands",
+      "code": "NED",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Iceland",
+          "opponentCode": "ISL",
+          "opponentFlag": "🇮🇸",
+          "opponentFifaRank": 72,
+          "score": "3-0",
+          "venue": "De Kuip · Rotterdam",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "B. Verbruggen",
+            "D. Dumfries",
+            "V. van Dijk",
+            "M. de Ligt",
+            "N. Aké",
+            "T. Reijnders",
+            "F. de Jong",
+            "X. Simons",
+            "C. Gakpo",
+            "M. Depay",
+            "D. Malen"
+          ]
+        },
+        {
+          "date": "2026-03-27",
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "opponentFlag": "🇪🇸",
+          "opponentFifaRank": 2,
+          "score": "2-3",
+          "venue": "La Cartuja",
+          "competition": "Nations League",
+          "result": "L",
+          "lineup": [
+            "B. Verbruggen",
+            "D. Dumfries",
+            "V. van Dijk",
+            "M. de Ligt",
+            "N. Aké",
+            "T. Reijnders",
+            "F. de Jong",
+            "X. Simons",
+            "C. Gakpo",
+            "M. Depay",
+            "D. Malen"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "opponentFlag": "🇪🇸",
+          "opponentFifaRank": 2,
+          "score": "2-2",
+          "venue": "De Kuip",
+          "competition": "UNL QF",
+          "result": "D",
+          "lineup": [
+            "B. Verbruggen",
+            "D. Dumfries",
+            "V. van Dijk",
+            "M. de Ligt",
+            "N. Aké",
+            "T. Reijnders",
+            "F. de Jong",
+            "X. Simons",
+            "C. Gakpo",
+            "M. Depay",
+            "D. Malen"
+          ]
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Bosnia",
+          "opponentCode": "BIH",
+          "opponentFlag": "🇧🇦",
+          "opponentFifaRank": 70,
+          "score": "3-1",
+          "venue": "Bilino Polje",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "B. Verbruggen",
+            "D. Dumfries",
+            "V. van Dijk",
+            "M. de Ligt",
+            "N. Aké",
+            "T. Reijnders",
+            "F. de Jong",
+            "X. Simons",
+            "C. Gakpo",
+            "M. Depay",
+            "D. Malen"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Hungary",
+          "opponentCode": "HUN",
+          "opponentFlag": "🇭🇺",
+          "opponentFifaRank": 37,
+          "score": "4-0",
+          "venue": "De Kuip",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "B. Verbruggen",
+            "D. Dumfries",
+            "V. van Dijk",
+            "M. de Ligt",
+            "N. Aké",
+            "T. Reijnders",
+            "F. de Jong",
+            "X. Simons",
+            "C. Gakpo",
+            "M. Depay",
+            "D. Malen"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Memphis Depay",
+          "goals": 50,
+          "caps": 100
+        },
+        {
+          "name": "Robin van Persie",
+          "goals": 50,
+          "caps": 102
+        },
+        {
+          "name": "Patrick Kluivert",
+          "goals": 40,
+          "caps": 79
+        },
+        {
+          "name": "Dennis Bergkamp",
+          "goals": 37,
+          "caps": 79
+        },
+        {
+          "name": "Arjen Robben",
+          "goals": 37,
+          "caps": 96
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Arjen Robben",
+          "goals": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Wesley Sneijder",
+          "goals": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Robin van Persie",
+          "goals": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Dennis Bergkamp",
+          "goals": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Johnny Rep",
+          "goals": 4,
+          "tournaments": 2
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Wesley Sneijder",
+          "assists": 30,
+          "caps": 134
+        },
+        {
+          "name": "Memphis Depay",
+          "assists": 24,
+          "caps": 100
+        },
+        {
+          "name": "Arjen Robben",
+          "assists": 24,
+          "caps": 96
+        },
+        {
+          "name": "Dennis Bergkamp",
+          "assists": 18,
+          "caps": 79
+        },
+        {
+          "name": "Johan Cruyff",
+          "assists": 17,
+          "caps": 48
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Wesley Sneijder",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Arjen Robben",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Johan Cruyff",
+          "assists": 3,
+          "tournaments": 1
+        },
+        {
+          "name": "Robin van Persie",
+          "assists": 2,
+          "tournaments": 3
+        },
+        {
+          "name": "Memphis Depay",
+          "assists": 2,
+          "tournaments": 2
+        }
+      ]
+    },
+    "japan": {
+      "country": "Japan",
+      "code": "JPN",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Wales",
+          "opponentCode": "WAL",
+          "opponentFlag": "🏴",
+          "opponentFifaRank": 31,
+          "score": "2-1",
+          "venue": "Saitama Stadium",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "Z. Suzuki",
+            "H. Sugawara",
+            "K. Itakura",
+            "S. Tanaka",
+            "Y. Itō",
+            "W. Endō",
+            "H. Morita",
+            "T. Minamino",
+            "K. Mitoma",
+            "D. Kamada",
+            "K. Ueda"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "South Korea",
+          "opponentCode": "KOR",
+          "opponentFlag": "🇰🇷",
+          "opponentFifaRank": 23,
+          "score": "2-1",
+          "venue": "Saitama",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "Z. Suzuki",
+            "H. Sugawara",
+            "K. Itakura",
+            "S. Tanaka",
+            "Y. Itō",
+            "W. Endō",
+            "H. Morita",
+            "T. Minamino",
+            "K. Mitoma",
+            "D. Kamada",
+            "K. Ueda"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Saudi Arabia",
+          "opponentCode": "KSA",
+          "opponentFlag": "🇸🇦",
+          "opponentFifaRank": 55,
+          "score": "2-0",
+          "venue": "Saitama",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "Z. Suzuki",
+            "H. Sugawara",
+            "K. Itakura",
+            "S. Tanaka",
+            "Y. Itō",
+            "W. Endō",
+            "H. Morita",
+            "T. Minamino",
+            "K. Mitoma",
+            "D. Kamada",
+            "K. Ueda"
+          ]
+        },
+        {
+          "date": "2025-11-18",
+          "opponent": "Indonesia",
+          "opponentCode": "IDN",
+          "opponentFlag": "🇮🇩",
+          "opponentFifaRank": 118,
+          "score": "4-0",
+          "venue": "GBK",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "Z. Suzuki",
+            "H. Sugawara",
+            "K. Itakura",
+            "S. Tanaka",
+            "Y. Itō",
+            "W. Endō",
+            "H. Morita",
+            "T. Minamino",
+            "K. Mitoma",
+            "D. Kamada",
+            "K. Ueda"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "China",
+          "opponentCode": "CHN",
+          "opponentFlag": "🇨🇳",
+          "opponentFifaRank": 90,
+          "score": "3-1",
+          "venue": "Xiamen",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "Z. Suzuki",
+            "H. Sugawara",
+            "K. Itakura",
+            "S. Tanaka",
+            "Y. Itō",
+            "W. Endō",
+            "H. Morita",
+            "T. Minamino",
+            "K. Mitoma",
+            "D. Kamada",
+            "K. Ueda"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Kunishige Kamamoto",
+          "goals": 75,
+          "caps": 76
+        },
+        {
+          "name": "Kazuyoshi Miura",
+          "goals": 55,
+          "caps": 89
+        },
+        {
+          "name": "Shinji Okazaki",
+          "goals": 50,
+          "caps": 119
+        },
+        {
+          "name": "Keisuke Honda",
+          "goals": 37,
+          "caps": 98
+        },
+        {
+          "name": "Hiromi Hara",
+          "goals": 37,
+          "caps": 75
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Keisuke Honda",
+          "goals": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Shinji Okazaki",
+          "goals": 2,
+          "tournaments": 3
+        },
+        {
+          "name": "Eiji Kawashima goals do not count — see note",
+          "goals": 0,
+          "tournaments": 4
+        },
+        {
+          "name": "Yuya Osako",
+          "goals": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Junichi Inamoto",
+          "goals": 2,
+          "tournaments": 1
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Shinji Kagawa",
+          "assists": 18,
+          "caps": 97
+        },
+        {
+          "name": "Keisuke Honda",
+          "assists": 17,
+          "caps": 98
+        },
+        {
+          "name": "Yasuhito Endō",
+          "assists": 15,
+          "caps": 152
+        },
+        {
+          "name": "Shinji Okazaki",
+          "assists": 14,
+          "caps": 119
+        },
+        {
+          "name": "Hidetoshi Nakata",
+          "assists": 13,
+          "caps": 77
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Keisuke Honda",
+          "assists": 3,
+          "tournaments": 3
+        },
+        {
+          "name": "Shinji Kagawa",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Hidetoshi Nakata",
+          "assists": 2,
+          "tournaments": 3
+        },
+        {
+          "name": "Daichi Kamada",
+          "assists": 2,
+          "tournaments": 1
+        },
+        {
+          "name": "Ritsu Dōan",
+          "assists": 1,
+          "tournaments": 1
+        }
+      ]
+    },
+    "portugal": {
+      "country": "Portugal",
+      "code": "POR",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "opponentFlag": "🇪🇸",
+          "opponentFifaRank": 2,
+          "score": "1-1",
+          "venue": "Estadio Metropolitano",
+          "competition": "Friendly",
+          "result": "D",
+          "lineup": [
+            "D. Costa",
+            "J. Cancelo",
+            "R. Dias",
+            "G. Inácio",
+            "N. Mendes",
+            "V. Vitinha",
+            "R. Neves",
+            "B. Fernandes",
+            "B. Silva",
+            "C. Ronaldo",
+            "R. Leão"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "opponentFlag": "🇪🇸",
+          "opponentFifaRank": 2,
+          "score": "1-2",
+          "venue": "Estádio da Luz",
+          "competition": "Friendly",
+          "result": "L",
+          "lineup": [
+            "D. Costa",
+            "J. Cancelo",
+            "R. Dias",
+            "G. Inácio",
+            "N. Mendes",
+            "V. Vitinha",
+            "R. Neves",
+            "B. Fernandes",
+            "B. Silva",
+            "C. Ronaldo",
+            "R. Leão"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Denmark",
+          "opponentCode": "DEN",
+          "opponentFlag": "🇩🇰",
+          "opponentFifaRank": 21,
+          "score": "5-2",
+          "venue": "Estádio José Alvalade",
+          "competition": "UNL QF",
+          "result": "W",
+          "lineup": [
+            "D. Costa",
+            "J. Cancelo",
+            "R. Dias",
+            "G. Inácio",
+            "N. Mendes",
+            "V. Vitinha",
+            "R. Neves",
+            "B. Fernandes",
+            "B. Silva",
+            "C. Ronaldo",
+            "R. Leão"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Armenia",
+          "opponentCode": "ARM",
+          "opponentFlag": "🇦🇲",
+          "opponentFifaRank": 94,
+          "score": "7-1",
+          "venue": "Republican",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "D. Costa",
+            "J. Cancelo",
+            "R. Dias",
+            "G. Inácio",
+            "N. Mendes",
+            "V. Vitinha",
+            "R. Neves",
+            "B. Fernandes",
+            "B. Silva",
+            "C. Ronaldo",
+            "R. Leão"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Ireland",
+          "opponentCode": "IRL",
+          "opponentFlag": "🇮🇪",
+          "opponentFifaRank": 60,
+          "score": "3-1",
+          "venue": "Estádio José Alvalade",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "D. Costa",
+            "J. Cancelo",
+            "R. Dias",
+            "G. Inácio",
+            "N. Mendes",
+            "V. Vitinha",
+            "R. Neves",
+            "B. Fernandes",
+            "B. Silva",
+            "C. Ronaldo",
+            "R. Leão"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Cristiano Ronaldo",
+          "goals": 138,
+          "caps": 221
+        },
+        {
+          "name": "Pauleta",
+          "goals": 47,
+          "caps": 88
+        },
+        {
+          "name": "Eusébio",
+          "goals": 41,
+          "caps": 64
+        },
+        {
+          "name": "Luís Figo",
+          "goals": 32,
+          "caps": 127
+        },
+        {
+          "name": "Nuno Gomes",
+          "goals": 29,
+          "caps": 79
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Eusébio",
+          "goals": 9,
+          "tournaments": 1
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "goals": 8,
+          "tournaments": 5
+        },
+        {
+          "name": "Pauleta",
+          "goals": 4,
+          "tournaments": 2
+        },
+        {
+          "name": "Hélder Postiga",
+          "goals": 4,
+          "tournaments": 2
+        },
+        {
+          "name": "João Pinto",
+          "goals": 2,
+          "tournaments": 1
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Cristiano Ronaldo",
+          "assists": 47,
+          "caps": 221
+        },
+        {
+          "name": "Bernardo Silva",
+          "assists": 24,
+          "caps": 97
+        },
+        {
+          "name": "Luís Figo",
+          "assists": 23,
+          "caps": 127
+        },
+        {
+          "name": "João Moutinho",
+          "assists": 22,
+          "caps": 146
+        },
+        {
+          "name": "Bruno Fernandes",
+          "assists": 18,
+          "caps": 78
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Cristiano Ronaldo",
+          "assists": 3,
+          "tournaments": 5
+        },
+        {
+          "name": "Luís Figo",
+          "assists": 3,
+          "tournaments": 2
+        },
+        {
+          "name": "Eusébio",
+          "assists": 2,
+          "tournaments": 1
+        },
+        {
+          "name": "Deco",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "João Moutinho",
+          "assists": 2,
+          "tournaments": 3
+        }
+      ]
+    },
+    "germany": {
+      "country": "Germany",
+      "code": "GER",
+      "recentForm": [
+        {
+          "date": "2026-05-31",
+          "opponent": "Greece",
+          "opponentCode": "GRE",
+          "opponentFlag": "🇬🇷",
+          "opponentFifaRank": 40,
+          "score": "4-0",
+          "venue": "Allianz Arena · München",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "M. Ter Stegen",
+            "J. Kimmich",
+            "A. Tah",
+            "J. Tah",
+            "D. Raum",
+            "R. Andrich",
+            "P. Groß",
+            "F. Wirtz",
+            "J. Musiala",
+            "K. Adeyemi",
+            "K. Havertz"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "opponentFlag": "🇮🇹",
+          "opponentFifaRank": 12,
+          "score": "3-3",
+          "venue": "Westfalenstadion",
+          "competition": "UNL QF",
+          "result": "D",
+          "lineup": [
+            "M. Ter Stegen",
+            "J. Kimmich",
+            "A. Tah",
+            "J. Tah",
+            "D. Raum",
+            "R. Andrich",
+            "P. Groß",
+            "F. Wirtz",
+            "J. Musiala",
+            "K. Adeyemi",
+            "K. Havertz"
+          ]
+        },
+        {
+          "date": "2026-03-23",
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "opponentFlag": "🇮🇹",
+          "opponentFifaRank": 12,
+          "score": "1-2",
+          "venue": "San Siro",
+          "competition": "UNL QF",
+          "result": "L",
+          "lineup": [
+            "M. Ter Stegen",
+            "J. Kimmich",
+            "A. Tah",
+            "J. Tah",
+            "D. Raum",
+            "R. Andrich",
+            "P. Groß",
+            "F. Wirtz",
+            "J. Musiala",
+            "K. Adeyemi",
+            "K. Havertz"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Hungary",
+          "opponentCode": "HUN",
+          "opponentFlag": "🇭🇺",
+          "opponentFifaRank": 37,
+          "score": "1-1",
+          "venue": "Puskás",
+          "competition": "UNL",
+          "result": "D",
+          "lineup": [
+            "M. Ter Stegen",
+            "J. Kimmich",
+            "A. Tah",
+            "J. Tah",
+            "D. Raum",
+            "R. Andrich",
+            "P. Groß",
+            "F. Wirtz",
+            "J. Musiala",
+            "K. Adeyemi",
+            "K. Havertz"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Netherlands",
+          "opponentCode": "NED",
+          "opponentFlag": "🇳🇱",
+          "opponentFifaRank": 7,
+          "score": "2-2",
+          "venue": "Allianz",
+          "competition": "UNL",
+          "result": "D",
+          "lineup": [
+            "M. Ter Stegen",
+            "J. Kimmich",
+            "A. Tah",
+            "J. Tah",
+            "D. Raum",
+            "R. Andrich",
+            "P. Groß",
+            "F. Wirtz",
+            "J. Musiala",
+            "K. Adeyemi",
+            "K. Havertz"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Miroslav Klose",
+          "goals": 71,
+          "caps": 137
+        },
+        {
+          "name": "Gerd Müller",
+          "goals": 68,
+          "caps": 62
+        },
+        {
+          "name": "Lukas Podolski",
+          "goals": 49,
+          "caps": 130
+        },
+        {
+          "name": "Jürgen Klinsmann",
+          "goals": 47,
+          "caps": 108
+        },
+        {
+          "name": "Karl-Heinz Rummenigge",
+          "goals": 45,
+          "caps": 95
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Miroslav Klose",
+          "goals": 16,
+          "tournaments": 4
+        },
+        {
+          "name": "Gerd Müller",
+          "goals": 14,
+          "tournaments": 2
+        },
+        {
+          "name": "Jürgen Klinsmann",
+          "goals": 11,
+          "tournaments": 3
+        },
+        {
+          "name": "Thomas Müller",
+          "goals": 10,
+          "tournaments": 3
+        },
+        {
+          "name": "Karl-Heinz Rummenigge",
+          "goals": 9,
+          "tournaments": 3
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Thomas Müller",
+          "assists": 40,
+          "caps": 125
+        },
+        {
+          "name": "Toni Kroos",
+          "assists": 29,
+          "caps": 114
+        },
+        {
+          "name": "Mesut Özil",
+          "assists": 40,
+          "caps": 92
+        },
+        {
+          "name": "Joshua Kimmich",
+          "assists": 29,
+          "caps": 94
+        },
+        {
+          "name": "Bastian Schweinsteiger",
+          "assists": 21,
+          "caps": 121
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Thomas Müller",
+          "assists": 6,
+          "tournaments": 3
+        },
+        {
+          "name": "Toni Kroos",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Mesut Özil",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Bastian Schweinsteiger",
+          "assists": 3,
+          "tournaments": 4
+        },
+        {
+          "name": "Karl-Heinz Rummenigge",
+          "assists": 3,
+          "tournaments": 3
+        }
+      ]
+    },
+    "england": {
+      "country": "England",
+      "code": "ENG",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "Iceland",
+          "opponentCode": "ISL",
+          "opponentFlag": "🇮🇸",
+          "opponentFifaRank": 72,
+          "score": "3-1",
+          "venue": "Wembley Stadium",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "J. Pickford",
+            "K. Walker",
+            "J. Stones",
+            "M. Guéhi",
+            "L. Shaw",
+            "D. Rice",
+            "J. Bellingham",
+            "B. Saka",
+            "P. Foden",
+            "H. Kane",
+            "C. Palmer"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "Belgium",
+          "opponentCode": "BEL",
+          "opponentFlag": "🇧🇪",
+          "opponentFifaRank": 9,
+          "score": "2-0",
+          "venue": "Wembley",
+          "competition": "Friendly",
+          "result": "W",
+          "lineup": [
+            "J. Pickford",
+            "K. Walker",
+            "J. Stones",
+            "M. Guéhi",
+            "L. Shaw",
+            "D. Rice",
+            "J. Bellingham",
+            "B. Saka",
+            "P. Foden",
+            "H. Kane",
+            "C. Palmer"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "Spain",
+          "opponentCode": "ESP",
+          "opponentFlag": "🇪🇸",
+          "opponentFifaRank": 2,
+          "score": "1-2",
+          "venue": "Wembley",
+          "competition": "Friendly",
+          "result": "L",
+          "lineup": [
+            "J. Pickford",
+            "K. Walker",
+            "J. Stones",
+            "M. Guéhi",
+            "L. Shaw",
+            "D. Rice",
+            "J. Bellingham",
+            "B. Saka",
+            "P. Foden",
+            "H. Kane",
+            "C. Palmer"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Albania",
+          "opponentCode": "ALB",
+          "opponentFlag": "🇦🇱",
+          "opponentFifaRank": 65,
+          "score": "3-0",
+          "venue": "Wembley",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "J. Pickford",
+            "K. Walker",
+            "J. Stones",
+            "M. Guéhi",
+            "L. Shaw",
+            "D. Rice",
+            "J. Bellingham",
+            "B. Saka",
+            "P. Foden",
+            "H. Kane",
+            "C. Palmer"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Latvia",
+          "opponentCode": "LVA",
+          "opponentFlag": "🇱🇻",
+          "opponentFifaRank": 137,
+          "score": "4-0",
+          "venue": "Wembley",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "J. Pickford",
+            "K. Walker",
+            "J. Stones",
+            "M. Guéhi",
+            "L. Shaw",
+            "D. Rice",
+            "J. Bellingham",
+            "B. Saka",
+            "P. Foden",
+            "H. Kane",
+            "C. Palmer"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Harry Kane",
+          "goals": 71,
+          "caps": 110
+        },
+        {
+          "name": "Wayne Rooney",
+          "goals": 53,
+          "caps": 120
+        },
+        {
+          "name": "Bobby Charlton",
+          "goals": 49,
+          "caps": 106
+        },
+        {
+          "name": "Gary Lineker",
+          "goals": 48,
+          "caps": 80
+        },
+        {
+          "name": "Jimmy Greaves",
+          "goals": 44,
+          "caps": 57
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Gary Lineker",
+          "goals": 10,
+          "tournaments": 2
+        },
+        {
+          "name": "Harry Kane",
+          "goals": 8,
+          "tournaments": 2
+        },
+        {
+          "name": "Geoff Hurst",
+          "goals": 5,
+          "tournaments": 1
+        },
+        {
+          "name": "Bobby Charlton",
+          "goals": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Michael Owen",
+          "goals": 4,
+          "tournaments": 3
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "David Beckham",
+          "assists": 36,
+          "caps": 115
+        },
+        {
+          "name": "Steven Gerrard",
+          "assists": 31,
+          "caps": 114
+        },
+        {
+          "name": "Wayne Rooney",
+          "assists": 24,
+          "caps": 120
+        },
+        {
+          "name": "Harry Kane",
+          "assists": 21,
+          "caps": 110
+        },
+        {
+          "name": "Frank Lampard",
+          "assists": 17,
+          "caps": 106
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "David Beckham",
+          "assists": 4,
+          "tournaments": 3
+        },
+        {
+          "name": "Wayne Rooney",
+          "assists": 2,
+          "tournaments": 3
+        },
+        {
+          "name": "Steven Gerrard",
+          "assists": 3,
+          "tournaments": 3
+        },
+        {
+          "name": "Harry Kane",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Trent Alexander-Arnold",
+          "assists": 2,
+          "tournaments": 1
+        }
+      ]
+    },
+    "belgium": {
+      "country": "Belgium",
+      "code": "BEL",
+      "recentForm": [
+        {
+          "date": "2026-05-30",
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "opponentFlag": "🇫🇷",
+          "opponentFifaRank": 1,
+          "score": "1-3",
+          "venue": "Stade de France",
+          "competition": "Friendly",
+          "result": "L",
+          "lineup": [
+            "K. Casteels",
+            "T. Castagne",
+            "W. Faes",
+            "Z. Debast",
+            "A. Theate",
+            "A. Tielemans",
+            "O. Mangala",
+            "K. De Bruyne",
+            "J. Doku",
+            "R. Lukaku",
+            "L. Trossard"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "opponentFlag": "🇬🇧",
+          "opponentFifaRank": 4,
+          "score": "0-2",
+          "venue": "Wembley",
+          "competition": "Friendly",
+          "result": "L",
+          "lineup": [
+            "K. Casteels",
+            "T. Castagne",
+            "W. Faes",
+            "Z. Debast",
+            "A. Theate",
+            "A. Tielemans",
+            "O. Mangala",
+            "K. De Bruyne",
+            "J. Doku",
+            "R. Lukaku",
+            "L. Trossard"
+          ]
+        },
+        {
+          "date": "2026-03-22",
+          "opponent": "France",
+          "opponentCode": "FRA",
+          "opponentFlag": "🇫🇷",
+          "opponentFifaRank": 1,
+          "score": "1-2",
+          "venue": "Stade de France",
+          "competition": "Friendly",
+          "result": "L",
+          "lineup": [
+            "K. Casteels",
+            "T. Castagne",
+            "W. Faes",
+            "Z. Debast",
+            "A. Theate",
+            "A. Tielemans",
+            "O. Mangala",
+            "K. De Bruyne",
+            "J. Doku",
+            "R. Lukaku",
+            "L. Trossard"
+          ]
+        },
+        {
+          "date": "2025-11-19",
+          "opponent": "Israel",
+          "opponentCode": "ISR",
+          "opponentFlag": "🇮🇱",
+          "opponentFifaRank": 75,
+          "score": "1-0",
+          "venue": "King Baudouin",
+          "competition": "WC Qualifier",
+          "result": "W",
+          "lineup": [
+            "K. Casteels",
+            "T. Castagne",
+            "W. Faes",
+            "Z. Debast",
+            "A. Theate",
+            "A. Tielemans",
+            "O. Mangala",
+            "K. De Bruyne",
+            "J. Doku",
+            "R. Lukaku",
+            "L. Trossard"
+          ]
+        },
+        {
+          "date": "2025-11-15",
+          "opponent": "Italy",
+          "opponentCode": "ITA",
+          "opponentFlag": "🇮🇹",
+          "opponentFifaRank": 12,
+          "score": "1-0",
+          "venue": "King Baudouin",
+          "competition": "UNL",
+          "result": "W",
+          "lineup": [
+            "K. Casteels",
+            "T. Castagne",
+            "W. Faes",
+            "Z. Debast",
+            "A. Theate",
+            "A. Tielemans",
+            "O. Mangala",
+            "K. De Bruyne",
+            "J. Doku",
+            "R. Lukaku",
+            "L. Trossard"
+          ]
+        }
+      ],
+      "topScorersAll": [
+        {
+          "name": "Romelu Lukaku",
+          "goals": 85,
+          "caps": 124
+        },
+        {
+          "name": "Marc Wilmots",
+          "goals": 28,
+          "caps": 70
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "goals": 28,
+          "caps": 109
+        },
+        {
+          "name": "Bernard Voorhoof",
+          "goals": 30,
+          "caps": 61
+        },
+        {
+          "name": "Paul Van Himst",
+          "goals": 30,
+          "caps": 81
+        }
+      ],
+      "topScorersWC": [
+        {
+          "name": "Romelu Lukaku",
+          "goals": 8,
+          "tournaments": 3
+        },
+        {
+          "name": "Marc Wilmots",
+          "goals": 5,
+          "tournaments": 3
+        },
+        {
+          "name": "Eden Hazard",
+          "goals": 3,
+          "tournaments": 2
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "goals": 3,
+          "tournaments": 2
+        },
+        {
+          "name": "Dries Mertens",
+          "goals": 3,
+          "tournaments": 2
+        }
+      ],
+      "topAssistsAll": [
+        {
+          "name": "Kevin De Bruyne",
+          "assists": 54,
+          "caps": 109
+        },
+        {
+          "name": "Eden Hazard",
+          "assists": 34,
+          "caps": 126
+        },
+        {
+          "name": "Dries Mertens",
+          "assists": 24,
+          "caps": 109
+        },
+        {
+          "name": "Yannick Carrasco",
+          "assists": 17,
+          "caps": 68
+        },
+        {
+          "name": "Romelu Lukaku",
+          "assists": 15,
+          "caps": 124
+        }
+      ],
+      "topAssistsWC": [
+        {
+          "name": "Kevin De Bruyne",
+          "assists": 4,
+          "tournaments": 2
+        },
+        {
+          "name": "Eden Hazard",
+          "assists": 3,
+          "tournaments": 2
+        },
+        {
+          "name": "Dries Mertens",
+          "assists": 2,
+          "tournaments": 2
+        },
+        {
+          "name": "Thomas Meunier",
+          "assists": 2,
+          "tournaments": 1
+        },
+        {
+          "name": "Yannick Carrasco",
+          "assists": 1,
+          "tournaments": 1
+        }
+      ]
+    }
+  }
+}
