@@ -1,0 +1,88 @@
+<svg width="100%" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Bobbycito the Jaguar mascot</title>
+<desc>A friendly cartoon jaguar mascot smiling warmly, in a green Mexico football jersey with a football, on a warm gold-and-cream roundel with a banner reading Bobbycito.</desc>
+
+<g stroke="#3D2517" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+
+<!-- roundel -->
+<circle cx="340" cy="320" r="274" fill="#ECA63F"/>
+<circle cx="340" cy="320" r="250" fill="#FBEAC8" stroke-width="0"/>
+
+<!-- jersey -->
+<path d="M250 432 C228 452 196 472 168 502 C150 524 140 560 140 600 L540 600 C540 560 530 524 512 502 C484 472 452 452 430 432 C408 462 372 472 340 472 C308 472 272 462 250 432 Z" fill="#178A50"/>
+<path d="M292 446 C312 468 368 468 388 446 C392 466 374 486 340 488 C306 486 288 466 292 446 Z" fill="#FBEAC8"/>
+
+<!-- ears -->
+<path d="M282 184 C268 152 246 124 226 116 C214 146 212 182 220 210 C242 198 264 192 282 184 Z" fill="#F0AD4C"/>
+<path d="M256 186 C247 164 238 146 230 138 C225 160 226 180 230 196 C242 192 250 190 256 186 Z" fill="#E89A8A" stroke-width="0"/>
+<path d="M398 184 C412 152 434 124 454 116 C466 146 468 182 460 210 C438 198 416 192 398 184 Z" fill="#F0AD4C"/>
+<path d="M424 186 C433 164 442 146 450 138 C455 160 454 180 450 196 C438 192 430 190 424 186 Z" fill="#E89A8A" stroke-width="0"/>
+
+<!-- head -->
+<path d="M340 168 C392 165 438 178 458 214 C478 250 480 296 470 332 C462 374 446 406 410 426 C384 439 360 444 340 444 C320 444 296 439 270 426 C234 406 218 374 210 332 C200 296 202 250 222 214 C242 178 288 165 340 168 Z" fill="#F0AD4C"/>
+
+<!-- soft spots (jaguar hint) -->
+<g fill="#9C6B33" stroke-width="0">
+<circle cx="306" cy="212" r="7"/>
+<circle cx="374" cy="212" r="7"/>
+<circle cx="246" cy="300" r="7"/>
+<circle cx="434" cy="300" r="7"/>
+</g>
+
+<!-- rosy cheeks -->
+<g fill="#EE9A86" stroke-width="0" opacity="0.55">
+<ellipse cx="250" cy="350" rx="20" ry="14"/>
+<ellipse cx="430" cy="350" rx="20" ry="14"/>
+</g>
+
+<!-- soft brows -->
+<path d="M266 232 Q292 220 316 228" fill="none"/>
+<path d="M364 228 Q388 220 414 232" fill="none"/>
+
+<!-- eyes -->
+<ellipse cx="300" cy="274" rx="36" ry="40" fill="#FFFFFF"/>
+<ellipse cx="380" cy="274" rx="36" ry="40" fill="#FFFFFF"/>
+<circle cx="304" cy="276" r="22" fill="#33915F" stroke-width="3"/>
+<circle cx="376" cy="276" r="22" fill="#33915F" stroke-width="3"/>
+<circle cx="304" cy="278" r="12" fill="#2A1A12" stroke-width="0"/>
+<circle cx="376" cy="278" r="12" fill="#2A1A12" stroke-width="0"/>
+<circle cx="297" cy="270" r="5" fill="#FFFFFF" stroke-width="0"/>
+<circle cx="369" cy="270" r="5" fill="#FFFFFF" stroke-width="0"/>
+
+<!-- muzzle -->
+<path d="M340 302 C302 302 270 318 266 348 C262 374 286 394 340 394 C394 394 418 374 414 348 C410 318 378 302 340 302 Z" fill="#FBF1DC"/>
+<g fill="#9C6B33" stroke-width="0">
+<circle cx="300" cy="356" r="2.4"/><circle cx="312" cy="362" r="2.4"/>
+<circle cx="380" cy="356" r="2.4"/><circle cx="368" cy="362" r="2.4"/>
+</g>
+
+<!-- nose + smile -->
+<path d="M322 318 L358 318 C364 318 366 324 362 329 L344 345 C342 348 338 348 336 345 L318 329 C314 324 316 318 322 318 Z" fill="#C66B5C"/>
+<path d="M340 346 L340 360" fill="none"/>
+<path d="M298 360 Q340 388 382 360" fill="none"/>
+
+<!-- football -->
+<circle cx="232" cy="540" r="50" fill="#FFFFFF"/>
+<path d="M232 514 L251 528 L244 550 L220 550 L213 528 Z" fill="#2A1A12" stroke-width="0"/>
+<g stroke="#3D2517" stroke-width="3" fill="none">
+<path d="M232 514 L232 500"/>
+<path d="M251 528 L266 522"/>
+<path d="M220 550 L211 564"/>
+<path d="M244 550 L253 564"/>
+</g>
+
+<!-- captain armband (Bobby nod) -->
+<path d="M444 472 C463 472 481 482 492 497 C483 506 470 511 455 511 C450 498 447 485 444 472 Z" fill="#F3C44C" stroke-width="3"/>
+<text x="465" y="499" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#3D2517" text-anchor="middle" stroke-width="0">C</text>
+
+<!-- banner -->
+<path d="M124 596 L556 596 L556 642 L124 642 Z" fill="#178A50" stroke-width="4"/>
+<path d="M124 596 L102 586 L102 630 L124 642 Z" fill="#0E6B3C" stroke-width="4"/>
+<path d="M556 596 L578 586 L578 630 L556 642 Z" fill="#0E6B3C" stroke-width="4"/>
+<text x="340" y="628" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="900" fill="#FBEAC8" text-anchor="middle" stroke-width="0" letter-spacing="4">BOBBYCITO</text>
+
+<!-- subtitle -->
+<text x="340" y="686" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#B5701F" text-anchor="middle" stroke-width="0" letter-spacing="3">DON BOBBY'S CLUB</text>
+
+</g>
+</svg>
