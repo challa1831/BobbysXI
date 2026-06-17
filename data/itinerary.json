@@ -1,0 +1,1081 @@
+{
+  "_meta": {
+    "owner": "Don Bobby",
+    "lastUpdated": "2026-06-17",
+    "note": "Day-by-day plan. CDMX week (20-26 Jun) reflects the Don Bobby CDMX Battle Plan; other cities update as bookings firm up."
+  },
+  "days": {
+    "2026-06-19": {
+      "date": "2026-06-19",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🛬",
+          "line": "Land MEX 06:25 · group meeting at Hotel Carlota lobby 09:00"
+        },
+        {
+          "icon": "🚐",
+          "line": "Pre-booked vans Hotel Carlota → Estadio Azteca · pickup 17:30"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "El Cardenal — old-school breakfast",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Contramar — long lunch",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Pujol — tasting menu 19:30",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "M5",
+          "headline": "🇲🇽 MEX vs 🇨🇿 CZE",
+          "venue": "Estadio Azteca",
+          "kickoff": "21:00 ET",
+          "section": "Section 235 · Row 12 · Seats 4-17",
+          "note": "Opening day in CDMX"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-06-20": {
+      "date": "2026-06-20",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "✈️",
+          "line": "Arrive MEX ~14:00 (via NRT layover) · Uber/Didi vans to Roma Norte"
+        },
+        {
+          "icon": "🏠",
+          "line": "Check-in Artsy Roma Rooftop ~4pm · group meet on the rooftop"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "On the plane",
+          "time": "in transit"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Eaten in the air",
+          "time": "in transit"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Páramo Roma · Av. Yucatán 84",
+          "time": "19:30 · BOOKED 15 pax"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Mezcalería nightcap nearby",
+          "note": "Bobbycito's pick — keep it gentle, big day Sun"
+        }
+      ]
+    },
+    "2026-06-21": {
+      "date": "2026-06-21",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚲",
+          "line": "AM · car-free Reforma cycle (Sunday only)"
+        },
+        {
+          "icon": "🚖",
+          "line": "Uber to El Cardenal, Centro (~MXN 120–180) for 1:30 lunch"
+        },
+        {
+          "icon": "🚖",
+          "line": "Centro → Arena México for 5pm Lucha (short hop) · don't walk Doctores"
+        },
+        {
+          "icon": "🚶",
+          "line": "Walk back to Roma for Orinoco"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast (light)",
+          "place": "Coffee & pan dulce near base — save room for El Cardenal",
+          "time": "09:00"
+        },
+        {
+          "slot": "Lunch (booked)",
+          "place": "El Cardenal · Calle de la Palma 23, Centro — group lunch, 14 pax",
+          "time": "13:30"
+        },
+        {
+          "slot": "Late tacos",
+          "place": "Taquería Orinoco · Av. Álvaro Obregón 100",
+          "time": "22:00+"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "-",
+          "headline": "🤼 Lucha Libre · Arena México",
+          "venue": "Dr. Lavista 189, Doctores",
+          "kickoff": "17:00",
+          "section": "Box office — mid-tier for the roar",
+          "note": "Buy a luchador mask off the street stalls"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-06-22": {
+      "date": "2026-06-22",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚖",
+          "line": "3–4 Ubers Roma Norte → Polanco for 13:30 (~MXN 150–220/car)"
+        },
+        {
+          "icon": "🚶",
+          "line": "Walk Condesa · Parque México · Mercado Medellín in the PM"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Lalo! (Zacatecas 173) or Fonda Fina (Medellín 79)",
+          "time": "keep it light"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Entremar · Hegel 307, Polanco",
+          "time": "13:30 · BOOKED 15 pax"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Cantina Covadonga · Puebla 121",
+          "time": "20:00 · dominoes + beers"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Cantina Covadonga · Puebla 121",
+          "note": "Bobbycito's pick — they slide the wooden tables together"
+        }
+      ]
+    },
+    "2026-06-23": {
+      "date": "2026-06-23",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚐",
+          "line": "Pre-dawn · leave base ~4:00am for Teotihuacán (1 hr each way)"
+        },
+        {
+          "icon": "🎈",
+          "line": "Hot-air balloon over the pyramids at sunrise"
+        },
+        {
+          "icon": "🛌",
+          "line": "Back to base mid-AM · NAP — long day"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Hacienda breakfast at Teotihuacán (INCLUDED in tour)",
+          "time": "08:00"
+        },
+        {
+          "slot": "Lunch",
+          "place": "— skip / nap to recover from 4am start",
+          "time": "open"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Guided food tour (doubles as dinner)",
+          "time": "17:00–20:00"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "-",
+          "headline": "🎈 Teotihuacán Hot-air Balloon",
+          "venue": "Teotihuacán archaeological site",
+          "kickoff": "06:00",
+          "section": "Prepaid · includes breakfast",
+          "note": "Confirm pickup point the day before"
+        },
+        {
+          "matchId": "-",
+          "headline": "🍴 Guided CDMX food tour",
+          "venue": "Roma / Centro (TBD)",
+          "kickoff": "17:00",
+          "section": "Prepaid · ~$60–100/pp",
+          "note": "Doubles as the day's dinner"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-06-24": {
+      "date": "2026-06-24",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚇",
+          "line": "Metro L2 → Tasqueña → Tren Ligero → Estadio Azteca (~MXN 8)"
+        },
+        {
+          "icon": "🚐",
+          "line": "OR Parque México park-&-ride shuttle (~MXN 350 round trip)"
+        },
+        {
+          "icon": "⚠️",
+          "line": "Leave base ~3 hrs before kickoff · regroup over tacos in Coyoacán post-match to dodge the crush"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Roma chilaquiles / huevos rancheros — big fuel-up",
+          "time": "09:00"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Steak · Sonora Grill / Quebracho / Colosos",
+          "time": "12:30"
+        },
+        {
+          "slot": "Late",
+          "place": "Post-match taco run · Orinoco / El Califa + night out",
+          "time": "22:30+"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "-",
+          "headline": "⚽ Mexico @ Estadio Azteca",
+          "venue": "Calz. de Tlalpan 3465, Santa Úrsula",
+          "kickoff": "TBC (ticket: 19:00; public sched: 21:00)",
+          "section": "1 ticket (Darsh) · others to Fan Fest / sports bar",
+          "note": "Confirm opponent + kickoff — ticket says Croatia 19:00; public says Czechia ~21:00"
+        }
+      ],
+      "watchSpots": [
+        {
+          "place": "Fan Fest CDMX (TBD) or a sports bar near base",
+          "note": "For everyone without a stadium ticket"
+        }
+      ]
+    },
+    "2026-06-25": {
+      "date": "2026-06-25",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚖",
+          "line": "3–4 Ubers Roma → Coyoacán (~25–35 min, MXN 150–220/car)"
+        },
+        {
+          "icon": "🚇",
+          "line": "OR Metro Line 3 to Coyoacán / Viveros + walk"
+        },
+        {
+          "icon": "🛒",
+          "line": "5pm Mercado Medellín shop run for the rooftop asado"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Cardinal Casa de Café · Córdoba 132",
+          "time": "09:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Contramar · Durango 200 (RESERVE AHEAD for 15)",
+          "time": "14:00"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Rooftop asado at base — Mercado Medellín haul",
+          "time": "19:30 · ~$25–30 pp"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "-",
+          "headline": "🎨 Casa Azul · Museo Frida Kahlo",
+          "venue": "Londres 247, Coyoacán",
+          "kickoff": "timed entry slot TBD",
+          "section": "~MXN 250 ($15) pp",
+          "note": "BOOK NOW at museofridakahlo.org.mx — sells out ~2 weeks out, no door sales"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-06-26": {
+      "date": "2026-06-26",
+      "city": "Mexico City",
+      "cityEmoji": "🌮",
+      "accommodation": {
+        "name": "Roma Norte AirBnB",
+        "address": "",
+        "neighbourhood": "Roma Norte"
+      },
+      "localTravel": [
+        {
+          "icon": "🚐",
+          "line": "Airport pickup 10:00 · vans Roma Norte → MEX T1/T2"
+        },
+        {
+          "icon": "✈️",
+          "line": "AeroMar AM-205 · MEX → GDL · dep 13:00 · arr ~14:30"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Light at base — chilaquiles to go from Lalo!",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "In transit",
+          "time": "airport snack"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Guadalajara · Alcalde or La Docena",
+          "time": "21:00 (TBC)"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": []
+    },
+    "2026-06-27": {
+      "date": "2026-06-27",
+      "city": "Guadalajara",
+      "cityEmoji": "🍹",
+      "accommodation": {
+        "name": "Lafayette AirBnB",
+        "address": "",
+        "neighbourhood": "Lafayette / Americana"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore Lafayette / Americana"
+        },
+        {
+          "icon": "🚇",
+          "line": "Guadalajara Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Birriería Las 9 Esquinas",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Tortas Ahogadas Toño",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Alcalde — Paco Ruano",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "M51",
+          "headline": "🇨🇿 CZE vs 🇿🇦 RSA",
+          "venue": "Estadio Akron · Guadalajara",
+          "kickoff": "12:00 ET",
+          "section": "Section 112 · Row 8",
+          "note": "Group A final round"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-06-28": {
+      "date": "2026-06-28",
+      "city": "Guadalajara",
+      "cityEmoji": "🍹",
+      "accommodation": {
+        "name": "Lafayette AirBnB",
+        "address": "",
+        "neighbourhood": "Lafayette / Americana"
+      },
+      "localTravel": [
+        {
+          "icon": "✈️",
+          "line": "Volaris Y4-1138 · GDL → OAX · dep 09:55 · arr 13:20 (1 stop CDMX)"
+        },
+        {
+          "icon": "🚖",
+          "line": "Taxi caravana hotel airport → Hotel Sin Nombre"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Birriería Las 9 Esquinas",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Tortas Ahogadas Toño",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Alcalde — Paco Ruano",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "La Tequila · Av. México",
+          "note": "200+ tequilas · screens"
+        },
+        {
+          "place": "Patán Ale House · Chapalita",
+          "note": "craft beer + matches"
+        }
+      ]
+    },
+    "2026-06-29": {
+      "date": "2026-06-29",
+      "city": "Oaxaca",
+      "cityEmoji": "🌶️",
+      "accommodation": {
+        "name": "Centro AirBnB",
+        "address": "",
+        "neighbourhood": "Centro Histórico"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore Centro Histórico"
+        },
+        {
+          "icon": "🚇",
+          "line": "Oaxaca Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Mercado 20 de Noviembre — grill alley",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Itanoní — tlayudas",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Origen — Rodolfo Castellanos",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Txalaparta · Centro",
+          "note": "Basque bar · big screen"
+        },
+        {
+          "place": "La Popular · rooftop",
+          "note": "sunset match + mezcal"
+        }
+      ]
+    },
+    "2026-06-30": {
+      "date": "2026-06-30",
+      "city": "Oaxaca",
+      "cityEmoji": "🌶️",
+      "accommodation": {
+        "name": "Centro AirBnB",
+        "address": "",
+        "neighbourhood": "Centro Histórico"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore Centro Histórico"
+        },
+        {
+          "icon": "🚇",
+          "line": "Oaxaca Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Mercado 20 de Noviembre — grill alley",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Itanoní — tlayudas",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Origen — Rodolfo Castellanos",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Txalaparta · Centro",
+          "note": "Basque bar · big screen"
+        },
+        {
+          "place": "La Popular · rooftop",
+          "note": "sunset match + mezcal"
+        }
+      ]
+    },
+    "2026-07-01": {
+      "date": "2026-07-01",
+      "city": "Oaxaca",
+      "cityEmoji": "🌶️",
+      "accommodation": {
+        "name": "Centro AirBnB",
+        "address": "",
+        "neighbourhood": "Centro Histórico"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore Centro Histórico"
+        },
+        {
+          "icon": "🚇",
+          "line": "Oaxaca Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Mercado 20 de Noviembre — grill alley",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Itanoní — tlayudas",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Origen — Rodolfo Castellanos",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Txalaparta · Centro",
+          "note": "Basque bar · big screen"
+        },
+        {
+          "place": "La Popular · rooftop",
+          "note": "sunset match + mezcal"
+        }
+      ]
+    },
+    "2026-07-02": {
+      "date": "2026-07-02",
+      "city": "Oaxaca",
+      "cityEmoji": "🌶️",
+      "accommodation": {
+        "name": "Centro AirBnB",
+        "address": "",
+        "neighbourhood": "Centro Histórico"
+      },
+      "localTravel": [
+        {
+          "icon": "✈️",
+          "line": "AeroMéxico AM-672 · OAX → JFK via MEX · dep 11:10 · arr JFK 22:55"
+        },
+        {
+          "icon": "🚐",
+          "line": "JFK arrivals AirRide vans → The Standard, East Village"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Mercado 20 de Noviembre — grill alley",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Itanoní — tlayudas",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Origen — Rodolfo Castellanos",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "Txalaparta · Centro",
+          "note": "Basque bar · big screen"
+        },
+        {
+          "place": "La Popular · rooftop",
+          "note": "sunset match + mezcal"
+        }
+      ]
+    },
+    "2026-07-03": {
+      "date": "2026-07-03",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore East Village / Lower East Side"
+        },
+        {
+          "icon": "🚇",
+          "line": "New York City Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    },
+    "2026-07-04": {
+      "date": "2026-07-04",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚆",
+          "line": "NJ Transit 1042 · Penn Stn → Secaucus · 09:42"
+        },
+        {
+          "icon": "🚌",
+          "line": "Shuttle bus Secaucus Jct → MetLife Stadium · runs every 10 min"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "M89",
+          "headline": "Round of 16 · TBD",
+          "venue": "MetLife Stadium · East Rutherford",
+          "kickoff": "12:00 ET",
+          "section": "Section 134 · Row 24 · Seats 6-19",
+          "note": "First R16 in NJ"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-07-05": {
+      "date": "2026-07-05",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore East Village / Lower East Side"
+        },
+        {
+          "icon": "🚇",
+          "line": "New York City Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    },
+    "2026-07-06": {
+      "date": "2026-07-06",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore East Village / Lower East Side"
+        },
+        {
+          "icon": "🚇",
+          "line": "New York City Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    },
+    "2026-07-07": {
+      "date": "2026-07-07",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore East Village / Lower East Side"
+        },
+        {
+          "icon": "🚇",
+          "line": "New York City Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    },
+    "2026-07-08": {
+      "date": "2026-07-08",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚶",
+          "line": "Free morning · explore East Village / Lower East Side"
+        },
+        {
+          "icon": "🚇",
+          "line": "New York City Metro/Uber as needed · group group-chat for pickups"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    },
+    "2026-07-09": {
+      "date": "2026-07-09",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "🚆",
+          "line": "Amtrak Acela 2167 · NYP → BOS · dep 06:00 · arr BOS 09:35"
+        },
+        {
+          "icon": "🚐",
+          "line": "Group shuttle BOS South Station → Gillette Stadium · 11:00"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [
+        {
+          "matchId": "M97",
+          "headline": "Quarter-Final · TBD",
+          "venue": "Gillette Stadium · Boston (Foxborough)",
+          "kickoff": "15:00 ET",
+          "section": "Section 119 · Row 30",
+          "note": "Day trip from NYC by Amtrak Acela"
+        }
+      ],
+      "watchSpots": []
+    },
+    "2026-07-10": {
+      "date": "2026-07-10",
+      "city": "New York City",
+      "cityEmoji": "🗽",
+      "accommodation": {
+        "name": "East Village AirBnB",
+        "address": "",
+        "neighbourhood": "East Village / LES"
+      },
+      "localTravel": [
+        {
+          "icon": "✈️",
+          "line": "Air India AI-102 · JFK → BOM · dep 22:50 · sleep on the plane 🙏"
+        },
+        {
+          "icon": "🚐",
+          "line": "Group Uber XL stack · Hotel → JFK Terminal 4 · pickup 19:00"
+        }
+      ],
+      "eats": [
+        {
+          "slot": "Breakfast",
+          "place": "Russ & Daughters — bagels",
+          "time": "08:30"
+        },
+        {
+          "slot": "Lunch",
+          "place": "Joe's Pizza — Bleecker St",
+          "time": "13:30"
+        },
+        {
+          "slot": "Dinner",
+          "place": "Carbone — Greenwich Village",
+          "time": "20:30"
+        }
+      ],
+      "tickets": [],
+      "watchSpots": [
+        {
+          "place": "The Football Factory · 6 W 33rd",
+          "note": "world-football pub · all matches"
+        },
+        {
+          "place": "Banter NYC · East Village",
+          "note": "Aussie place · screens everywhere"
+        }
+      ]
+    }
+  }
+}
