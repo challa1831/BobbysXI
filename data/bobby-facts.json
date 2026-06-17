@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "lastUpdated": "2026-06-18",
+    "owner": "Don Bobby's Club",
+    "schema_version": 1,
+    "note": "Canonical Bobby facts. Add new ones to the 'facts' array — the trip page picks 1 hero + 3 random cards on load, the Bobbycito landing page renders the whole list, and the floating 'Ask Bobbycito' button on country pages picks one at random per click. HTML tags inside 'text' are allowed (use <em> and <b> for emphasis); they get rendered as-is."
+  },
+  "facts": [
+    {
+      "number": 1,
+      "tag": "on the weather",
+      "text": "Bobby doesn't check the weather. <em>The weather checks with Bobby.</em>"
+    },
+    {
+      "number": 2,
+      "tag": "on FIFA",
+      "text": "FIFA didn't set the fixture schedule. Bobby did. <em>FIFA just published it.</em>"
+    },
+    {
+      "number": 3,
+      "tag": "on Roma Norte",
+      "text": "Bobby has a broken ankle and still knows more about <b>Roma Norte</b> than the people who live there."
+    },
+    {
+      "number": 4,
+      "tag": "on the Azteca",
+      "text": "Estadio Azteca wasn't built for football. <em>It was built for the day Bobby needed a venue.</em>"
+    },
+    {
+      "number": 5,
+      "tag": "on the AirBnB host",
+      "text": "The Airbnb host gave this place a 5-star review. <em>Of Bobby.</em>"
+    },
+    {
+      "number": 6,
+      "tag": "on \"let me check something\"",
+      "text": "When Bobby says <em>\"let me check something\"</em>, three countries update their plans."
+    },
+    {
+      "number": 7,
+      "tag": "on the group chat",
+      "text": "Bobby's group chat messages have been submitted for <b>UNESCO heritage status.</b>"
+    }
+  ]
+}
