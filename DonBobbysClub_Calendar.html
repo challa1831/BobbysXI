@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Don Bobby's Club — CDMX 2026</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.30.0/dist/tabler-icons.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #EEF3FA; min-height: 100vh; padding: 12px 12px 40px; }
+.wrap { max-width: 480px; margin: 0 auto; }
+
+/* ── COMPACT HERO ── */
+.hero { background: #2B4A6F; border-radius: 16px; padding: 14px 16px; margin-bottom: 10px; }
+.hero-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.hero-logo { font-size: 26px; line-height: 1; }
+.hero-text { }
+.hero-title { font-size: 17px; font-weight: 700; color: #fff; line-height: 1.2; }
+.hero-sub { font-size: 11px; color: #A8C5E0; margin-top: 2px; }
+
+.big-btn { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; padding: 14px 16px; background: white; border: none; border-radius: 11px; font-size: 15px; font-weight: 700; color: #2B4A6F; cursor: pointer; min-height: 50px; transition: opacity .15s, transform .1s; }
+.big-btn:active { opacity: 0.82; transform: scale(0.98); }
+.big-btn i { font-size: 20px; }
+
+/* hint that appears after tap */
+.hint { margin-top: 9px; background: rgba(255,255,255,0.12); border-radius: 9px; padding: 9px 12px; font-size: 12px; color: rgba(255,255,255,0.9); line-height: 1.6; display: none; }
+.hint.show { display: block; }
+.hint b { color: #fff; }
+
+/* ── SECTION LABEL ── */
+.section-label { font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #4A7BA7; margin: 12px 0 7px 2px; }
+
+/* ── EVENT CARDS ── */
+.ev-list { display: flex; flex-direction: column; gap: 7px; }
+.ev-card { background: white; border: 1px solid #DCE8F4; border-radius: 12px; overflow: hidden; }
+.ev-header { display: flex; align-items: center; gap: 10px; padding: 11px 13px 0; }
+.ev-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.dot-bk { background: #4CAF50; }
+.dot-pl { background: #2196F3; }
+.dot-al { background: #E91E8C; }
+.ev-name { font-size: 13px; font-weight: 600; color: #1a1a2e; line-height: 1.35; flex: 1; }
+.ev-meta { font-size: 11px; color: #6B7FA0; margin: 4px 13px 0 32px; line-height: 1.5; }
+.ev-actions { display: flex; gap: 0; margin-top: 9px; border-top: 1px solid #EEF3FA; }
+.gcal-btn { flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px; padding: 10px 8px; background: #F7FAFF; border: none; border-right: 1px solid #EEF3FA; font-size: 12px; font-weight: 500; color: #2B4A6F; text-decoration: none; min-height: 40px; cursor: pointer; }
+.gcal-btn:active { background: #E8F0FB; }
+.ics-btn { display: flex; align-items: center; justify-content: center; gap: 5px; padding: 10px 14px; background: #F7FAFF; border: none; font-size: 12px; font-weight: 500; color: #5A6A80; cursor: pointer; min-height: 40px; white-space: nowrap; }
+.ics-btn:active { background: #ECEEF2; }
+.gcal-btn i, .ics-btn i { font-size: 14px; }
+
+/* ── LEGEND ── */
+.legend { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 14px; padding: 10px 0 0; border-top: 1px solid #DCE8F4; }
+.leg { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #6B7FA0; }
+.leg-dot { width: 8px; height: 8px; border-radius: 50%; }
+.footer { font-size: 11px; color: #8899BB; text-align: center; margin-top: 16px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-row">
+    <div class="hero-logo">🐆</div>
+    <div class="hero-text">
+      <div class="hero-title">Don Bobby's Club · CDMX 2026</div>
+      <div class="hero-sub">11 events · 20–26 June · Roma Norte</div>
+    </div>
+  </div>
+  <button class="big-btn" onclick="addAll()">
+    <i class="ti ti-calendar-down"></i>
+    Add all 11 events to Calendar
+  </button>
+  <div class="hint" id="hint-ios">
+    <b>Calendar should open automatically</b> — tap <b>Add All</b> to import all 11 events at once.<br>
+    If nothing happens, scroll down and use the individual buttons below.
+  </div>
+  <div class="hint" id="hint-desk">
+    <b>File downloaded!</b> Open it to import all events.<br>
+    • Apple Calendar — double-click the file<br>
+    • Google Calendar — Settings → Import<br>
+    • Outlook — double-click the file
+  </div>
+</div>
+
+<!-- INDIVIDUAL EVENTS (always visible) -->
+<div class="section-label">Or add events one by one ↓</div>
+<div class="ev-list" id="evlist"></div>
+
+<div class="legend">
+  <div class="leg"><div class="leg-dot" style="background:#4CAF50"></div>Booked</div>
+  <div class="leg"><div class="leg-dot" style="background:#2196F3"></div>On the plan</div>
+  <div class="leg"><div class="leg-dot" style="background:#E91E8C"></div>C&amp;A alt</div>
+</div>
+<div class="footer">All times are Mexico City local time (UTC−5).<br>C&amp;A alt = Challa &amp; Anjali alternate plan (Tue 23).</div>
+</div>
+
+<!-- hidden iframe used to trigger Calendar on iOS without navigating away -->
+<iframe id="cal-frame" style="display:none" sandbox="allow-same-origin"></iframe>
+
+<script>
+const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+const EVS = [
+  { name:'Welcome dinner — Paramo Roma',         time:'Sat 20 Jun · 7:30 PM',  loc:'Av. Yucatán 84, Roma Norte',                 badge:'bk', ds:'20260620T193000', de:'20260620T220000', desc:"Don Bobby's Club welcome dinner. 15 pax." },
+  { name:'Lunch — El Cardenal',                   time:'Sun 21 Jun · 1:30 PM',  loc:'Calle de la Palma 23, Centro Histórico',     badge:'bk', ds:'20260621T133000', de:'20260621T153000', desc:"Group lunch, 15 pax." },
+  { name:'Lucha Libre — Arena México',            time:'Sun 21 Jun · 5:00 PM',  loc:'Dr. Lavista 189, Colonia Doctores',           badge:'pl', ds:'20260621T170000', de:'20260621T193000', desc:"Lucha Libre at Arena México." },
+  { name:'Seafood lunch — Entremar',              time:'Mon 22 Jun · 1:30 PM',  loc:'Hegel 307, Polanco',                          badge:'bk', ds:'20260622T133000', de:'20260622T153000', desc:"Group seafood lunch, 15 pax." },
+  { name:'Hot-air balloon — Teotihuacán',        time:'Tue 23 Jun · 4:00 AM',  loc:'Teotihuacán (~50 km NE of CDMX)',            badge:'bk', ds:'20260623T040000', de:'20260623T110000', desc:"Sunrise hot-air balloon. Pre-dawn departure." },
+  { name:'Guided food tour',                     time:'Tue 23 Jun · 5–8 PM',   loc:'Roma Norte',                                  badge:'bk', ds:'20260623T170000', de:'20260623T200000', desc:"Group guided food tour." },
+  { name:'MODO museum (C&A alt)',                time:'Tue 23 Jun · 11:00 AM', loc:'Colima 145, Roma Norte',                      badge:'al', ds:'20260623T110000', de:'20260623T123000', desc:"Challa & Anjali — MODO museum." },
+  { name:'Sonora Grill + England vs Ghana (C&A alt)', time:'Tue 23 Jun · 12:45 PM', loc:'Paseo de la Reforma Nte 1, Tabacalera',  badge:'al', ds:'20260623T124500', de:'20260623T153000', desc:"Challa & Anjali — Sonora Grill (booked), then England vs Ghana at 2PM." },
+  { name:'Mexico vs Czechia — Estadio Azteca',   time:'Wed 24 Jun · ~9:00 PM', loc:'Estadio Azteca, Santa Úrsula',               badge:'bk', ds:'20260624T210000', de:'20260624T230000', desc:"World Cup 2026 — Mexico vs Czechia." },
+  { name:'Asado lunch — Cambalache',             time:'Thu 25 Jun · 1:15 PM',  loc:'Insurgentes Sur 1384, Del Valle',             badge:'bk', ds:'20260625T131500', de:'20260625T153000', desc:"Group asado, 15 pax." },
+  { name:'Airport — departure',                  time:'Fri 26 Jun · 10:00 AM', loc:'Mexico City Airport (MEX)',                   badge:'bk', ds:'20260626T100000', de:'20260626T130000', desc:"Leave for airport. Flight at 1PM." },
+];
+
+function icsEvent(ev) {
+  const uid = ev.ds + '_' + Math.random().toString(36).slice(2,8) + '@bobbysclub';
+  const e = s => s.replace(/,/g,'\\,').replace(/\n/g,'\\n');
+  return ['BEGIN:VEVENT','UID:'+uid,
+    'DTSTART;TZID=America/Mexico_City:'+ev.ds,
+    'DTEND;TZID=America/Mexico_City:'+ev.de,
+    'SUMMARY:'+e(ev.name),
+    'LOCATION:'+e(ev.loc),
+    'DESCRIPTION:'+e(ev.desc),
+    'END:VEVENT'].join('\r\n');
+}
+function buildICS(evs) {
+  return ['BEGIN:VCALENDAR','VERSION:2.0',
+    "PRODID:-//Don Bobby's Club//CDMX 2026//EN",
+    'CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    "X-WR-CALNAME:Don Bobby's Club CDMX 2026",
+    ...evs.map(icsEvent),'END:VCALENDAR'].join('\r\n');
+}
+
+function triggerICS(evs) {
+  const cal = buildICS(evs);
+  if (isIOS) {
+    // Use hidden iframe — triggers Calendar app without navigating the main page away
+    const b64 = btoa(unescape(encodeURIComponent(cal)));
+    const frame = document.getElementById('cal-frame');
+    frame.src = 'data:text/calendar;base64,' + b64;
+    document.getElementById('hint-ios').classList.add('show');
+  } else {
+    const blob = new Blob([cal], {type:'text/calendar;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = evs.length > 1 ? 'DonBobbysClub_CDMX2026.ics'
+      : evs[0].name.replace(/[^a-z0-9]/gi,'_').slice(0,40)+'.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    document.getElementById('hint-desk').classList.add('show');
+  }
+}
+
+function addAll() { triggerICS(EVS); }
+
+function gcalUrl(ev) {
+  const p = new URLSearchParams({action:'TEMPLATE', text:ev.name,
+    dates:ev.ds+'/'+ev.de, details:ev.desc + "\n\nDon Bobby's Club CDMX 2026",
+    location:ev.loc, ctz:'America/Mexico_City'});
+  return 'https://calendar.google.com/calendar/render?' + p;
+}
+
+const dotMap = {bk:'dot-bk', pl:'dot-pl', al:'dot-al'};
+const list = document.getElementById('evlist');
+const icsLabel = isIOS ? '<i class="ti ti-device-mobile"></i> Apple Cal' : '<i class="ti ti-download"></i> .ics';
+EVS.forEach((ev, i) => {
+  const card = document.createElement('div');
+  card.className = 'ev-card';
+  card.innerHTML = `
+    <div class="ev-header">
+      <div class="ev-dot ${dotMap[ev.badge]}"></div>
+      <div class="ev-name">${ev.name}</div>
+    </div>
+    <div class="ev-meta">${ev.time} · ${ev.loc}</div>
+    <div class="ev-actions">
+      <a class="gcal-btn" href="${gcalUrl(ev)}" target="_blank" rel="noopener">
+        <i class="ti ti-brand-google"></i> Google Calendar
+      </a>
+      <button class="ics-btn" onclick="triggerICS([EVS[${i}]])">${icsLabel}</button>
+    </div>`;
+  list.appendChild(card);
+});
+</script>
+</body>
+</html>
